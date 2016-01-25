@@ -1,0 +1,11339 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>body {
+	background: #111;
+}
+
+.planet {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-sizing: border-box;
+}
+
+.planet {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: -1;
+	-webkit-animation: snooze 15s ease infinite, shunt 120s ease infinite;
+	animation: snooze 15s ease infinite, shunt 120s ease infinite;
+}
+
+@-webkit-keyframes snooze {
+	0%,
+	33%,
+	66%,
+	100% {
+		border-radius: 50%;
+	}
+	50% {
+		border-radius: 0;
+	}
+}
+
+@keyframes snooze {
+	0%,
+	33%,
+	66%,
+	100% {
+		border-radius: 50%;
+	}
+	50% {
+		border-radius: 0;
+	}
+}
+
+@-webkit-keyframes shunt {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes shunt {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.planet div {
+	width: 4px;
+	height: 4px;
+	float: left;
+}
+
+.planet div:nth-child(1) {
+	-webkit-animation: shift-1 15s ease infinite;
+	animation: shift-1 15s ease infinite;
+}
+
+@-webkit-keyframes shift-1 {
+	0%,
+	100% {
+		background: #4c01e1;
+	}
+	16% {
+		background: #3300ff;
+	}
+	33% {
+		background: #5a01d1;
+	}
+	50% {
+		background: #0c2396;
+	}
+	66% {
+		background: #ff6745;
+	}
+	83% {
+		background: #fffe00;
+	}
+}
+
+@keyframes shift-1 {
+	0%,
+	100% {
+		background: #4c01e1;
+	}
+	16% {
+		background: #3300ff;
+	}
+	33% {
+		background: #5a01d1;
+	}
+	50% {
+		background: #0c2396;
+	}
+	66% {
+		background: #ff6745;
+	}
+	83% {
+		background: #fffe00;
+	}
+}
+
+.planet div:nth-child(2) {
+	-webkit-animation: shift-2 15s ease infinite;
+	animation: shift-2 15s ease infinite;
+}
+
+@-webkit-keyframes shift-2 {
+	0%,
+	100% {
+		background: #94018e;
+	}
+	16% {
+		background: #3400ff;
+	}
+	33% {
+		background: #a00181;
+	}
+	50% {
+		background: #061c07;
+	}
+	66% {
+		background: #ffd015;
+	}
+	83% {
+		background: #fffe01;
+	}
+}
+
+@keyframes shift-2 {
+	0%,
+	100% {
+		background: #94018e;
+	}
+	16% {
+		background: #3400ff;
+	}
+	33% {
+		background: #a00181;
+	}
+	50% {
+		background: #061c07;
+	}
+	66% {
+		background: #ffd015;
+	}
+	83% {
+		background: #fffe01;
+	}
+}
+
+.planet div:nth-child(3) {
+	-webkit-animation: shift-3 15s ease infinite;
+	animation: shift-3 15s ease infinite;
+}
+
+@-webkit-keyframes shift-3 {
+	0%,
+	100% {
+		background: #fa0119;
+	}
+	16% {
+		background: #3500ff;
+	}
+	33% {
+		background: #be015f;
+	}
+	50% {
+		background: #8a643c;
+	}
+	66% {
+		background: #fff007;
+	}
+	83% {
+		background: #fffd01;
+	}
+}
+
+@keyframes shift-3 {
+	0%,
+	100% {
+		background: #fa0119;
+	}
+	16% {
+		background: #3500ff;
+	}
+	33% {
+		background: #be015f;
+	}
+	50% {
+		background: #8a643c;
+	}
+	66% {
+		background: #fff007;
+	}
+	83% {
+		background: #fffd01;
+	}
+}
+
+.planet div:nth-child(4) {
+	-webkit-animation: shift-4 15s ease infinite;
+	animation: shift-4 15s ease infinite;
+}
+
+@-webkit-keyframes shift-4 {
+	0%,
+	100% {
+		background: #e50131;
+	}
+	16% {
+		background: #3600ff;
+	}
+	33% {
+		background: #8e0195;
+	}
+	50% {
+		background: #b0e3ee;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #fffc01;
+	}
+}
+
+@keyframes shift-4 {
+	0%,
+	100% {
+		background: #e50131;
+	}
+	16% {
+		background: #3600ff;
+	}
+	33% {
+		background: #8e0195;
+	}
+	50% {
+		background: #b0e3ee;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #fffc01;
+	}
+}
+
+.planet div:nth-child(5) {
+	-webkit-animation: shift-5 15s ease infinite;
+	animation: shift-5 15s ease infinite;
+}
+
+@-webkit-keyframes shift-5 {
+	0%,
+	100% {
+		background: #c50155;
+	}
+	16% {
+		background: #3700ff;
+	}
+	33% {
+		background: #5d01cd;
+	}
+	50% {
+		background: #a00621;
+	}
+	66% {
+		background: #ff7a3d;
+	}
+	83% {
+		background: #fffc02;
+	}
+}
+
+@keyframes shift-5 {
+	0%,
+	100% {
+		background: #c50155;
+	}
+	16% {
+		background: #3700ff;
+	}
+	33% {
+		background: #5d01cd;
+	}
+	50% {
+		background: #a00621;
+	}
+	66% {
+		background: #ff7a3d;
+	}
+	83% {
+		background: #fffc02;
+	}
+}
+
+.planet div:nth-child(6) {
+	-webkit-animation: shift-6 15s ease infinite;
+	animation: shift-6 15s ease infinite;
+}
+
+@-webkit-keyframes shift-6 {
+	0%,
+	100% {
+		background: #7801af;
+	}
+	16% {
+		background: #3800ff;
+	}
+	33% {
+		background: #9c0186;
+	}
+	50% {
+		background: #752a53;
+	}
+	66% {
+		background: #fff206;
+	}
+	83% {
+		background: #fffb02;
+	}
+}
+
+@keyframes shift-6 {
+	0%,
+	100% {
+		background: #7801af;
+	}
+	16% {
+		background: #3800ff;
+	}
+	33% {
+		background: #9c0186;
+	}
+	50% {
+		background: #752a53;
+	}
+	66% {
+		background: #fff206;
+	}
+	83% {
+		background: #fffb02;
+	}
+}
+
+.planet div:nth-child(7) {
+	-webkit-animation: shift-7 15s ease infinite;
+	animation: shift-7 15s ease infinite;
+}
+
+@-webkit-keyframes shift-7 {
+	0%,
+	100% {
+		background: #4401ea;
+	}
+	16% {
+		background: #3900ff;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #824e6b;
+	}
+	66% {
+		background: #ff9530;
+	}
+	83% {
+		background: #fffa02;
+	}
+}
+
+@keyframes shift-7 {
+	0%,
+	100% {
+		background: #4401ea;
+	}
+	16% {
+		background: #3900ff;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #824e6b;
+	}
+	66% {
+		background: #ff9530;
+	}
+	83% {
+		background: #fffa02;
+	}
+}
+
+.planet div:nth-child(8) {
+	-webkit-animation: shift-8 15s ease infinite;
+	animation: shift-8 15s ease infinite;
+}
+
+@-webkit-keyframes shift-8 {
+	0%,
+	100% {
+		background: #7801af;
+	}
+	16% {
+		background: #3a00ff;
+	}
+	33% {
+		background: #4701e7;
+	}
+	50% {
+		background: #c27495;
+	}
+	66% {
+		background: #ffd812;
+	}
+	83% {
+		background: #fffa02;
+	}
+}
+
+@keyframes shift-8 {
+	0%,
+	100% {
+		background: #7801af;
+	}
+	16% {
+		background: #3a00ff;
+	}
+	33% {
+		background: #4701e7;
+	}
+	50% {
+		background: #c27495;
+	}
+	66% {
+		background: #ffd812;
+	}
+	83% {
+		background: #fffa02;
+	}
+}
+
+.planet div:nth-child(9) {
+	-webkit-animation: shift-9 15s ease infinite;
+	animation: shift-9 15s ease infinite;
+}
+
+@-webkit-keyframes shift-9 {
+	0%,
+	100% {
+		background: #f30121;
+	}
+	16% {
+		background: #3b00ff;
+	}
+	33% {
+		background: #d30145;
+	}
+	50% {
+		background: #498815;
+	}
+	66% {
+		background: #ff8e33;
+	}
+	83% {
+		background: #fff903;
+	}
+}
+
+@keyframes shift-9 {
+	0%,
+	100% {
+		background: #f30121;
+	}
+	16% {
+		background: #3b00ff;
+	}
+	33% {
+		background: #d30145;
+	}
+	50% {
+		background: #498815;
+	}
+	66% {
+		background: #ff8e33;
+	}
+	83% {
+		background: #fff903;
+	}
+}
+
+.planet div:nth-child(10) {
+	-webkit-animation: shift-10 15s ease infinite;
+	animation: shift-10 15s ease infinite;
+}
+
+@-webkit-keyframes shift-10 {
+	0%,
+	100% {
+		background: #e60130;
+	}
+	16% {
+		background: #3c00ff;
+	}
+	33% {
+		background: #a80177;
+	}
+	50% {
+		background: #2d48fa;
+	}
+	66% {
+		background: #ffe70b;
+	}
+	83% {
+		background: #fff803;
+	}
+}
+
+@keyframes shift-10 {
+	0%,
+	100% {
+		background: #e60130;
+	}
+	16% {
+		background: #3c00ff;
+	}
+	33% {
+		background: #a80177;
+	}
+	50% {
+		background: #2d48fa;
+	}
+	66% {
+		background: #ffe70b;
+	}
+	83% {
+		background: #fff803;
+	}
+}
+
+.planet div:nth-child(11) {
+	-webkit-animation: shift-11 15s ease infinite;
+	animation: shift-11 15s ease infinite;
+}
+
+@-webkit-keyframes shift-11 {
+	0%,
+	100% {
+		background: #5901d2;
+	}
+	16% {
+		background: #3d00ff;
+	}
+	33% {
+		background: #8101a4;
+	}
+	50% {
+		background: #b478d7;
+	}
+	66% {
+		background: #ffb621;
+	}
+	83% {
+		background: #fff703;
+	}
+}
+
+@keyframes shift-11 {
+	0%,
+	100% {
+		background: #5901d2;
+	}
+	16% {
+		background: #3d00ff;
+	}
+	33% {
+		background: #8101a4;
+	}
+	50% {
+		background: #b478d7;
+	}
+	66% {
+		background: #ffb621;
+	}
+	83% {
+		background: #fff703;
+	}
+}
+
+.planet div:nth-child(12) {
+	-webkit-animation: shift-12 15s ease infinite;
+	animation: shift-12 15s ease infinite;
+}
+
+@-webkit-keyframes shift-12 {
+	0%,
+	100% {
+		background: #900193;
+	}
+	16% {
+		background: #3e00ff;
+	}
+	33% {
+		background: #7b01ab;
+	}
+	50% {
+		background: #b051bd;
+	}
+	66% {
+		background: #ff763e;
+	}
+	83% {
+		background: #fff704;
+	}
+}
+
+@keyframes shift-12 {
+	0%,
+	100% {
+		background: #900193;
+	}
+	16% {
+		background: #3e00ff;
+	}
+	33% {
+		background: #7b01ab;
+	}
+	50% {
+		background: #b051bd;
+	}
+	66% {
+		background: #ff763e;
+	}
+	83% {
+		background: #fff704;
+	}
+}
+
+.planet div:nth-child(13) {
+	-webkit-animation: shift-13 15s ease infinite;
+	animation: shift-13 15s ease infinite;
+}
+
+@-webkit-keyframes shift-13 {
+	0%,
+	100% {
+		background: #3401fd;
+	}
+	16% {
+		background: #3f00ff;
+	}
+	33% {
+		background: #a60179;
+	}
+	50% {
+		background: #b9156f;
+	}
+	66% {
+		background: #ff6745;
+	}
+	83% {
+		background: #fff604;
+	}
+}
+
+@keyframes shift-13 {
+	0%,
+	100% {
+		background: #3401fd;
+	}
+	16% {
+		background: #3f00ff;
+	}
+	33% {
+		background: #a60179;
+	}
+	50% {
+		background: #b9156f;
+	}
+	66% {
+		background: #ff6745;
+	}
+	83% {
+		background: #fff604;
+	}
+}
+
+.planet div:nth-child(14) {
+	-webkit-animation: shift-14 15s ease infinite;
+	animation: shift-14 15s ease infinite;
+}
+
+@-webkit-keyframes shift-14 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #4000ff;
+	}
+	33% {
+		background: #7701af;
+	}
+	50% {
+		background: #15d502;
+	}
+	66% {
+		background: #ffc31b;
+	}
+	83% {
+		background: #fff504;
+	}
+}
+
+@keyframes shift-14 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #4000ff;
+	}
+	33% {
+		background: #7701af;
+	}
+	50% {
+		background: #15d502;
+	}
+	66% {
+		background: #ffc31b;
+	}
+	83% {
+		background: #fff504;
+	}
+}
+
+.planet div:nth-child(15) {
+	-webkit-animation: shift-15 15s ease infinite;
+	animation: shift-15 15s ease infinite;
+}
+
+@-webkit-keyframes shift-15 {
+	0%,
+	100% {
+		background: #6901bf;
+	}
+	16% {
+		background: #4100ff;
+	}
+	33% {
+		background: #8e0195;
+	}
+	50% {
+		background: #5e1f16;
+	}
+	66% {
+		background: #ff6845;
+	}
+	83% {
+		background: #fff505;
+	}
+}
+
+@keyframes shift-15 {
+	0%,
+	100% {
+		background: #6901bf;
+	}
+	16% {
+		background: #4100ff;
+	}
+	33% {
+		background: #8e0195;
+	}
+	50% {
+		background: #5e1f16;
+	}
+	66% {
+		background: #ff6845;
+	}
+	83% {
+		background: #fff505;
+	}
+}
+
+.planet div:nth-child(16) {
+	-webkit-animation: shift-16 15s ease infinite;
+	animation: shift-16 15s ease infinite;
+}
+
+@-webkit-keyframes shift-16 {
+	0%,
+	100% {
+		background: #b80165;
+	}
+	16% {
+		background: #4200ff;
+	}
+	33% {
+		background: #c1015a;
+	}
+	50% {
+		background: #33d65f;
+	}
+	66% {
+		background: #ffa628;
+	}
+	83% {
+		background: #fff405;
+	}
+}
+
+@keyframes shift-16 {
+	0%,
+	100% {
+		background: #b80165;
+	}
+	16% {
+		background: #4200ff;
+	}
+	33% {
+		background: #c1015a;
+	}
+	50% {
+		background: #33d65f;
+	}
+	66% {
+		background: #ffa628;
+	}
+	83% {
+		background: #fff405;
+	}
+}
+
+.planet div:nth-child(17) {
+	-webkit-animation: shift-17 15s ease infinite;
+	animation: shift-17 15s ease infinite;
+}
+
+@-webkit-keyframes shift-17 {
+	0%,
+	100% {
+		background: #6401c5;
+	}
+	16% {
+		background: #4300ff;
+	}
+	33% {
+		background: #5a01d1;
+	}
+	50% {
+		background: #e26c6c;
+	}
+	66% {
+		background: #ff6845;
+	}
+	83% {
+		background: #fff305;
+	}
+}
+
+@keyframes shift-17 {
+	0%,
+	100% {
+		background: #6401c5;
+	}
+	16% {
+		background: #4300ff;
+	}
+	33% {
+		background: #5a01d1;
+	}
+	50% {
+		background: #e26c6c;
+	}
+	66% {
+		background: #ff6845;
+	}
+	83% {
+		background: #fff305;
+	}
+}
+
+.planet div:nth-child(18) {
+	-webkit-animation: shift-18 15s ease infinite;
+	animation: shift-18 15s ease infinite;
+}
+
+@-webkit-keyframes shift-18 {
+	0%,
+	100% {
+		background: #b50168;
+	}
+	16% {
+		background: #4400ff;
+	}
+	33% {
+		background: #8301a2;
+	}
+	50% {
+		background: #1c7be5;
+	}
+	66% {
+		background: #ffeb09;
+	}
+	83% {
+		background: #fff306;
+	}
+}
+
+@keyframes shift-18 {
+	0%,
+	100% {
+		background: #b50168;
+	}
+	16% {
+		background: #4400ff;
+	}
+	33% {
+		background: #8301a2;
+	}
+	50% {
+		background: #1c7be5;
+	}
+	66% {
+		background: #ffeb09;
+	}
+	83% {
+		background: #fff306;
+	}
+}
+
+.planet div:nth-child(19) {
+	-webkit-animation: shift-19 15s ease infinite;
+	animation: shift-19 15s ease infinite;
+}
+
+@-webkit-keyframes shift-19 {
+	0%,
+	100% {
+		background: #a60179;
+	}
+	16% {
+		background: #4500ff;
+	}
+	33% {
+		background: #eb012a;
+	}
+	50% {
+		background: #365429;
+	}
+	66% {
+		background: #ffb124;
+	}
+	83% {
+		background: #fff206;
+	}
+}
+
+@keyframes shift-19 {
+	0%,
+	100% {
+		background: #a60179;
+	}
+	16% {
+		background: #4500ff;
+	}
+	33% {
+		background: #eb012a;
+	}
+	50% {
+		background: #365429;
+	}
+	66% {
+		background: #ffb124;
+	}
+	83% {
+		background: #fff206;
+	}
+}
+
+.planet div:nth-child(20) {
+	-webkit-animation: shift-20 15s ease infinite;
+	animation: shift-20 15s ease infinite;
+}
+
+@-webkit-keyframes shift-20 {
+	0%,
+	100% {
+		background: #dc013b;
+	}
+	16% {
+		background: #4600ff;
+	}
+	33% {
+		background: #ca0150;
+	}
+	50% {
+		background: #b40b5b;
+	}
+	66% {
+		background: #fffa02;
+	}
+	83% {
+		background: #fff106;
+	}
+}
+
+@keyframes shift-20 {
+	0%,
+	100% {
+		background: #dc013b;
+	}
+	16% {
+		background: #4600ff;
+	}
+	33% {
+		background: #ca0150;
+	}
+	50% {
+		background: #b40b5b;
+	}
+	66% {
+		background: #fffa02;
+	}
+	83% {
+		background: #fff106;
+	}
+}
+
+.planet div:nth-child(21) {
+	-webkit-animation: shift-21 15s ease infinite;
+	animation: shift-21 15s ease infinite;
+}
+
+@-webkit-keyframes shift-21 {
+	0%,
+	100% {
+		background: #ae0171;
+	}
+	16% {
+		background: #4700ff;
+	}
+	33% {
+		background: #e20135;
+	}
+	50% {
+		background: #063f1d;
+	}
+	66% {
+		background: #fff206;
+	}
+	83% {
+		background: #fff107;
+	}
+}
+
+@keyframes shift-21 {
+	0%,
+	100% {
+		background: #ae0171;
+	}
+	16% {
+		background: #4700ff;
+	}
+	33% {
+		background: #e20135;
+	}
+	50% {
+		background: #063f1d;
+	}
+	66% {
+		background: #fff206;
+	}
+	83% {
+		background: #fff107;
+	}
+}
+
+.planet div:nth-child(22) {
+	-webkit-animation: shift-22 15s ease infinite;
+	animation: shift-22 15s ease infinite;
+}
+
+@-webkit-keyframes shift-22 {
+	0%,
+	100% {
+		background: #cd014d;
+	}
+	16% {
+		background: #4800ff;
+	}
+	33% {
+		background: #bc0161;
+	}
+	50% {
+		background: #bf3d66;
+	}
+	66% {
+		background: #ffa12b;
+	}
+	83% {
+		background: #fff007;
+	}
+}
+
+@keyframes shift-22 {
+	0%,
+	100% {
+		background: #cd014d;
+	}
+	16% {
+		background: #4800ff;
+	}
+	33% {
+		background: #bc0161;
+	}
+	50% {
+		background: #bf3d66;
+	}
+	66% {
+		background: #ffa12b;
+	}
+	83% {
+		background: #fff007;
+	}
+}
+
+.planet div:nth-child(23) {
+	-webkit-animation: shift-23 15s ease infinite;
+	animation: shift-23 15s ease infinite;
+}
+
+@-webkit-keyframes shift-23 {
+	0%,
+	100% {
+		background: #a90176;
+	}
+	16% {
+		background: #4900ff;
+	}
+	33% {
+		background: #9f0181;
+	}
+	50% {
+		background: #bf9871;
+	}
+	66% {
+		background: #ffbc1e;
+	}
+	83% {
+		background: #ffef07;
+	}
+}
+
+@keyframes shift-23 {
+	0%,
+	100% {
+		background: #a90176;
+	}
+	16% {
+		background: #4900ff;
+	}
+	33% {
+		background: #9f0181;
+	}
+	50% {
+		background: #bf9871;
+	}
+	66% {
+		background: #ffbc1e;
+	}
+	83% {
+		background: #ffef07;
+	}
+}
+
+.planet div:nth-child(24) {
+	-webkit-animation: shift-24 15s ease infinite;
+	animation: shift-24 15s ease infinite;
+}
+
+@-webkit-keyframes shift-24 {
+	0%,
+	100% {
+		background: #dc013c;
+	}
+	16% {
+		background: #4a00ff;
+	}
+	33% {
+		background: #f10123;
+	}
+	50% {
+		background: #8a7170;
+	}
+	66% {
+		background: #fff405;
+	}
+	83% {
+		background: #ffef07;
+	}
+}
+
+@keyframes shift-24 {
+	0%,
+	100% {
+		background: #dc013c;
+	}
+	16% {
+		background: #4a00ff;
+	}
+	33% {
+		background: #f10123;
+	}
+	50% {
+		background: #8a7170;
+	}
+	66% {
+		background: #fff405;
+	}
+	83% {
+		background: #ffef07;
+	}
+}
+
+.planet div:nth-child(25) {
+	-webkit-animation: shift-25 15s ease infinite;
+	animation: shift-25 15s ease infinite;
+}
+
+@-webkit-keyframes shift-25 {
+	0%,
+	100% {
+		background: #6201c7;
+	}
+	16% {
+		background: #4b00ff;
+	}
+	33% {
+		background: #cc014d;
+	}
+	50% {
+		background: #d807b7;
+	}
+	66% {
+		background: #ffc919;
+	}
+	83% {
+		background: #ffee08;
+	}
+}
+
+@keyframes shift-25 {
+	0%,
+	100% {
+		background: #6201c7;
+	}
+	16% {
+		background: #4b00ff;
+	}
+	33% {
+		background: #cc014d;
+	}
+	50% {
+		background: #d807b7;
+	}
+	66% {
+		background: #ffc919;
+	}
+	83% {
+		background: #ffee08;
+	}
+}
+
+.planet div:nth-child(26) {
+	-webkit-animation: shift-26 15s ease infinite;
+	animation: shift-26 15s ease infinite;
+}
+
+@-webkit-keyframes shift-26 {
+	0%,
+	100% {
+		background: #3b01f5;
+	}
+	16% {
+		background: #4c00ff;
+	}
+	33% {
+		background: #7301b5;
+	}
+	50% {
+		background: #e07a6b;
+	}
+	66% {
+		background: #ffc719;
+	}
+	83% {
+		background: #ffed08;
+	}
+}
+
+@keyframes shift-26 {
+	0%,
+	100% {
+		background: #3b01f5;
+	}
+	16% {
+		background: #4c00ff;
+	}
+	33% {
+		background: #7301b5;
+	}
+	50% {
+		background: #e07a6b;
+	}
+	66% {
+		background: #ffc719;
+	}
+	83% {
+		background: #ffed08;
+	}
+}
+
+.planet div:nth-child(27) {
+	-webkit-animation: shift-27 15s ease infinite;
+	animation: shift-27 15s ease infinite;
+}
+
+@-webkit-keyframes shift-27 {
+	0%,
+	100% {
+		background: #3201ff;
+	}
+	16% {
+		background: #4d00ff;
+	}
+	33% {
+		background: #7301b5;
+	}
+	50% {
+		background: #da623c;
+	}
+	66% {
+		background: #ffc41b;
+	}
+	83% {
+		background: #ffec08;
+	}
+}
+
+@keyframes shift-27 {
+	0%,
+	100% {
+		background: #3201ff;
+	}
+	16% {
+		background: #4d00ff;
+	}
+	33% {
+		background: #7301b5;
+	}
+	50% {
+		background: #da623c;
+	}
+	66% {
+		background: #ffc41b;
+	}
+	83% {
+		background: #ffec08;
+	}
+}
+
+.planet div:nth-child(28) {
+	-webkit-animation: shift-28 15s ease infinite;
+	animation: shift-28 15s ease infinite;
+}
+
+@-webkit-keyframes shift-28 {
+	0%,
+	100% {
+		background: #be015f;
+	}
+	16% {
+		background: #4e00ff;
+	}
+	33% {
+		background: #c0015b;
+	}
+	50% {
+		background: #598c5e;
+	}
+	66% {
+		background: #ffc71a;
+	}
+	83% {
+		background: #ffec09;
+	}
+}
+
+@keyframes shift-28 {
+	0%,
+	100% {
+		background: #be015f;
+	}
+	16% {
+		background: #4e00ff;
+	}
+	33% {
+		background: #c0015b;
+	}
+	50% {
+		background: #598c5e;
+	}
+	66% {
+		background: #ffc71a;
+	}
+	83% {
+		background: #ffec09;
+	}
+}
+
+.planet div:nth-child(29) {
+	-webkit-animation: shift-29 15s ease infinite;
+	animation: shift-29 15s ease infinite;
+}
+
+@-webkit-keyframes shift-29 {
+	0%,
+	100% {
+		background: #7601b0;
+	}
+	16% {
+		background: #4f00ff;
+	}
+	33% {
+		background: #4001ef;
+	}
+	50% {
+		background: #87ee46;
+	}
+	66% {
+		background: yellow;
+	}
+	83% {
+		background: #ffeb09;
+	}
+}
+
+@keyframes shift-29 {
+	0%,
+	100% {
+		background: #7601b0;
+	}
+	16% {
+		background: #4f00ff;
+	}
+	33% {
+		background: #4001ef;
+	}
+	50% {
+		background: #87ee46;
+	}
+	66% {
+		background: yellow;
+	}
+	83% {
+		background: #ffeb09;
+	}
+}
+
+.planet div:nth-child(30) {
+	-webkit-animation: shift-30 15s ease infinite;
+	animation: shift-30 15s ease infinite;
+}
+
+@-webkit-keyframes shift-30 {
+	0%,
+	100% {
+		background: #f10123;
+	}
+	16% {
+		background: #5000ff;
+	}
+	33% {
+		background: #af016f;
+	}
+	50% {
+		background: #9a7796;
+	}
+	66% {
+		background: #ff763e;
+	}
+	83% {
+		background: #ffea09;
+	}
+}
+
+@keyframes shift-30 {
+	0%,
+	100% {
+		background: #f10123;
+	}
+	16% {
+		background: #5000ff;
+	}
+	33% {
+		background: #af016f;
+	}
+	50% {
+		background: #9a7796;
+	}
+	66% {
+		background: #ff763e;
+	}
+	83% {
+		background: #ffea09;
+	}
+}
+
+.planet div:nth-child(31) {
+	-webkit-animation: shift-31 15s ease infinite;
+	animation: shift-31 15s ease infinite;
+}
+
+@-webkit-keyframes shift-31 {
+	0%,
+	100% {
+		background: #5401d8;
+	}
+	16% {
+		background: #5100ff;
+	}
+	33% {
+		background: #5e01cc;
+	}
+	50% {
+		background: #21ea56;
+	}
+	66% {
+		background: #ffd712;
+	}
+	83% {
+		background: #ffea0a;
+	}
+}
+
+@keyframes shift-31 {
+	0%,
+	100% {
+		background: #5401d8;
+	}
+	16% {
+		background: #5100ff;
+	}
+	33% {
+		background: #5e01cc;
+	}
+	50% {
+		background: #21ea56;
+	}
+	66% {
+		background: #ffd712;
+	}
+	83% {
+		background: #ffea0a;
+	}
+}
+
+.planet div:nth-child(32) {
+	-webkit-animation: shift-32 15s ease infinite;
+	animation: shift-32 15s ease infinite;
+}
+
+@-webkit-keyframes shift-32 {
+	0%,
+	100% {
+		background: #c60155;
+	}
+	16% {
+		background: #5200ff;
+	}
+	33% {
+		background: #5901d2;
+	}
+	50% {
+		background: #7f6a98;
+	}
+	66% {
+		background: #ffec09;
+	}
+	83% {
+		background: #ffe90a;
+	}
+}
+
+@keyframes shift-32 {
+	0%,
+	100% {
+		background: #c60155;
+	}
+	16% {
+		background: #5200ff;
+	}
+	33% {
+		background: #5901d2;
+	}
+	50% {
+		background: #7f6a98;
+	}
+	66% {
+		background: #ffec09;
+	}
+	83% {
+		background: #ffe90a;
+	}
+}
+
+.planet div:nth-child(33) {
+	-webkit-animation: shift-33 15s ease infinite;
+	animation: shift-33 15s ease infinite;
+}
+
+@-webkit-keyframes shift-33 {
+	0%,
+	100% {
+		background: #3f01f1;
+	}
+	16% {
+		background: #5300ff;
+	}
+	33% {
+		background: #f30121;
+	}
+	50% {
+		background: #46fdaf;
+	}
+	66% {
+		background: #ff8339;
+	}
+	83% {
+		background: #ffe80a;
+	}
+}
+
+@keyframes shift-33 {
+	0%,
+	100% {
+		background: #3f01f1;
+	}
+	16% {
+		background: #5300ff;
+	}
+	33% {
+		background: #f30121;
+	}
+	50% {
+		background: #46fdaf;
+	}
+	66% {
+		background: #ff8339;
+	}
+	83% {
+		background: #ffe80a;
+	}
+}
+
+.planet div:nth-child(34) {
+	-webkit-animation: shift-34 15s ease infinite;
+	animation: shift-34 15s ease infinite;
+}
+
+@-webkit-keyframes shift-34 {
+	0%,
+	100% {
+		background: #b1016c;
+	}
+	16% {
+		background: #5400ff;
+	}
+	33% {
+		background: #d10149;
+	}
+	50% {
+		background: #fc9a7b;
+	}
+	66% {
+		background: #fff505;
+	}
+	83% {
+		background: #ffe80b;
+	}
+}
+
+@keyframes shift-34 {
+	0%,
+	100% {
+		background: #b1016c;
+	}
+	16% {
+		background: #5400ff;
+	}
+	33% {
+		background: #d10149;
+	}
+	50% {
+		background: #fc9a7b;
+	}
+	66% {
+		background: #fff505;
+	}
+	83% {
+		background: #ffe80b;
+	}
+}
+
+.planet div:nth-child(35) {
+	-webkit-animation: shift-35 15s ease infinite;
+	animation: shift-35 15s ease infinite;
+}
+
+@-webkit-keyframes shift-35 {
+	0%,
+	100% {
+		background: #5301d9;
+	}
+	16% {
+		background: #5500ff;
+	}
+	33% {
+		background: #5801d3;
+	}
+	50% {
+		background: #4e370a;
+	}
+	66% {
+		background: #fff306;
+	}
+	83% {
+		background: #ffe70b;
+	}
+}
+
+@keyframes shift-35 {
+	0%,
+	100% {
+		background: #5301d9;
+	}
+	16% {
+		background: #5500ff;
+	}
+	33% {
+		background: #5801d3;
+	}
+	50% {
+		background: #4e370a;
+	}
+	66% {
+		background: #fff306;
+	}
+	83% {
+		background: #ffe70b;
+	}
+}
+
+.planet div:nth-child(36) {
+	-webkit-animation: shift-36 15s ease infinite;
+	animation: shift-36 15s ease infinite;
+}
+
+@-webkit-keyframes shift-36 {
+	0%,
+	100% {
+		background: #fa0119;
+	}
+	16% {
+		background: #5600ff;
+	}
+	33% {
+		background: #d20147;
+	}
+	50% {
+		background: #f2e0b6;
+	}
+	66% {
+		background: #ffa629;
+	}
+	83% {
+		background: #ffe60b;
+	}
+}
+
+@keyframes shift-36 {
+	0%,
+	100% {
+		background: #fa0119;
+	}
+	16% {
+		background: #5600ff;
+	}
+	33% {
+		background: #d20147;
+	}
+	50% {
+		background: #f2e0b6;
+	}
+	66% {
+		background: #ffa629;
+	}
+	83% {
+		background: #ffe60b;
+	}
+}
+
+.planet div:nth-child(37) {
+	-webkit-animation: shift-37 15s ease infinite;
+	animation: shift-37 15s ease infinite;
+}
+
+@-webkit-keyframes shift-37 {
+	0%,
+	100% {
+		background: #7801af;
+	}
+	16% {
+		background: #5700ff;
+	}
+	33% {
+		background: #d60143;
+	}
+	50% {
+		background: #45ce47;
+	}
+	66% {
+		background: #ff8637;
+	}
+	83% {
+		background: #ffe60c;
+	}
+}
+
+@keyframes shift-37 {
+	0%,
+	100% {
+		background: #7801af;
+	}
+	16% {
+		background: #5700ff;
+	}
+	33% {
+		background: #d60143;
+	}
+	50% {
+		background: #45ce47;
+	}
+	66% {
+		background: #ff8637;
+	}
+	83% {
+		background: #ffe60c;
+	}
+}
+
+.planet div:nth-child(38) {
+	-webkit-animation: shift-38 15s ease infinite;
+	animation: shift-38 15s ease infinite;
+}
+
+@-webkit-keyframes shift-38 {
+	0%,
+	100% {
+		background: #4701e7;
+	}
+	16% {
+		background: #5800ff;
+	}
+	33% {
+		background: #8f0194;
+	}
+	50% {
+		background: #ae1bf5;
+	}
+	66% {
+		background: #ffe00e;
+	}
+	83% {
+		background: #ffe50c;
+	}
+}
+
+@keyframes shift-38 {
+	0%,
+	100% {
+		background: #4701e7;
+	}
+	16% {
+		background: #5800ff;
+	}
+	33% {
+		background: #8f0194;
+	}
+	50% {
+		background: #ae1bf5;
+	}
+	66% {
+		background: #ffe00e;
+	}
+	83% {
+		background: #ffe50c;
+	}
+}
+
+.planet div:nth-child(39) {
+	-webkit-animation: shift-39 15s ease infinite;
+	animation: shift-39 15s ease infinite;
+}
+
+@-webkit-keyframes shift-39 {
+	0%,
+	100% {
+		background: #7601b1;
+	}
+	16% {
+		background: #5900ff;
+	}
+	33% {
+		background: #5101db;
+	}
+	50% {
+		background: #5b6f06;
+	}
+	66% {
+		background: #ff9a2e;
+	}
+	83% {
+		background: #ffe40c;
+	}
+}
+
+@keyframes shift-39 {
+	0%,
+	100% {
+		background: #7601b1;
+	}
+	16% {
+		background: #5900ff;
+	}
+	33% {
+		background: #5101db;
+	}
+	50% {
+		background: #5b6f06;
+	}
+	66% {
+		background: #ff9a2e;
+	}
+	83% {
+		background: #ffe40c;
+	}
+}
+
+.planet div:nth-child(40) {
+	-webkit-animation: shift-40 15s ease infinite;
+	animation: shift-40 15s ease infinite;
+}
+
+@-webkit-keyframes shift-40 {
+	0%,
+	100% {
+		background: #e00137;
+	}
+	16% {
+		background: #5a00ff;
+	}
+	33% {
+		background: #4601e8;
+	}
+	50% {
+		background: #f0dab1;
+	}
+	66% {
+		background: #ff9033;
+	}
+	83% {
+		background: #ffe40c;
+	}
+}
+
+@keyframes shift-40 {
+	0%,
+	100% {
+		background: #e00137;
+	}
+	16% {
+		background: #5a00ff;
+	}
+	33% {
+		background: #4601e8;
+	}
+	50% {
+		background: #f0dab1;
+	}
+	66% {
+		background: #ff9033;
+	}
+	83% {
+		background: #ffe40c;
+	}
+}
+
+.planet div:nth-child(41) {
+	-webkit-animation: shift-41 15s ease infinite;
+	animation: shift-41 15s ease infinite;
+}
+
+@-webkit-keyframes shift-41 {
+	0%,
+	100% {
+		background: #af016f;
+	}
+	16% {
+		background: #5b00ff;
+	}
+	33% {
+		background: #fa011a;
+	}
+	50% {
+		background: #74ceb6;
+	}
+	66% {
+		background: #fff107;
+	}
+	83% {
+		background: #ffe30d;
+	}
+}
+
+@keyframes shift-41 {
+	0%,
+	100% {
+		background: #af016f;
+	}
+	16% {
+		background: #5b00ff;
+	}
+	33% {
+		background: #fa011a;
+	}
+	50% {
+		background: #74ceb6;
+	}
+	66% {
+		background: #fff107;
+	}
+	83% {
+		background: #ffe30d;
+	}
+}
+
+.planet div:nth-child(42) {
+	-webkit-animation: shift-42 15s ease infinite;
+	animation: shift-42 15s ease infinite;
+}
+
+@-webkit-keyframes shift-42 {
+	0%,
+	100% {
+		background: #a60179;
+	}
+	16% {
+		background: #5c00ff;
+	}
+	33% {
+		background: #7301b4;
+	}
+	50% {
+		background: #f572c1;
+	}
+	66% {
+		background: #fff505;
+	}
+	83% {
+		background: #ffe20d;
+	}
+}
+
+@keyframes shift-42 {
+	0%,
+	100% {
+		background: #a60179;
+	}
+	16% {
+		background: #5c00ff;
+	}
+	33% {
+		background: #7301b4;
+	}
+	50% {
+		background: #f572c1;
+	}
+	66% {
+		background: #fff505;
+	}
+	83% {
+		background: #ffe20d;
+	}
+}
+
+.planet div:nth-child(43) {
+	-webkit-animation: shift-43 15s ease infinite;
+	animation: shift-43 15s ease infinite;
+}
+
+@-webkit-keyframes shift-43 {
+	0%,
+	100% {
+		background: #d9013f;
+	}
+	16% {
+		background: #5d00ff;
+	}
+	33% {
+		background: #7401b3;
+	}
+	50% {
+		background: #3d4f34;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ffe10d;
+	}
+}
+
+@keyframes shift-43 {
+	0%,
+	100% {
+		background: #d9013f;
+	}
+	16% {
+		background: #5d00ff;
+	}
+	33% {
+		background: #7401b3;
+	}
+	50% {
+		background: #3d4f34;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ffe10d;
+	}
+}
+
+.planet div:nth-child(44) {
+	-webkit-animation: shift-44 15s ease infinite;
+	animation: shift-44 15s ease infinite;
+}
+
+@-webkit-keyframes shift-44 {
+	0%,
+	100% {
+		background: #f10123;
+	}
+	16% {
+		background: #5e00ff;
+	}
+	33% {
+		background: #6601c3;
+	}
+	50% {
+		background: #c3e3e9;
+	}
+	66% {
+		background: #ffcf16;
+	}
+	83% {
+		background: #ffe10e;
+	}
+}
+
+@keyframes shift-44 {
+	0%,
+	100% {
+		background: #f10123;
+	}
+	16% {
+		background: #5e00ff;
+	}
+	33% {
+		background: #6601c3;
+	}
+	50% {
+		background: #c3e3e9;
+	}
+	66% {
+		background: #ffcf16;
+	}
+	83% {
+		background: #ffe10e;
+	}
+}
+
+.planet div:nth-child(45) {
+	-webkit-animation: shift-45 15s ease infinite;
+	animation: shift-45 15s ease infinite;
+}
+
+@-webkit-keyframes shift-45 {
+	0%,
+	100% {
+		background: #6c01bc;
+	}
+	16% {
+		background: #5f00ff;
+	}
+	33% {
+		background: #7a01ac;
+	}
+	50% {
+		background: #985a03;
+	}
+	66% {
+		background: #ffa429;
+	}
+	83% {
+		background: #ffe00e;
+	}
+}
+
+@keyframes shift-45 {
+	0%,
+	100% {
+		background: #6c01bc;
+	}
+	16% {
+		background: #5f00ff;
+	}
+	33% {
+		background: #7a01ac;
+	}
+	50% {
+		background: #985a03;
+	}
+	66% {
+		background: #ffa429;
+	}
+	83% {
+		background: #ffe00e;
+	}
+}
+
+.planet div:nth-child(46) {
+	-webkit-animation: shift-46 15s ease infinite;
+	animation: shift-46 15s ease infinite;
+}
+
+@-webkit-keyframes shift-46 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #6000fe;
+	}
+	33% {
+		background: #3501fc;
+	}
+	50% {
+		background: #5c0ca6;
+	}
+	66% {
+		background: #ffad25;
+	}
+	83% {
+		background: #ffdf0e;
+	}
+}
+
+@keyframes shift-46 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #6000fe;
+	}
+	33% {
+		background: #3501fc;
+	}
+	50% {
+		background: #5c0ca6;
+	}
+	66% {
+		background: #ffad25;
+	}
+	83% {
+		background: #ffdf0e;
+	}
+}
+
+.planet div:nth-child(47) {
+	-webkit-animation: shift-47 15s ease infinite;
+	animation: shift-47 15s ease infinite;
+}
+
+@-webkit-keyframes shift-47 {
+	0%,
+	100% {
+		background: #8301a2;
+	}
+	16% {
+		background: #6100fd;
+	}
+	33% {
+		background: #dd013a;
+	}
+	50% {
+		background: #9430db;
+	}
+	66% {
+		background: #ffba1f;
+	}
+	83% {
+		background: #ffdf0f;
+	}
+}
+
+@keyframes shift-47 {
+	0%,
+	100% {
+		background: #8301a2;
+	}
+	16% {
+		background: #6100fd;
+	}
+	33% {
+		background: #dd013a;
+	}
+	50% {
+		background: #9430db;
+	}
+	66% {
+		background: #ffba1f;
+	}
+	83% {
+		background: #ffdf0f;
+	}
+}
+
+.planet div:nth-child(48) {
+	-webkit-animation: shift-48 15s ease infinite;
+	animation: shift-48 15s ease infinite;
+}
+
+@-webkit-keyframes shift-48 {
+	0%,
+	100% {
+		background: #b70166;
+	}
+	16% {
+		background: #6200fc;
+	}
+	33% {
+		background: #a4017c;
+	}
+	50% {
+		background: #ca446b;
+	}
+	66% {
+		background: #ff8f33;
+	}
+	83% {
+		background: #ffde0f;
+	}
+}
+
+@keyframes shift-48 {
+	0%,
+	100% {
+		background: #b70166;
+	}
+	16% {
+		background: #6200fc;
+	}
+	33% {
+		background: #a4017c;
+	}
+	50% {
+		background: #ca446b;
+	}
+	66% {
+		background: #ff8f33;
+	}
+	83% {
+		background: #ffde0f;
+	}
+}
+
+.planet div:nth-child(49) {
+	-webkit-animation: shift-49 15s ease infinite;
+	animation: shift-49 15s ease infinite;
+}
+
+@-webkit-keyframes shift-49 {
+	0%,
+	100% {
+		background: #7401b3;
+	}
+	16% {
+		background: #6300fb;
+	}
+	33% {
+		background: #5e01cd;
+	}
+	50% {
+		background: #bb531f;
+	}
+	66% {
+		background: #ffe60c;
+	}
+	83% {
+		background: #ffdd0f;
+	}
+}
+
+@keyframes shift-49 {
+	0%,
+	100% {
+		background: #7401b3;
+	}
+	16% {
+		background: #6300fb;
+	}
+	33% {
+		background: #5e01cd;
+	}
+	50% {
+		background: #bb531f;
+	}
+	66% {
+		background: #ffe60c;
+	}
+	83% {
+		background: #ffdd0f;
+	}
+}
+
+.planet div:nth-child(50) {
+	-webkit-animation: shift-50 15s ease infinite;
+	animation: shift-50 15s ease infinite;
+}
+
+@-webkit-keyframes shift-50 {
+	0%,
+	100% {
+		background: #de0139;
+	}
+	16% {
+		background: #6400fa;
+	}
+	33% {
+		background: #8b0199;
+	}
+	50% {
+		background: #4c1d1a;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ffdd10;
+	}
+}
+
+@keyframes shift-50 {
+	0%,
+	100% {
+		background: #de0139;
+	}
+	16% {
+		background: #6400fa;
+	}
+	33% {
+		background: #8b0199;
+	}
+	50% {
+		background: #4c1d1a;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ffdd10;
+	}
+}
+
+.planet div:nth-child(51) {
+	-webkit-animation: shift-51 15s ease infinite;
+	animation: shift-51 15s ease infinite;
+}
+
+@-webkit-keyframes shift-51 {
+	0%,
+	100% {
+		background: #5001dd;
+	}
+	16% {
+		background: #6500f9;
+	}
+	33% {
+		background: #8b0198;
+	}
+	50% {
+		background: #4fc965;
+	}
+	66% {
+		background: #ffeb09;
+	}
+	83% {
+		background: #ffdc10;
+	}
+}
+
+@keyframes shift-51 {
+	0%,
+	100% {
+		background: #5001dd;
+	}
+	16% {
+		background: #6500f9;
+	}
+	33% {
+		background: #8b0198;
+	}
+	50% {
+		background: #4fc965;
+	}
+	66% {
+		background: #ffeb09;
+	}
+	83% {
+		background: #ffdc10;
+	}
+}
+
+.planet div:nth-child(52) {
+	-webkit-animation: shift-52 15s ease infinite;
+	animation: shift-52 15s ease infinite;
+}
+
+@-webkit-keyframes shift-52 {
+	0%,
+	100% {
+		background: #f10123;
+	}
+	16% {
+		background: #6600f8;
+	}
+	33% {
+		background: #5e01cc;
+	}
+	50% {
+		background: #c044a3;
+	}
+	66% {
+		background: #ff982f;
+	}
+	83% {
+		background: #ffdb10;
+	}
+}
+
+@keyframes shift-52 {
+	0%,
+	100% {
+		background: #f10123;
+	}
+	16% {
+		background: #6600f8;
+	}
+	33% {
+		background: #5e01cc;
+	}
+	50% {
+		background: #c044a3;
+	}
+	66% {
+		background: #ff982f;
+	}
+	83% {
+		background: #ffdb10;
+	}
+}
+
+.planet div:nth-child(53) {
+	-webkit-animation: shift-53 15s ease infinite;
+	animation: shift-53 15s ease infinite;
+}
+
+@-webkit-keyframes shift-53 {
+	0%,
+	100% {
+		background: #ba0163;
+	}
+	16% {
+		background: #6700f7;
+	}
+	33% {
+		background: #6c01bd;
+	}
+	50% {
+		background: #25d1f7;
+	}
+	66% {
+		background: #ffdb10;
+	}
+	83% {
+		background: #ffdb11;
+	}
+}
+
+@keyframes shift-53 {
+	0%,
+	100% {
+		background: #ba0163;
+	}
+	16% {
+		background: #6700f7;
+	}
+	33% {
+		background: #6c01bd;
+	}
+	50% {
+		background: #25d1f7;
+	}
+	66% {
+		background: #ffdb10;
+	}
+	83% {
+		background: #ffdb11;
+	}
+}
+
+.planet div:nth-child(54) {
+	-webkit-animation: shift-54 15s ease infinite;
+	animation: shift-54 15s ease infinite;
+}
+
+@-webkit-keyframes shift-54 {
+	0%,
+	100% {
+		background: #b50169;
+	}
+	16% {
+		background: #6800f6;
+	}
+	33% {
+		background: #3701f9;
+	}
+	50% {
+		background: #3f6d7e;
+	}
+	66% {
+		background: #ff9630;
+	}
+	83% {
+		background: #ffda11;
+	}
+}
+
+@keyframes shift-54 {
+	0%,
+	100% {
+		background: #b50169;
+	}
+	16% {
+		background: #6800f6;
+	}
+	33% {
+		background: #3701f9;
+	}
+	50% {
+		background: #3f6d7e;
+	}
+	66% {
+		background: #ff9630;
+	}
+	83% {
+		background: #ffda11;
+	}
+}
+
+.planet div:nth-child(55) {
+	-webkit-animation: shift-55 15s ease infinite;
+	animation: shift-55 15s ease infinite;
+}
+
+@-webkit-keyframes shift-55 {
+	0%,
+	100% {
+		background: #d0014a;
+	}
+	16% {
+		background: #6900f5;
+	}
+	33% {
+		background: #ef0126;
+	}
+	50% {
+		background: #520b38;
+	}
+	66% {
+		background: #ffa12b;
+	}
+	83% {
+		background: #ffd911;
+	}
+}
+
+@keyframes shift-55 {
+	0%,
+	100% {
+		background: #d0014a;
+	}
+	16% {
+		background: #6900f5;
+	}
+	33% {
+		background: #ef0126;
+	}
+	50% {
+		background: #520b38;
+	}
+	66% {
+		background: #ffa12b;
+	}
+	83% {
+		background: #ffd911;
+	}
+}
+
+.planet div:nth-child(56) {
+	-webkit-animation: shift-56 15s ease infinite;
+	animation: shift-56 15s ease infinite;
+}
+
+@-webkit-keyframes shift-56 {
+	0%,
+	100% {
+		background: #b0016f;
+	}
+	16% {
+		background: #6a00f4;
+	}
+	33% {
+		background: #5d01ce;
+	}
+	50% {
+		background: #cc99a5;
+	}
+	66% {
+		background: #ffc31b;
+	}
+	83% {
+		background: #ffd911;
+	}
+}
+
+@keyframes shift-56 {
+	0%,
+	100% {
+		background: #b0016f;
+	}
+	16% {
+		background: #6a00f4;
+	}
+	33% {
+		background: #5d01ce;
+	}
+	50% {
+		background: #cc99a5;
+	}
+	66% {
+		background: #ffc31b;
+	}
+	83% {
+		background: #ffd911;
+	}
+}
+
+.planet div:nth-child(57) {
+	-webkit-animation: shift-57 15s ease infinite;
+	animation: shift-57 15s ease infinite;
+}
+
+@-webkit-keyframes shift-57 {
+	0%,
+	100% {
+		background: #930190;
+	}
+	16% {
+		background: #6b00f3;
+	}
+	33% {
+		background: #ce014c;
+	}
+	50% {
+		background: #a93eee;
+	}
+	66% {
+		background: #ff9c2d;
+	}
+	83% {
+		background: #ffd812;
+	}
+}
+
+@keyframes shift-57 {
+	0%,
+	100% {
+		background: #930190;
+	}
+	16% {
+		background: #6b00f3;
+	}
+	33% {
+		background: #ce014c;
+	}
+	50% {
+		background: #a93eee;
+	}
+	66% {
+		background: #ff9c2d;
+	}
+	83% {
+		background: #ffd812;
+	}
+}
+
+.planet div:nth-child(58) {
+	-webkit-animation: shift-58 15s ease infinite;
+	animation: shift-58 15s ease infinite;
+}
+
+@-webkit-keyframes shift-58 {
+	0%,
+	100% {
+		background: #d0014a;
+	}
+	16% {
+		background: #6c00f2;
+	}
+	33% {
+		background: #9f0181;
+	}
+	50% {
+		background: #565a5d;
+	}
+	66% {
+		background: #fff106;
+	}
+	83% {
+		background: #ffd712;
+	}
+}
+
+@keyframes shift-58 {
+	0%,
+	100% {
+		background: #d0014a;
+	}
+	16% {
+		background: #6c00f2;
+	}
+	33% {
+		background: #9f0181;
+	}
+	50% {
+		background: #565a5d;
+	}
+	66% {
+		background: #fff106;
+	}
+	83% {
+		background: #ffd712;
+	}
+}
+
+.planet div:nth-child(59) {
+	-webkit-animation: shift-59 15s ease infinite;
+	animation: shift-59 15s ease infinite;
+}
+
+@-webkit-keyframes shift-59 {
+	0%,
+	100% {
+		background: #c2015a;
+	}
+	16% {
+		background: #6d00f1;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #a9a15a;
+	}
+	66% {
+		background: #ff972f;
+	}
+	83% {
+		background: #ffd712;
+	}
+}
+
+@keyframes shift-59 {
+	0%,
+	100% {
+		background: #c2015a;
+	}
+	16% {
+		background: #6d00f1;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #a9a15a;
+	}
+	66% {
+		background: #ff972f;
+	}
+	83% {
+		background: #ffd712;
+	}
+}
+
+.planet div:nth-child(60) {
+	-webkit-animation: shift-60 15s ease infinite;
+	animation: shift-60 15s ease infinite;
+}
+
+@-webkit-keyframes shift-60 {
+	0%,
+	100% {
+		background: #e8012e;
+	}
+	16% {
+		background: #6e00f0;
+	}
+	33% {
+		background: #6001ca;
+	}
+	50% {
+		background: #812831;
+	}
+	66% {
+		background: #ff992f;
+	}
+	83% {
+		background: #ffd613;
+	}
+}
+
+@keyframes shift-60 {
+	0%,
+	100% {
+		background: #e8012e;
+	}
+	16% {
+		background: #6e00f0;
+	}
+	33% {
+		background: #6001ca;
+	}
+	50% {
+		background: #812831;
+	}
+	66% {
+		background: #ff992f;
+	}
+	83% {
+		background: #ffd613;
+	}
+}
+
+.planet div:nth-child(61) {
+	-webkit-animation: shift-61 15s ease infinite;
+	animation: shift-61 15s ease infinite;
+}
+
+@-webkit-keyframes shift-61 {
+	0%,
+	100% {
+		background: #bc0160;
+	}
+	16% {
+		background: #6f00ef;
+	}
+	33% {
+		background: #5701d4;
+	}
+	50% {
+		background: #b27186;
+	}
+	66% {
+		background: #ffb522;
+	}
+	83% {
+		background: #ffd513;
+	}
+}
+
+@keyframes shift-61 {
+	0%,
+	100% {
+		background: #bc0160;
+	}
+	16% {
+		background: #6f00ef;
+	}
+	33% {
+		background: #5701d4;
+	}
+	50% {
+		background: #b27186;
+	}
+	66% {
+		background: #ffb522;
+	}
+	83% {
+		background: #ffd513;
+	}
+}
+
+.planet div:nth-child(62) {
+	-webkit-animation: shift-62 15s ease infinite;
+	animation: shift-62 15s ease infinite;
+}
+
+@-webkit-keyframes shift-62 {
+	0%,
+	100% {
+		background: #7c01aa;
+	}
+	16% {
+		background: #7000ee;
+	}
+	33% {
+		background: #8401a0;
+	}
+	50% {
+		background: #5e587d;
+	}
+	66% {
+		background: #ff8d34;
+	}
+	83% {
+		background: #ffd413;
+	}
+}
+
+@keyframes shift-62 {
+	0%,
+	100% {
+		background: #7c01aa;
+	}
+	16% {
+		background: #7000ee;
+	}
+	33% {
+		background: #8401a0;
+	}
+	50% {
+		background: #5e587d;
+	}
+	66% {
+		background: #ff8d34;
+	}
+	83% {
+		background: #ffd413;
+	}
+}
+
+.planet div:nth-child(63) {
+	-webkit-animation: shift-63 15s ease infinite;
+	animation: shift-63 15s ease infinite;
+}
+
+@-webkit-keyframes shift-63 {
+	0%,
+	100% {
+		background: #6501c4;
+	}
+	16% {
+		background: #7100ed;
+	}
+	33% {
+		background: #5d01cd;
+	}
+	50% {
+		background: #265402;
+	}
+	66% {
+		background: #fff803;
+	}
+	83% {
+		background: #ffd414;
+	}
+}
+
+@keyframes shift-63 {
+	0%,
+	100% {
+		background: #6501c4;
+	}
+	16% {
+		background: #7100ed;
+	}
+	33% {
+		background: #5d01cd;
+	}
+	50% {
+		background: #265402;
+	}
+	66% {
+		background: #fff803;
+	}
+	83% {
+		background: #ffd414;
+	}
+}
+
+.planet div:nth-child(64) {
+	-webkit-animation: shift-64 15s ease infinite;
+	animation: shift-64 15s ease infinite;
+}
+
+@-webkit-keyframes shift-64 {
+	0%,
+	100% {
+		background: #8d0197;
+	}
+	16% {
+		background: #7200ec;
+	}
+	33% {
+		background: #86019e;
+	}
+	50% {
+		background: #e19881;
+	}
+	66% {
+		background: #ff6446;
+	}
+	83% {
+		background: #ffd314;
+	}
+}
+
+@keyframes shift-64 {
+	0%,
+	100% {
+		background: #8d0197;
+	}
+	16% {
+		background: #7200ec;
+	}
+	33% {
+		background: #86019e;
+	}
+	50% {
+		background: #e19881;
+	}
+	66% {
+		background: #ff6446;
+	}
+	83% {
+		background: #ffd314;
+	}
+}
+
+.planet div:nth-child(65) {
+	-webkit-animation: shift-65 15s ease infinite;
+	animation: shift-65 15s ease infinite;
+}
+
+@-webkit-keyframes shift-65 {
+	0%,
+	100% {
+		background: #8a019a;
+	}
+	16% {
+		background: #7300eb;
+	}
+	33% {
+		background: #b60168;
+	}
+	50% {
+		background: #b7579b;
+	}
+	66% {
+		background: #ffa629;
+	}
+	83% {
+		background: #ffd214;
+	}
+}
+
+@keyframes shift-65 {
+	0%,
+	100% {
+		background: #8a019a;
+	}
+	16% {
+		background: #7300eb;
+	}
+	33% {
+		background: #b60168;
+	}
+	50% {
+		background: #b7579b;
+	}
+	66% {
+		background: #ffa629;
+	}
+	83% {
+		background: #ffd214;
+	}
+}
+
+.planet div:nth-child(66) {
+	-webkit-animation: shift-66 15s ease infinite;
+	animation: shift-66 15s ease infinite;
+}
+
+@-webkit-keyframes shift-66 {
+	0%,
+	100% {
+		background: #7701af;
+	}
+	16% {
+		background: #7400ea;
+	}
+	33% {
+		background: #cf014a;
+	}
+	50% {
+		background: #958822;
+	}
+	66% {
+		background: #ff7f3a;
+	}
+	83% {
+		background: #ffd215;
+	}
+}
+
+@keyframes shift-66 {
+	0%,
+	100% {
+		background: #7701af;
+	}
+	16% {
+		background: #7400ea;
+	}
+	33% {
+		background: #cf014a;
+	}
+	50% {
+		background: #958822;
+	}
+	66% {
+		background: #ff7f3a;
+	}
+	83% {
+		background: #ffd215;
+	}
+}
+
+.planet div:nth-child(67) {
+	-webkit-animation: shift-67 15s ease infinite;
+	animation: shift-67 15s ease infinite;
+}
+
+@-webkit-keyframes shift-67 {
+	0%,
+	100% {
+		background: #b50168;
+	}
+	16% {
+		background: #7500e9;
+	}
+	33% {
+		background: #4e01df;
+	}
+	50% {
+		background: #8e55d8;
+	}
+	66% {
+		background: #ff8c34;
+	}
+	83% {
+		background: #ffd115;
+	}
+}
+
+@keyframes shift-67 {
+	0%,
+	100% {
+		background: #b50168;
+	}
+	16% {
+		background: #7500e9;
+	}
+	33% {
+		background: #4e01df;
+	}
+	50% {
+		background: #8e55d8;
+	}
+	66% {
+		background: #ff8c34;
+	}
+	83% {
+		background: #ffd115;
+	}
+}
+
+.planet div:nth-child(68) {
+	-webkit-animation: shift-68 15s ease infinite;
+	animation: shift-68 15s ease infinite;
+}
+
+@-webkit-keyframes shift-68 {
+	0%,
+	100% {
+		background: #b3016b;
+	}
+	16% {
+		background: #7600e8;
+	}
+	33% {
+		background: #5e01cc;
+	}
+	50% {
+		background: #a96902;
+	}
+	66% {
+		background: #ffd215;
+	}
+	83% {
+		background: #ffd015;
+	}
+}
+
+@keyframes shift-68 {
+	0%,
+	100% {
+		background: #b3016b;
+	}
+	16% {
+		background: #7600e8;
+	}
+	33% {
+		background: #5e01cc;
+	}
+	50% {
+		background: #a96902;
+	}
+	66% {
+		background: #ffd215;
+	}
+	83% {
+		background: #ffd015;
+	}
+}
+
+.planet div:nth-child(69) {
+	-webkit-animation: shift-69 15s ease infinite;
+	animation: shift-69 15s ease infinite;
+}
+
+@-webkit-keyframes shift-69 {
+	0%,
+	100% {
+		background: #6901c0;
+	}
+	16% {
+		background: #7700e7;
+	}
+	33% {
+		background: #b3016b;
+	}
+	50% {
+		background: #30543e;
+	}
+	66% {
+		background: #ffa02b;
+	}
+	83% {
+		background: #ffd016;
+	}
+}
+
+@keyframes shift-69 {
+	0%,
+	100% {
+		background: #6901c0;
+	}
+	16% {
+		background: #7700e7;
+	}
+	33% {
+		background: #b3016b;
+	}
+	50% {
+		background: #30543e;
+	}
+	66% {
+		background: #ffa02b;
+	}
+	83% {
+		background: #ffd016;
+	}
+}
+
+.planet div:nth-child(70) {
+	-webkit-animation: shift-70 15s ease infinite;
+	animation: shift-70 15s ease infinite;
+}
+
+@-webkit-keyframes shift-70 {
+	0%,
+	100% {
+		background: #c0015c;
+	}
+	16% {
+		background: #7800e6;
+	}
+	33% {
+		background: #95018d;
+	}
+	50% {
+		background: #dc0a51;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #ffcf16;
+	}
+}
+
+@keyframes shift-70 {
+	0%,
+	100% {
+		background: #c0015c;
+	}
+	16% {
+		background: #7800e6;
+	}
+	33% {
+		background: #95018d;
+	}
+	50% {
+		background: #dc0a51;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #ffcf16;
+	}
+}
+
+.planet div:nth-child(71) {
+	-webkit-animation: shift-71 15s ease infinite;
+	animation: shift-71 15s ease infinite;
+}
+
+@-webkit-keyframes shift-71 {
+	0%,
+	100% {
+		background: #a3017d;
+	}
+	16% {
+		background: #7900e5;
+	}
+	33% {
+		background: #c70154;
+	}
+	50% {
+		background: #0249f2;
+	}
+	66% {
+		background: #ff783d;
+	}
+	83% {
+		background: #ffce16;
+	}
+}
+
+@keyframes shift-71 {
+	0%,
+	100% {
+		background: #a3017d;
+	}
+	16% {
+		background: #7900e5;
+	}
+	33% {
+		background: #c70154;
+	}
+	50% {
+		background: #0249f2;
+	}
+	66% {
+		background: #ff783d;
+	}
+	83% {
+		background: #ffce16;
+	}
+}
+
+.planet div:nth-child(72) {
+	-webkit-animation: shift-72 15s ease infinite;
+	animation: shift-72 15s ease infinite;
+}
+
+@-webkit-keyframes shift-72 {
+	0%,
+	100% {
+		background: #8201a2;
+	}
+	16% {
+		background: #7a00e4;
+	}
+	33% {
+		background: #4101ee;
+	}
+	50% {
+		background: #8aaca6;
+	}
+	66% {
+		background: #ff982f;
+	}
+	83% {
+		background: #ffce16;
+	}
+}
+
+@keyframes shift-72 {
+	0%,
+	100% {
+		background: #8201a2;
+	}
+	16% {
+		background: #7a00e4;
+	}
+	33% {
+		background: #4101ee;
+	}
+	50% {
+		background: #8aaca6;
+	}
+	66% {
+		background: #ff982f;
+	}
+	83% {
+		background: #ffce16;
+	}
+}
+
+.planet div:nth-child(73) {
+	-webkit-animation: shift-73 15s ease infinite;
+	animation: shift-73 15s ease infinite;
+}
+
+@-webkit-keyframes shift-73 {
+	0%,
+	100% {
+		background: #8301a2;
+	}
+	16% {
+		background: #7b00e3;
+	}
+	33% {
+		background: #9e0183;
+	}
+	50% {
+		background: #e79c8b;
+	}
+	66% {
+		background: #ffc51b;
+	}
+	83% {
+		background: #ffcd17;
+	}
+}
+
+@keyframes shift-73 {
+	0%,
+	100% {
+		background: #8301a2;
+	}
+	16% {
+		background: #7b00e3;
+	}
+	33% {
+		background: #9e0183;
+	}
+	50% {
+		background: #e79c8b;
+	}
+	66% {
+		background: #ffc51b;
+	}
+	83% {
+		background: #ffcd17;
+	}
+}
+
+.planet div:nth-child(74) {
+	-webkit-animation: shift-74 15s ease infinite;
+	animation: shift-74 15s ease infinite;
+}
+
+@-webkit-keyframes shift-74 {
+	0%,
+	100% {
+		background: #7101b6;
+	}
+	16% {
+		background: #7c00e2;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #d7a5f1;
+	}
+	66% {
+		background: #ffaa27;
+	}
+	83% {
+		background: #ffcc17;
+	}
+}
+
+@keyframes shift-74 {
+	0%,
+	100% {
+		background: #7101b6;
+	}
+	16% {
+		background: #7c00e2;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #d7a5f1;
+	}
+	66% {
+		background: #ffaa27;
+	}
+	83% {
+		background: #ffcc17;
+	}
+}
+
+.planet div:nth-child(75) {
+	-webkit-animation: shift-75 15s ease infinite;
+	animation: shift-75 15s ease infinite;
+}
+
+@-webkit-keyframes shift-75 {
+	0%,
+	100% {
+		background: #ad0172;
+	}
+	16% {
+		background: #7d00e1;
+	}
+	33% {
+		background: #7801af;
+	}
+	50% {
+		background: #d57259;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #ffcc17;
+	}
+}
+
+@keyframes shift-75 {
+	0%,
+	100% {
+		background: #ad0172;
+	}
+	16% {
+		background: #7d00e1;
+	}
+	33% {
+		background: #7801af;
+	}
+	50% {
+		background: #d57259;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #ffcc17;
+	}
+}
+
+.planet div:nth-child(76) {
+	-webkit-animation: shift-76 15s ease infinite;
+	animation: shift-76 15s ease infinite;
+}
+
+@-webkit-keyframes shift-76 {
+	0%,
+	100% {
+		background: #4101ee;
+	}
+	16% {
+		background: #7e00e0;
+	}
+	33% {
+		background: #6401c5;
+	}
+	50% {
+		background: #a86081;
+	}
+	66% {
+		background: #ff9b2d;
+	}
+	83% {
+		background: #ffcb18;
+	}
+}
+
+@keyframes shift-76 {
+	0%,
+	100% {
+		background: #4101ee;
+	}
+	16% {
+		background: #7e00e0;
+	}
+	33% {
+		background: #6401c5;
+	}
+	50% {
+		background: #a86081;
+	}
+	66% {
+		background: #ff9b2d;
+	}
+	83% {
+		background: #ffcb18;
+	}
+}
+
+.planet div:nth-child(77) {
+	-webkit-animation: shift-77 15s ease infinite;
+	animation: shift-77 15s ease infinite;
+}
+
+@-webkit-keyframes shift-77 {
+	0%,
+	100% {
+		background: #c30158;
+	}
+	16% {
+		background: #7f00df;
+	}
+	33% {
+		background: #6e01ba;
+	}
+	50% {
+		background: #077bad;
+	}
+	66% {
+		background: #ffc41b;
+	}
+	83% {
+		background: #ffca18;
+	}
+}
+
+@keyframes shift-77 {
+	0%,
+	100% {
+		background: #c30158;
+	}
+	16% {
+		background: #7f00df;
+	}
+	33% {
+		background: #6e01ba;
+	}
+	50% {
+		background: #077bad;
+	}
+	66% {
+		background: #ffc41b;
+	}
+	83% {
+		background: #ffca18;
+	}
+}
+
+.planet div:nth-child(78) {
+	-webkit-animation: shift-78 15s ease infinite;
+	animation: shift-78 15s ease infinite;
+}
+
+@-webkit-keyframes shift-78 {
+	0%,
+	100% {
+		background: #97018b;
+	}
+	16% {
+		background: #8000de;
+	}
+	33% {
+		background: #ce014b;
+	}
+	50% {
+		background: #692151;
+	}
+	66% {
+		background: #ff6b43;
+	}
+	83% {
+		background: #ffc918;
+	}
+}
+
+@keyframes shift-78 {
+	0%,
+	100% {
+		background: #97018b;
+	}
+	16% {
+		background: #8000de;
+	}
+	33% {
+		background: #ce014b;
+	}
+	50% {
+		background: #692151;
+	}
+	66% {
+		background: #ff6b43;
+	}
+	83% {
+		background: #ffc918;
+	}
+}
+
+.planet div:nth-child(79) {
+	-webkit-animation: shift-79 15s ease infinite;
+	animation: shift-79 15s ease infinite;
+}
+
+@-webkit-keyframes shift-79 {
+	0%,
+	100% {
+		background: #4f01de;
+	}
+	16% {
+		background: #8100dd;
+	}
+	33% {
+		background: #ea012b;
+	}
+	50% {
+		background: #3abb4f;
+	}
+	66% {
+		background: #ffb721;
+	}
+	83% {
+		background: #ffc919;
+	}
+}
+
+@keyframes shift-79 {
+	0%,
+	100% {
+		background: #4f01de;
+	}
+	16% {
+		background: #8100dd;
+	}
+	33% {
+		background: #ea012b;
+	}
+	50% {
+		background: #3abb4f;
+	}
+	66% {
+		background: #ffb721;
+	}
+	83% {
+		background: #ffc919;
+	}
+}
+
+.planet div:nth-child(80) {
+	-webkit-animation: shift-80 15s ease infinite;
+	animation: shift-80 15s ease infinite;
+}
+
+@-webkit-keyframes shift-80 {
+	0%,
+	100% {
+		background: #a1017f;
+	}
+	16% {
+		background: #8200dc;
+	}
+	33% {
+		background: #ca0150;
+	}
+	50% {
+		background: #b1de9d;
+	}
+	66% {
+		background: #ffcb18;
+	}
+	83% {
+		background: #ffc819;
+	}
+}
+
+@keyframes shift-80 {
+	0%,
+	100% {
+		background: #a1017f;
+	}
+	16% {
+		background: #8200dc;
+	}
+	33% {
+		background: #ca0150;
+	}
+	50% {
+		background: #b1de9d;
+	}
+	66% {
+		background: #ffcb18;
+	}
+	83% {
+		background: #ffc819;
+	}
+}
+
+.planet div:nth-child(81) {
+	-webkit-animation: shift-81 15s ease infinite;
+	animation: shift-81 15s ease infinite;
+}
+
+@-webkit-keyframes shift-81 {
+	0%,
+	100% {
+		background: #9e0182;
+	}
+	16% {
+		background: #8300db;
+	}
+	33% {
+		background: #f40120;
+	}
+	50% {
+		background: #a82508;
+	}
+	66% {
+		background: #ffcc17;
+	}
+	83% {
+		background: #ffc719;
+	}
+}
+
+@keyframes shift-81 {
+	0%,
+	100% {
+		background: #9e0182;
+	}
+	16% {
+		background: #8300db;
+	}
+	33% {
+		background: #f40120;
+	}
+	50% {
+		background: #a82508;
+	}
+	66% {
+		background: #ffcc17;
+	}
+	83% {
+		background: #ffc719;
+	}
+}
+
+.planet div:nth-child(82) {
+	-webkit-animation: shift-82 15s ease infinite;
+	animation: shift-82 15s ease infinite;
+}
+
+@-webkit-keyframes shift-82 {
+	0%,
+	100% {
+		background: #c20159;
+	}
+	16% {
+		background: #8400da;
+	}
+	33% {
+		background: #4801e5;
+	}
+	50% {
+		background: #9a824c;
+	}
+	66% {
+		background: #ffd414;
+	}
+	83% {
+		background: #ffc71a;
+	}
+}
+
+@keyframes shift-82 {
+	0%,
+	100% {
+		background: #c20159;
+	}
+	16% {
+		background: #8400da;
+	}
+	33% {
+		background: #4801e5;
+	}
+	50% {
+		background: #9a824c;
+	}
+	66% {
+		background: #ffd414;
+	}
+	83% {
+		background: #ffc71a;
+	}
+}
+
+.planet div:nth-child(83) {
+	-webkit-animation: shift-83 15s ease infinite;
+	animation: shift-83 15s ease infinite;
+}
+
+@-webkit-keyframes shift-83 {
+	0%,
+	100% {
+		background: #a1017f;
+	}
+	16% {
+		background: #8500d9;
+	}
+	33% {
+		background: #da013e;
+	}
+	50% {
+		background: #cbcc72;
+	}
+	66% {
+		background: #fff505;
+	}
+	83% {
+		background: #ffc61a;
+	}
+}
+
+@keyframes shift-83 {
+	0%,
+	100% {
+		background: #a1017f;
+	}
+	16% {
+		background: #8500d9;
+	}
+	33% {
+		background: #da013e;
+	}
+	50% {
+		background: #cbcc72;
+	}
+	66% {
+		background: #fff505;
+	}
+	83% {
+		background: #ffc61a;
+	}
+}
+
+.planet div:nth-child(84) {
+	-webkit-animation: shift-84 15s ease infinite;
+	animation: shift-84 15s ease infinite;
+}
+
+@-webkit-keyframes shift-84 {
+	0%,
+	100% {
+		background: #7501b2;
+	}
+	16% {
+		background: #8600d8;
+	}
+	33% {
+		background: #7701b0;
+	}
+	50% {
+		background: #b7c27c;
+	}
+	66% {
+		background: #ffd413;
+	}
+	83% {
+		background: #ffc51a;
+	}
+}
+
+@keyframes shift-84 {
+	0%,
+	100% {
+		background: #7501b2;
+	}
+	16% {
+		background: #8600d8;
+	}
+	33% {
+		background: #7701b0;
+	}
+	50% {
+		background: #b7c27c;
+	}
+	66% {
+		background: #ffd413;
+	}
+	83% {
+		background: #ffc51a;
+	}
+}
+
+.planet div:nth-child(85) {
+	-webkit-animation: shift-85 15s ease infinite;
+	animation: shift-85 15s ease infinite;
+}
+
+@-webkit-keyframes shift-85 {
+	0%,
+	100% {
+		background: #f20122;
+	}
+	16% {
+		background: #8700d7;
+	}
+	33% {
+		background: #ef0126;
+	}
+	50% {
+		background: #7b181f;
+	}
+	66% {
+		background: #ffe60b;
+	}
+	83% {
+		background: #ffc51b;
+	}
+}
+
+@keyframes shift-85 {
+	0%,
+	100% {
+		background: #f20122;
+	}
+	16% {
+		background: #8700d7;
+	}
+	33% {
+		background: #ef0126;
+	}
+	50% {
+		background: #7b181f;
+	}
+	66% {
+		background: #ffe60b;
+	}
+	83% {
+		background: #ffc51b;
+	}
+}
+
+.planet div:nth-child(86) {
+	-webkit-animation: shift-86 15s ease infinite;
+	animation: shift-86 15s ease infinite;
+}
+
+@-webkit-keyframes shift-86 {
+	0%,
+	100% {
+		background: #a6017a;
+	}
+	16% {
+		background: #8800d6;
+	}
+	33% {
+		background: #c90152;
+	}
+	50% {
+		background: #86af9d;
+	}
+	66% {
+		background: #ffdd0f;
+	}
+	83% {
+		background: #ffc41b;
+	}
+}
+
+@keyframes shift-86 {
+	0%,
+	100% {
+		background: #a6017a;
+	}
+	16% {
+		background: #8800d6;
+	}
+	33% {
+		background: #c90152;
+	}
+	50% {
+		background: #86af9d;
+	}
+	66% {
+		background: #ffdd0f;
+	}
+	83% {
+		background: #ffc41b;
+	}
+}
+
+.planet div:nth-child(87) {
+	-webkit-animation: shift-87 15s ease infinite;
+	animation: shift-87 15s ease infinite;
+}
+
+@-webkit-keyframes shift-87 {
+	0%,
+	100% {
+		background: #e7012f;
+	}
+	16% {
+		background: #8900d5;
+	}
+	33% {
+		background: #5e01cc;
+	}
+	50% {
+		background: #6a84df;
+	}
+	66% {
+		background: #ffb522;
+	}
+	83% {
+		background: #ffc31b;
+	}
+}
+
+@keyframes shift-87 {
+	0%,
+	100% {
+		background: #e7012f;
+	}
+	16% {
+		background: #8900d5;
+	}
+	33% {
+		background: #5e01cc;
+	}
+	50% {
+		background: #6a84df;
+	}
+	66% {
+		background: #ffb522;
+	}
+	83% {
+		background: #ffc31b;
+	}
+}
+
+.planet div:nth-child(88) {
+	-webkit-animation: shift-88 15s ease infinite;
+	animation: shift-88 15s ease infinite;
+}
+
+@-webkit-keyframes shift-88 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #8a00d4;
+	}
+	33% {
+		background: #bc0161;
+	}
+	50% {
+		background: #2ce978;
+	}
+	66% {
+		background: #ff6e42;
+	}
+	83% {
+		background: #ffc31b;
+	}
+}
+
+@keyframes shift-88 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #8a00d4;
+	}
+	33% {
+		background: #bc0161;
+	}
+	50% {
+		background: #2ce978;
+	}
+	66% {
+		background: #ff6e42;
+	}
+	83% {
+		background: #ffc31b;
+	}
+}
+
+.planet div:nth-child(89) {
+	-webkit-animation: shift-89 15s ease infinite;
+	animation: shift-89 15s ease infinite;
+}
+
+@-webkit-keyframes shift-89 {
+	0%,
+	100% {
+		background: #95018e;
+	}
+	16% {
+		background: #8b00d3;
+	}
+	33% {
+		background: #e8012e;
+	}
+	50% {
+		background: #27cf2d;
+	}
+	66% {
+		background: #ff8a35;
+	}
+	83% {
+		background: #ffc21c;
+	}
+}
+
+@keyframes shift-89 {
+	0%,
+	100% {
+		background: #95018e;
+	}
+	16% {
+		background: #8b00d3;
+	}
+	33% {
+		background: #e8012e;
+	}
+	50% {
+		background: #27cf2d;
+	}
+	66% {
+		background: #ff8a35;
+	}
+	83% {
+		background: #ffc21c;
+	}
+}
+
+.planet div:nth-child(90) {
+	-webkit-animation: shift-90 15s ease infinite;
+	animation: shift-90 15s ease infinite;
+}
+
+@-webkit-keyframes shift-90 {
+	0%,
+	100% {
+		background: #7b01ab;
+	}
+	16% {
+		background: #8c00d2;
+	}
+	33% {
+		background: #5d01ce;
+	}
+	50% {
+		background: #e0ec59;
+	}
+	66% {
+		background: #ff9032;
+	}
+	83% {
+		background: #ffc11c;
+	}
+}
+
+@keyframes shift-90 {
+	0%,
+	100% {
+		background: #7b01ab;
+	}
+	16% {
+		background: #8c00d2;
+	}
+	33% {
+		background: #5d01ce;
+	}
+	50% {
+		background: #e0ec59;
+	}
+	66% {
+		background: #ff9032;
+	}
+	83% {
+		background: #ffc11c;
+	}
+}
+
+.planet div:nth-child(91) {
+	-webkit-animation: shift-91 15s ease infinite;
+	animation: shift-91 15s ease infinite;
+}
+
+@-webkit-keyframes shift-91 {
+	0%,
+	100% {
+		background: #bb0161;
+	}
+	16% {
+		background: #8d00d1;
+	}
+	33% {
+		background: #9d0183;
+	}
+	50% {
+		background: #7bab2e;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #ffc11c;
+	}
+}
+
+@keyframes shift-91 {
+	0%,
+	100% {
+		background: #bb0161;
+	}
+	16% {
+		background: #8d00d1;
+	}
+	33% {
+		background: #9d0183;
+	}
+	50% {
+		background: #7bab2e;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #ffc11c;
+	}
+}
+
+.planet div:nth-child(92) {
+	-webkit-animation: shift-92 15s ease infinite;
+	animation: shift-92 15s ease infinite;
+}
+
+@-webkit-keyframes shift-92 {
+	0%,
+	100% {
+		background: #7b01ab;
+	}
+	16% {
+		background: #8e00d0;
+	}
+	33% {
+		background: #eb012a;
+	}
+	50% {
+		background: #fdfd37;
+	}
+	66% {
+		background: #ff9033;
+	}
+	83% {
+		background: #ffc01d;
+	}
+}
+
+@keyframes shift-92 {
+	0%,
+	100% {
+		background: #7b01ab;
+	}
+	16% {
+		background: #8e00d0;
+	}
+	33% {
+		background: #eb012a;
+	}
+	50% {
+		background: #fdfd37;
+	}
+	66% {
+		background: #ff9033;
+	}
+	83% {
+		background: #ffc01d;
+	}
+}
+
+.planet div:nth-child(93) {
+	-webkit-animation: shift-93 15s ease infinite;
+	animation: shift-93 15s ease infinite;
+}
+
+@-webkit-keyframes shift-93 {
+	0%,
+	100% {
+		background: #7301b5;
+	}
+	16% {
+		background: #8f00cf;
+	}
+	33% {
+		background: #9c0185;
+	}
+	50% {
+		background: #cc05e4;
+	}
+	66% {
+		background: #ffbd1e;
+	}
+	83% {
+		background: #ffbf1d;
+	}
+}
+
+@keyframes shift-93 {
+	0%,
+	100% {
+		background: #7301b5;
+	}
+	16% {
+		background: #8f00cf;
+	}
+	33% {
+		background: #9c0185;
+	}
+	50% {
+		background: #cc05e4;
+	}
+	66% {
+		background: #ffbd1e;
+	}
+	83% {
+		background: #ffbf1d;
+	}
+}
+
+.planet div:nth-child(94) {
+	-webkit-animation: shift-94 15s ease infinite;
+	animation: shift-94 15s ease infinite;
+}
+
+@-webkit-keyframes shift-94 {
+	0%,
+	100% {
+		background: #cf014b;
+	}
+	16% {
+		background: #9000ce;
+	}
+	33% {
+		background: #e30134;
+	}
+	50% {
+		background: #6c7ab9;
+	}
+	66% {
+		background: #ff8a35;
+	}
+	83% {
+		background: #ffbe1d;
+	}
+}
+
+@keyframes shift-94 {
+	0%,
+	100% {
+		background: #cf014b;
+	}
+	16% {
+		background: #9000ce;
+	}
+	33% {
+		background: #e30134;
+	}
+	50% {
+		background: #6c7ab9;
+	}
+	66% {
+		background: #ff8a35;
+	}
+	83% {
+		background: #ffbe1d;
+	}
+}
+
+.planet div:nth-child(95) {
+	-webkit-animation: shift-95 15s ease infinite;
+	animation: shift-95 15s ease infinite;
+}
+
+@-webkit-keyframes shift-95 {
+	0%,
+	100% {
+		background: #5401d8;
+	}
+	16% {
+		background: #9100cd;
+	}
+	33% {
+		background: #4e01de;
+	}
+	50% {
+		background: #035665;
+	}
+	66% {
+		background: #ffc11c;
+	}
+	83% {
+		background: #ffbe1e;
+	}
+}
+
+@keyframes shift-95 {
+	0%,
+	100% {
+		background: #5401d8;
+	}
+	16% {
+		background: #9100cd;
+	}
+	33% {
+		background: #4e01de;
+	}
+	50% {
+		background: #035665;
+	}
+	66% {
+		background: #ffc11c;
+	}
+	83% {
+		background: #ffbe1e;
+	}
+}
+
+.planet div:nth-child(96) {
+	-webkit-animation: shift-96 15s ease infinite;
+	animation: shift-96 15s ease infinite;
+}
+
+@-webkit-keyframes shift-96 {
+	0%,
+	100% {
+		background: #5d01cd;
+	}
+	16% {
+		background: #9200cc;
+	}
+	33% {
+		background: #8001a5;
+	}
+	50% {
+		background: #8ee43e;
+	}
+	66% {
+		background: #ff763e;
+	}
+	83% {
+		background: #ffbd1e;
+	}
+}
+
+@keyframes shift-96 {
+	0%,
+	100% {
+		background: #5d01cd;
+	}
+	16% {
+		background: #9200cc;
+	}
+	33% {
+		background: #8001a5;
+	}
+	50% {
+		background: #8ee43e;
+	}
+	66% {
+		background: #ff763e;
+	}
+	83% {
+		background: #ffbd1e;
+	}
+}
+
+.planet div:nth-child(97) {
+	-webkit-animation: shift-97 15s ease infinite;
+	animation: shift-97 15s ease infinite;
+}
+
+@-webkit-keyframes shift-97 {
+	0%,
+	100% {
+		background: #b50169;
+	}
+	16% {
+		background: #9300cb;
+	}
+	33% {
+		background: #af016f;
+	}
+	50% {
+		background: #4c30fc;
+	}
+	66% {
+		background: #fff405;
+	}
+	83% {
+		background: #ffbc1e;
+	}
+}
+
+@keyframes shift-97 {
+	0%,
+	100% {
+		background: #b50169;
+	}
+	16% {
+		background: #9300cb;
+	}
+	33% {
+		background: #af016f;
+	}
+	50% {
+		background: #4c30fc;
+	}
+	66% {
+		background: #fff405;
+	}
+	83% {
+		background: #ffbc1e;
+	}
+}
+
+.planet div:nth-child(98) {
+	-webkit-animation: shift-98 15s ease infinite;
+	animation: shift-98 15s ease infinite;
+}
+
+@-webkit-keyframes shift-98 {
+	0%,
+	100% {
+		background: #b50168;
+	}
+	16% {
+		background: #9400ca;
+	}
+	33% {
+		background: #ad0172;
+	}
+	50% {
+		background: #a72bc5;
+	}
+	66% {
+		background: #ff7f3a;
+	}
+	83% {
+		background: #ffbc1f;
+	}
+}
+
+@keyframes shift-98 {
+	0%,
+	100% {
+		background: #b50168;
+	}
+	16% {
+		background: #9400ca;
+	}
+	33% {
+		background: #ad0172;
+	}
+	50% {
+		background: #a72bc5;
+	}
+	66% {
+		background: #ff7f3a;
+	}
+	83% {
+		background: #ffbc1f;
+	}
+}
+
+.planet div:nth-child(99) {
+	-webkit-animation: shift-99 15s ease infinite;
+	animation: shift-99 15s ease infinite;
+}
+
+@-webkit-keyframes shift-99 {
+	0%,
+	100% {
+		background: #7301b4;
+	}
+	16% {
+		background: #9500c9;
+	}
+	33% {
+		background: #4801e5;
+	}
+	50% {
+		background: #b0caab;
+	}
+	66% {
+		background: #ff9331;
+	}
+	83% {
+		background: #ffbb1f;
+	}
+}
+
+@keyframes shift-99 {
+	0%,
+	100% {
+		background: #7301b4;
+	}
+	16% {
+		background: #9500c9;
+	}
+	33% {
+		background: #4801e5;
+	}
+	50% {
+		background: #b0caab;
+	}
+	66% {
+		background: #ff9331;
+	}
+	83% {
+		background: #ffbb1f;
+	}
+}
+
+.planet div:nth-child(100) {
+	-webkit-animation: shift-100 15s ease infinite;
+	animation: shift-100 15s ease infinite;
+}
+
+@-webkit-keyframes shift-100 {
+	0%,
+	100% {
+		background: #87019d;
+	}
+	16% {
+		background: #9600c8;
+	}
+	33% {
+		background: #af0170;
+	}
+	50% {
+		background: #6c71cb;
+	}
+	66% {
+		background: #ff8936;
+	}
+	83% {
+		background: #ffba1f;
+	}
+}
+
+@keyframes shift-100 {
+	0%,
+	100% {
+		background: #87019d;
+	}
+	16% {
+		background: #9600c8;
+	}
+	33% {
+		background: #af0170;
+	}
+	50% {
+		background: #6c71cb;
+	}
+	66% {
+		background: #ff8936;
+	}
+	83% {
+		background: #ffba1f;
+	}
+}
+
+.planet div:nth-child(101) {
+	-webkit-animation: shift-101 15s ease infinite;
+	animation: shift-101 15s ease infinite;
+}
+
+@-webkit-keyframes shift-101 {
+	0%,
+	100% {
+		background: #7501b2;
+	}
+	16% {
+		background: #9700c7;
+	}
+	33% {
+		background: #ac0172;
+	}
+	50% {
+		background: #5a2160;
+	}
+	66% {
+		background: #ffc819;
+	}
+	83% {
+		background: #ffba20;
+	}
+}
+
+@keyframes shift-101 {
+	0%,
+	100% {
+		background: #7501b2;
+	}
+	16% {
+		background: #9700c7;
+	}
+	33% {
+		background: #ac0172;
+	}
+	50% {
+		background: #5a2160;
+	}
+	66% {
+		background: #ffc819;
+	}
+	83% {
+		background: #ffba20;
+	}
+}
+
+.planet div:nth-child(102) {
+	-webkit-animation: shift-102 15s ease infinite;
+	animation: shift-102 15s ease infinite;
+}
+
+@-webkit-keyframes shift-102 {
+	0%,
+	100% {
+		background: #87019e;
+	}
+	16% {
+		background: #9800c6;
+	}
+	33% {
+		background: #e10136;
+	}
+	50% {
+		background: #72b84d;
+	}
+	66% {
+		background: #ffe40c;
+	}
+	83% {
+		background: #ffb920;
+	}
+}
+
+@keyframes shift-102 {
+	0%,
+	100% {
+		background: #87019e;
+	}
+	16% {
+		background: #9800c6;
+	}
+	33% {
+		background: #e10136;
+	}
+	50% {
+		background: #72b84d;
+	}
+	66% {
+		background: #ffe40c;
+	}
+	83% {
+		background: #ffb920;
+	}
+}
+
+.planet div:nth-child(103) {
+	-webkit-animation: shift-103 15s ease infinite;
+	animation: shift-103 15s ease infinite;
+}
+
+@-webkit-keyframes shift-103 {
+	0%,
+	100% {
+		background: #900193;
+	}
+	16% {
+		background: #9900c5;
+	}
+	33% {
+		background: #cb014f;
+	}
+	50% {
+		background: #399eaf;
+	}
+	66% {
+		background: #ff793d;
+	}
+	83% {
+		background: #ffb820;
+	}
+}
+
+@keyframes shift-103 {
+	0%,
+	100% {
+		background: #900193;
+	}
+	16% {
+		background: #9900c5;
+	}
+	33% {
+		background: #cb014f;
+	}
+	50% {
+		background: #399eaf;
+	}
+	66% {
+		background: #ff793d;
+	}
+	83% {
+		background: #ffb820;
+	}
+}
+
+.planet div:nth-child(104) {
+	-webkit-animation: shift-104 15s ease infinite;
+	animation: shift-104 15s ease infinite;
+}
+
+@-webkit-keyframes shift-104 {
+	0%,
+	100% {
+		background: #de0139;
+	}
+	16% {
+		background: #9a00c4;
+	}
+	33% {
+		background: #b2016c;
+	}
+	50% {
+		background: #29b68d;
+	}
+	66% {
+		background: #ffa429;
+	}
+	83% {
+		background: #ffb820;
+	}
+}
+
+@keyframes shift-104 {
+	0%,
+	100% {
+		background: #de0139;
+	}
+	16% {
+		background: #9a00c4;
+	}
+	33% {
+		background: #b2016c;
+	}
+	50% {
+		background: #29b68d;
+	}
+	66% {
+		background: #ffa429;
+	}
+	83% {
+		background: #ffb820;
+	}
+}
+
+.planet div:nth-child(105) {
+	-webkit-animation: shift-105 15s ease infinite;
+	animation: shift-105 15s ease infinite;
+}
+
+@-webkit-keyframes shift-105 {
+	0%,
+	100% {
+		background: #bb0162;
+	}
+	16% {
+		background: #9b00c3;
+	}
+	33% {
+		background: #4e01de;
+	}
+	50% {
+		background: #7f01d1;
+	}
+	66% {
+		background: #ffa429;
+	}
+	83% {
+		background: #ffb721;
+	}
+}
+
+@keyframes shift-105 {
+	0%,
+	100% {
+		background: #bb0162;
+	}
+	16% {
+		background: #9b00c3;
+	}
+	33% {
+		background: #4e01de;
+	}
+	50% {
+		background: #7f01d1;
+	}
+	66% {
+		background: #ffa429;
+	}
+	83% {
+		background: #ffb721;
+	}
+}
+
+.planet div:nth-child(106) {
+	-webkit-animation: shift-106 15s ease infinite;
+	animation: shift-106 15s ease infinite;
+}
+
+@-webkit-keyframes shift-106 {
+	0%,
+	100% {
+		background: #7e01a7;
+	}
+	16% {
+		background: #9c00c2;
+	}
+	33% {
+		background: #5e01cd;
+	}
+	50% {
+		background: #6f93de;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ffb621;
+	}
+}
+
+@keyframes shift-106 {
+	0%,
+	100% {
+		background: #7e01a7;
+	}
+	16% {
+		background: #9c00c2;
+	}
+	33% {
+		background: #5e01cd;
+	}
+	50% {
+		background: #6f93de;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ffb621;
+	}
+}
+
+.planet div:nth-child(107) {
+	-webkit-animation: shift-107 15s ease infinite;
+	animation: shift-107 15s ease infinite;
+}
+
+@-webkit-keyframes shift-107 {
+	0%,
+	100% {
+		background: #b3016b;
+	}
+	16% {
+		background: #9d00c1;
+	}
+	33% {
+		background: #b60167;
+	}
+	50% {
+		background: #ae1e17;
+	}
+	66% {
+		background: #ffaf25;
+	}
+	83% {
+		background: #ffb621;
+	}
+}
+
+@keyframes shift-107 {
+	0%,
+	100% {
+		background: #b3016b;
+	}
+	16% {
+		background: #9d00c1;
+	}
+	33% {
+		background: #b60167;
+	}
+	50% {
+		background: #ae1e17;
+	}
+	66% {
+		background: #ffaf25;
+	}
+	83% {
+		background: #ffb621;
+	}
+}
+
+.planet div:nth-child(108) {
+	-webkit-animation: shift-108 15s ease infinite;
+	animation: shift-108 15s ease infinite;
+}
+
+@-webkit-keyframes shift-108 {
+	0%,
+	100% {
+		background: #f30121;
+	}
+	16% {
+		background: #9e00c0;
+	}
+	33% {
+		background: #c70154;
+	}
+	50% {
+		background: #d95866;
+	}
+	66% {
+		background: #ff9d2d;
+	}
+	83% {
+		background: #ffb522;
+	}
+}
+
+@keyframes shift-108 {
+	0%,
+	100% {
+		background: #f30121;
+	}
+	16% {
+		background: #9e00c0;
+	}
+	33% {
+		background: #c70154;
+	}
+	50% {
+		background: #d95866;
+	}
+	66% {
+		background: #ff9d2d;
+	}
+	83% {
+		background: #ffb522;
+	}
+}
+
+.planet div:nth-child(109) {
+	-webkit-animation: shift-109 15s ease infinite;
+	animation: shift-109 15s ease infinite;
+}
+
+@-webkit-keyframes shift-109 {
+	0%,
+	100% {
+		background: #6301c7;
+	}
+	16% {
+		background: #9f00bf;
+	}
+	33% {
+		background: #ea012b;
+	}
+	50% {
+		background: #a0314e;
+	}
+	66% {
+		background: #ffaf24;
+	}
+	83% {
+		background: #ffb422;
+	}
+}
+
+@keyframes shift-109 {
+	0%,
+	100% {
+		background: #6301c7;
+	}
+	16% {
+		background: #9f00bf;
+	}
+	33% {
+		background: #ea012b;
+	}
+	50% {
+		background: #a0314e;
+	}
+	66% {
+		background: #ffaf24;
+	}
+	83% {
+		background: #ffb422;
+	}
+}
+
+.planet div:nth-child(110) {
+	-webkit-animation: shift-110 15s ease infinite;
+	animation: shift-110 15s ease infinite;
+}
+
+@-webkit-keyframes shift-110 {
+	0%,
+	100% {
+		background: #9d0184;
+	}
+	16% {
+		background: #a000be;
+	}
+	33% {
+		background: #8d0196;
+	}
+	50% {
+		background: #c610b3;
+	}
+	66% {
+		background: #ff6d43;
+	}
+	83% {
+		background: #ffb322;
+	}
+}
+
+@keyframes shift-110 {
+	0%,
+	100% {
+		background: #9d0184;
+	}
+	16% {
+		background: #a000be;
+	}
+	33% {
+		background: #8d0196;
+	}
+	50% {
+		background: #c610b3;
+	}
+	66% {
+		background: #ff6d43;
+	}
+	83% {
+		background: #ffb322;
+	}
+}
+
+.planet div:nth-child(111) {
+	-webkit-animation: shift-111 15s ease infinite;
+	animation: shift-111 15s ease infinite;
+}
+
+@-webkit-keyframes shift-111 {
+	0%,
+	100% {
+		background: #c60155;
+	}
+	16% {
+		background: #a100bd;
+	}
+	33% {
+		background: #cb014f;
+	}
+	50% {
+		background: #8e9401;
+	}
+	66% {
+		background: #ff6d42;
+	}
+	83% {
+		background: #ffb323;
+	}
+}
+
+@keyframes shift-111 {
+	0%,
+	100% {
+		background: #c60155;
+	}
+	16% {
+		background: #a100bd;
+	}
+	33% {
+		background: #cb014f;
+	}
+	50% {
+		background: #8e9401;
+	}
+	66% {
+		background: #ff6d42;
+	}
+	83% {
+		background: #ffb323;
+	}
+}
+
+.planet div:nth-child(112) {
+	-webkit-animation: shift-112 15s ease infinite;
+	animation: shift-112 15s ease infinite;
+}
+
+@-webkit-keyframes shift-112 {
+	0%,
+	100% {
+		background: #c50155;
+	}
+	16% {
+		background: #a200bc;
+	}
+	33% {
+		background: #97018b;
+	}
+	50% {
+		background: #99eccd;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #ffb223;
+	}
+}
+
+@keyframes shift-112 {
+	0%,
+	100% {
+		background: #c50155;
+	}
+	16% {
+		background: #a200bc;
+	}
+	33% {
+		background: #97018b;
+	}
+	50% {
+		background: #99eccd;
+	}
+	66% {
+		background: #ff6944;
+	}
+	83% {
+		background: #ffb223;
+	}
+}
+
+.planet div:nth-child(113) {
+	-webkit-animation: shift-113 15s ease infinite;
+	animation: shift-113 15s ease infinite;
+}
+
+@-webkit-keyframes shift-113 {
+	0%,
+	100% {
+		background: #c70154;
+	}
+	16% {
+		background: #a300bb;
+	}
+	33% {
+		background: #3401fc;
+	}
+	50% {
+		background: #a8f8e5;
+	}
+	66% {
+		background: #ffd215;
+	}
+	83% {
+		background: #ffb123;
+	}
+}
+
+@keyframes shift-113 {
+	0%,
+	100% {
+		background: #c70154;
+	}
+	16% {
+		background: #a300bb;
+	}
+	33% {
+		background: #3401fc;
+	}
+	50% {
+		background: #a8f8e5;
+	}
+	66% {
+		background: #ffd215;
+	}
+	83% {
+		background: #ffb123;
+	}
+}
+
+.planet div:nth-child(114) {
+	-webkit-animation: shift-114 15s ease infinite;
+	animation: shift-114 15s ease infinite;
+}
+
+@-webkit-keyframes shift-114 {
+	0%,
+	100% {
+		background: #7901ae;
+	}
+	16% {
+		background: #a400ba;
+	}
+	33% {
+		background: #f10123;
+	}
+	50% {
+		background: #25d8d2;
+	}
+	66% {
+		background: #ff793d;
+	}
+	83% {
+		background: #ffb124;
+	}
+}
+
+@keyframes shift-114 {
+	0%,
+	100% {
+		background: #7901ae;
+	}
+	16% {
+		background: #a400ba;
+	}
+	33% {
+		background: #f10123;
+	}
+	50% {
+		background: #25d8d2;
+	}
+	66% {
+		background: #ff793d;
+	}
+	83% {
+		background: #ffb124;
+	}
+}
+
+.planet div:nth-child(115) {
+	-webkit-animation: shift-115 15s ease infinite;
+	animation: shift-115 15s ease infinite;
+}
+
+@-webkit-keyframes shift-115 {
+	0%,
+	100% {
+		background: #7c01a9;
+	}
+	16% {
+		background: #a500b9;
+	}
+	33% {
+		background: #ae0170;
+	}
+	50% {
+		background: #9861fc;
+	}
+	66% {
+		background: #fff803;
+	}
+	83% {
+		background: #ffb024;
+	}
+}
+
+@keyframes shift-115 {
+	0%,
+	100% {
+		background: #7c01a9;
+	}
+	16% {
+		background: #a500b9;
+	}
+	33% {
+		background: #ae0170;
+	}
+	50% {
+		background: #9861fc;
+	}
+	66% {
+		background: #fff803;
+	}
+	83% {
+		background: #ffb024;
+	}
+}
+
+.planet div:nth-child(116) {
+	-webkit-animation: shift-116 15s ease infinite;
+	animation: shift-116 15s ease infinite;
+}
+
+@-webkit-keyframes shift-116 {
+	0%,
+	100% {
+		background: #f5011f;
+	}
+	16% {
+		background: #a600b8;
+	}
+	33% {
+		background: #9d0184;
+	}
+	50% {
+		background: #ed8459;
+	}
+	66% {
+		background: #ffed08;
+	}
+	83% {
+		background: #ffaf24;
+	}
+}
+
+@keyframes shift-116 {
+	0%,
+	100% {
+		background: #f5011f;
+	}
+	16% {
+		background: #a600b8;
+	}
+	33% {
+		background: #9d0184;
+	}
+	50% {
+		background: #ed8459;
+	}
+	66% {
+		background: #ffed08;
+	}
+	83% {
+		background: #ffaf24;
+	}
+}
+
+.planet div:nth-child(117) {
+	-webkit-animation: shift-117 15s ease infinite;
+	animation: shift-117 15s ease infinite;
+}
+
+@-webkit-keyframes shift-117 {
+	0%,
+	100% {
+		background: #bb0162;
+	}
+	16% {
+		background: #a700b7;
+	}
+	33% {
+		background: #7c01aa;
+	}
+	50% {
+		background: #dfb9b2;
+	}
+	66% {
+		background: #fffe01;
+	}
+	83% {
+		background: #ffaf25;
+	}
+}
+
+@keyframes shift-117 {
+	0%,
+	100% {
+		background: #bb0162;
+	}
+	16% {
+		background: #a700b7;
+	}
+	33% {
+		background: #7c01aa;
+	}
+	50% {
+		background: #dfb9b2;
+	}
+	66% {
+		background: #fffe01;
+	}
+	83% {
+		background: #ffaf25;
+	}
+}
+
+.planet div:nth-child(118) {
+	-webkit-animation: shift-118 15s ease infinite;
+	animation: shift-118 15s ease infinite;
+}
+
+@-webkit-keyframes shift-118 {
+	0%,
+	100% {
+		background: #db013d;
+	}
+	16% {
+		background: #a800b6;
+	}
+	33% {
+		background: #5801d3;
+	}
+	50% {
+		background: #d2e13a;
+	}
+	66% {
+		background: #fff106;
+	}
+	83% {
+		background: #ffae25;
+	}
+}
+
+@keyframes shift-118 {
+	0%,
+	100% {
+		background: #db013d;
+	}
+	16% {
+		background: #a800b6;
+	}
+	33% {
+		background: #5801d3;
+	}
+	50% {
+		background: #d2e13a;
+	}
+	66% {
+		background: #fff106;
+	}
+	83% {
+		background: #ffae25;
+	}
+}
+
+.planet div:nth-child(119) {
+	-webkit-animation: shift-119 15s ease infinite;
+	animation: shift-119 15s ease infinite;
+}
+
+@-webkit-keyframes shift-119 {
+	0%,
+	100% {
+		background: #b3016b;
+	}
+	16% {
+		background: #a900b5;
+	}
+	33% {
+		background: #7601b1;
+	}
+	50% {
+		background: #805056;
+	}
+	66% {
+		background: #ffc11c;
+	}
+	83% {
+		background: #ffad25;
+	}
+}
+
+@keyframes shift-119 {
+	0%,
+	100% {
+		background: #b3016b;
+	}
+	16% {
+		background: #a900b5;
+	}
+	33% {
+		background: #7601b1;
+	}
+	50% {
+		background: #805056;
+	}
+	66% {
+		background: #ffc11c;
+	}
+	83% {
+		background: #ffad25;
+	}
+}
+
+.planet div:nth-child(120) {
+	-webkit-animation: shift-120 15s ease infinite;
+	animation: shift-120 15s ease infinite;
+}
+
+@-webkit-keyframes shift-120 {
+	0%,
+	100% {
+		background: #7b01ab;
+	}
+	16% {
+		background: #aa00b4;
+	}
+	33% {
+		background: #bf015d;
+	}
+	50% {
+		background: #88376a;
+	}
+	66% {
+		background: #fff206;
+	}
+	83% {
+		background: #ffad25;
+	}
+}
+
+@keyframes shift-120 {
+	0%,
+	100% {
+		background: #7b01ab;
+	}
+	16% {
+		background: #aa00b4;
+	}
+	33% {
+		background: #bf015d;
+	}
+	50% {
+		background: #88376a;
+	}
+	66% {
+		background: #fff206;
+	}
+	83% {
+		background: #ffad25;
+	}
+}
+
+.planet div:nth-child(121) {
+	-webkit-animation: shift-121 15s ease infinite;
+	animation: shift-121 15s ease infinite;
+}
+
+@-webkit-keyframes shift-121 {
+	0%,
+	100% {
+		background: #b0016e;
+	}
+	16% {
+		background: #ab00b3;
+	}
+	33% {
+		background: #bd0160;
+	}
+	50% {
+		background: #8f7381;
+	}
+	66% {
+		background: #fffb02;
+	}
+	83% {
+		background: #ffac26;
+	}
+}
+
+@keyframes shift-121 {
+	0%,
+	100% {
+		background: #b0016e;
+	}
+	16% {
+		background: #ab00b3;
+	}
+	33% {
+		background: #bd0160;
+	}
+	50% {
+		background: #8f7381;
+	}
+	66% {
+		background: #fffb02;
+	}
+	83% {
+		background: #ffac26;
+	}
+}
+
+.planet div:nth-child(122) {
+	-webkit-animation: shift-122 15s ease infinite;
+	animation: shift-122 15s ease infinite;
+}
+
+@-webkit-keyframes shift-122 {
+	0%,
+	100% {
+		background: #94018e;
+	}
+	16% {
+		background: #ac00b2;
+	}
+	33% {
+		background: #3c01f3;
+	}
+	50% {
+		background: #e1cc54;
+	}
+	66% {
+		background: #fff206;
+	}
+	83% {
+		background: #ffab26;
+	}
+}
+
+@keyframes shift-122 {
+	0%,
+	100% {
+		background: #94018e;
+	}
+	16% {
+		background: #ac00b2;
+	}
+	33% {
+		background: #3c01f3;
+	}
+	50% {
+		background: #e1cc54;
+	}
+	66% {
+		background: #fff206;
+	}
+	83% {
+		background: #ffab26;
+	}
+}
+
+.planet div:nth-child(123) {
+	-webkit-animation: shift-123 15s ease infinite;
+	animation: shift-123 15s ease infinite;
+}
+
+@-webkit-keyframes shift-123 {
+	0%,
+	100% {
+		background: #4601e8;
+	}
+	16% {
+		background: #ad00b1;
+	}
+	33% {
+		background: #8a019a;
+	}
+	50% {
+		background: #e1b7c1;
+	}
+	66% {
+		background: #ff753f;
+	}
+	83% {
+		background: #ffab26;
+	}
+}
+
+@keyframes shift-123 {
+	0%,
+	100% {
+		background: #4601e8;
+	}
+	16% {
+		background: #ad00b1;
+	}
+	33% {
+		background: #8a019a;
+	}
+	50% {
+		background: #e1b7c1;
+	}
+	66% {
+		background: #ff753f;
+	}
+	83% {
+		background: #ffab26;
+	}
+}
+
+.planet div:nth-child(124) {
+	-webkit-animation: shift-124 15s ease infinite;
+	animation: shift-124 15s ease infinite;
+}
+
+@-webkit-keyframes shift-124 {
+	0%,
+	100% {
+		background: #8f0194;
+	}
+	16% {
+		background: #ae00b0;
+	}
+	33% {
+		background: #8401a0;
+	}
+	50% {
+		background: #85870a;
+	}
+	66% {
+		background: #ffd712;
+	}
+	83% {
+		background: #ffaa27;
+	}
+}
+
+@keyframes shift-124 {
+	0%,
+	100% {
+		background: #8f0194;
+	}
+	16% {
+		background: #ae00b0;
+	}
+	33% {
+		background: #8401a0;
+	}
+	50% {
+		background: #85870a;
+	}
+	66% {
+		background: #ffd712;
+	}
+	83% {
+		background: #ffaa27;
+	}
+}
+
+.planet div:nth-child(125) {
+	-webkit-animation: shift-125 15s ease infinite;
+	animation: shift-125 15s ease infinite;
+}
+
+@-webkit-keyframes shift-125 {
+	0%,
+	100% {
+		background: #7401b3;
+	}
+	16% {
+		background: #af00af;
+	}
+	33% {
+		background: #3a01f6;
+	}
+	50% {
+		background: #eb2adf;
+	}
+	66% {
+		background: #ff6845;
+	}
+	83% {
+		background: #ffa927;
+	}
+}
+
+@keyframes shift-125 {
+	0%,
+	100% {
+		background: #7401b3;
+	}
+	16% {
+		background: #af00af;
+	}
+	33% {
+		background: #3a01f6;
+	}
+	50% {
+		background: #eb2adf;
+	}
+	66% {
+		background: #ff6845;
+	}
+	83% {
+		background: #ffa927;
+	}
+}
+
+.planet div:nth-child(126) {
+	-webkit-animation: shift-126 15s ease infinite;
+	animation: shift-126 15s ease infinite;
+}
+
+@-webkit-keyframes shift-126 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #b000ae;
+	}
+	33% {
+		background: #a3017d;
+	}
+	50% {
+		background: #d9a306;
+	}
+	66% {
+		background: #ff773e;
+	}
+	83% {
+		background: #ffa927;
+	}
+}
+
+@keyframes shift-126 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #b000ae;
+	}
+	33% {
+		background: #a3017d;
+	}
+	50% {
+		background: #d9a306;
+	}
+	66% {
+		background: #ff773e;
+	}
+	83% {
+		background: #ffa927;
+	}
+}
+
+.planet div:nth-child(127) {
+	-webkit-animation: shift-127 15s ease infinite;
+	animation: shift-127 15s ease infinite;
+}
+
+@-webkit-keyframes shift-127 {
+	0%,
+	100% {
+		background: #4101ed;
+	}
+	16% {
+		background: #b100ad;
+	}
+	33% {
+		background: #b1016d;
+	}
+	50% {
+		background: #77bf31;
+	}
+	66% {
+		background: #ff6f42;
+	}
+	83% {
+		background: #ffa828;
+	}
+}
+
+@keyframes shift-127 {
+	0%,
+	100% {
+		background: #4101ed;
+	}
+	16% {
+		background: #b100ad;
+	}
+	33% {
+		background: #b1016d;
+	}
+	50% {
+		background: #77bf31;
+	}
+	66% {
+		background: #ff6f42;
+	}
+	83% {
+		background: #ffa828;
+	}
+}
+
+.planet div:nth-child(128) {
+	-webkit-animation: shift-128 15s ease infinite;
+	animation: shift-128 15s ease infinite;
+}
+
+@-webkit-keyframes shift-128 {
+	0%,
+	100% {
+		background: #d70141;
+	}
+	16% {
+		background: #b200ac;
+	}
+	33% {
+		background: #9d0183;
+	}
+	50% {
+		background: #9c57d6;
+	}
+	66% {
+		background: #fffa02;
+	}
+	83% {
+		background: #ffa728;
+	}
+}
+
+@keyframes shift-128 {
+	0%,
+	100% {
+		background: #d70141;
+	}
+	16% {
+		background: #b200ac;
+	}
+	33% {
+		background: #9d0183;
+	}
+	50% {
+		background: #9c57d6;
+	}
+	66% {
+		background: #fffa02;
+	}
+	83% {
+		background: #ffa728;
+	}
+}
+
+.planet div:nth-child(129) {
+	-webkit-animation: shift-129 15s ease infinite;
+	animation: shift-129 15s ease infinite;
+}
+
+@-webkit-keyframes shift-129 {
+	0%,
+	100% {
+		background: #5b01cf;
+	}
+	16% {
+		background: #b300ab;
+	}
+	33% {
+		background: #f6011e;
+	}
+	50% {
+		background: #83cc2b;
+	}
+	66% {
+		background: #ffb821;
+	}
+	83% {
+		background: #ffa628;
+	}
+}
+
+@keyframes shift-129 {
+	0%,
+	100% {
+		background: #5b01cf;
+	}
+	16% {
+		background: #b300ab;
+	}
+	33% {
+		background: #f6011e;
+	}
+	50% {
+		background: #83cc2b;
+	}
+	66% {
+		background: #ffb821;
+	}
+	83% {
+		background: #ffa628;
+	}
+}
+
+.planet div:nth-child(130) {
+	-webkit-animation: shift-130 15s ease infinite;
+	animation: shift-130 15s ease infinite;
+}
+
+@-webkit-keyframes shift-130 {
+	0%,
+	100% {
+		background: #bd015f;
+	}
+	16% {
+		background: #b400aa;
+	}
+	33% {
+		background: #df0138;
+	}
+	50% {
+		background: #8aff2f;
+	}
+	66% {
+		background: #fff007;
+	}
+	83% {
+		background: #ffa629;
+	}
+}
+
+@keyframes shift-130 {
+	0%,
+	100% {
+		background: #bd015f;
+	}
+	16% {
+		background: #b400aa;
+	}
+	33% {
+		background: #df0138;
+	}
+	50% {
+		background: #8aff2f;
+	}
+	66% {
+		background: #fff007;
+	}
+	83% {
+		background: #ffa629;
+	}
+}
+
+.planet div:nth-child(131) {
+	-webkit-animation: shift-131 15s ease infinite;
+	animation: shift-131 15s ease infinite;
+}
+
+@-webkit-keyframes shift-131 {
+	0%,
+	100% {
+		background: #7401b4;
+	}
+	16% {
+		background: #b500a9;
+	}
+	33% {
+		background: #f30121;
+	}
+	50% {
+		background: #c0c227;
+	}
+	66% {
+		background: #ffbd1e;
+	}
+	83% {
+		background: #ffa529;
+	}
+}
+
+@keyframes shift-131 {
+	0%,
+	100% {
+		background: #7401b4;
+	}
+	16% {
+		background: #b500a9;
+	}
+	33% {
+		background: #f30121;
+	}
+	50% {
+		background: #c0c227;
+	}
+	66% {
+		background: #ffbd1e;
+	}
+	83% {
+		background: #ffa529;
+	}
+}
+
+.planet div:nth-child(132) {
+	-webkit-animation: shift-132 15s ease infinite;
+	animation: shift-132 15s ease infinite;
+}
+
+@-webkit-keyframes shift-132 {
+	0%,
+	100% {
+		background: #f5011f;
+	}
+	16% {
+		background: #b600a8;
+	}
+	33% {
+		background: #3801f8;
+	}
+	50% {
+		background: #cb90ea;
+	}
+	66% {
+		background: #ffa927;
+	}
+	83% {
+		background: #ffa429;
+	}
+}
+
+@keyframes shift-132 {
+	0%,
+	100% {
+		background: #f5011f;
+	}
+	16% {
+		background: #b600a8;
+	}
+	33% {
+		background: #3801f8;
+	}
+	50% {
+		background: #cb90ea;
+	}
+	66% {
+		background: #ffa927;
+	}
+	83% {
+		background: #ffa429;
+	}
+}
+
+.planet div:nth-child(133) {
+	-webkit-animation: shift-133 15s ease infinite;
+	animation: shift-133 15s ease infinite;
+}
+
+@-webkit-keyframes shift-133 {
+	0%,
+	100% {
+		background: #5b01d0;
+	}
+	16% {
+		background: #b700a7;
+	}
+	33% {
+		background: #5f01cc;
+	}
+	50% {
+		background: #e80cd7;
+	}
+	66% {
+		background: #ffe10e;
+	}
+	83% {
+		background: #ffa42a;
+	}
+}
+
+@keyframes shift-133 {
+	0%,
+	100% {
+		background: #5b01d0;
+	}
+	16% {
+		background: #b700a7;
+	}
+	33% {
+		background: #5f01cc;
+	}
+	50% {
+		background: #e80cd7;
+	}
+	66% {
+		background: #ffe10e;
+	}
+	83% {
+		background: #ffa42a;
+	}
+}
+
+.planet div:nth-child(134) {
+	-webkit-animation: shift-134 15s ease infinite;
+	animation: shift-134 15s ease infinite;
+}
+
+@-webkit-keyframes shift-134 {
+	0%,
+	100% {
+		background: #5701d4;
+	}
+	16% {
+		background: #b800a6;
+	}
+	33% {
+		background: #6301c7;
+	}
+	50% {
+		background: #cb93cb;
+	}
+	66% {
+		background: #ffc21c;
+	}
+	83% {
+		background: #ffa32a;
+	}
+}
+
+@keyframes shift-134 {
+	0%,
+	100% {
+		background: #5701d4;
+	}
+	16% {
+		background: #b800a6;
+	}
+	33% {
+		background: #6301c7;
+	}
+	50% {
+		background: #cb93cb;
+	}
+	66% {
+		background: #ffc21c;
+	}
+	83% {
+		background: #ffa32a;
+	}
+}
+
+.planet div:nth-child(135) {
+	-webkit-animation: shift-135 15s ease infinite;
+	animation: shift-135 15s ease infinite;
+}
+
+@-webkit-keyframes shift-135 {
+	0%,
+	100% {
+		background: #5701d5;
+	}
+	16% {
+		background: #b900a5;
+	}
+	33% {
+		background: #5b01d0;
+	}
+	50% {
+		background: #f50f38;
+	}
+	66% {
+		background: #ffc11c;
+	}
+	83% {
+		background: #ffa22a;
+	}
+}
+
+@keyframes shift-135 {
+	0%,
+	100% {
+		background: #5701d5;
+	}
+	16% {
+		background: #b900a5;
+	}
+	33% {
+		background: #5b01d0;
+	}
+	50% {
+		background: #f50f38;
+	}
+	66% {
+		background: #ffc11c;
+	}
+	83% {
+		background: #ffa22a;
+	}
+}
+
+.planet div:nth-child(136) {
+	-webkit-animation: shift-136 15s ease infinite;
+	animation: shift-136 15s ease infinite;
+}
+
+@-webkit-keyframes shift-136 {
+	0%,
+	100% {
+		background: #95018d;
+	}
+	16% {
+		background: #ba00a4;
+	}
+	33% {
+		background: #5201db;
+	}
+	50% {
+		background: #eeee3c;
+	}
+	66% {
+		background: #ff8a35;
+	}
+	83% {
+		background: #ffa22a;
+	}
+}
+
+@keyframes shift-136 {
+	0%,
+	100% {
+		background: #95018d;
+	}
+	16% {
+		background: #ba00a4;
+	}
+	33% {
+		background: #5201db;
+	}
+	50% {
+		background: #eeee3c;
+	}
+	66% {
+		background: #ff8a35;
+	}
+	83% {
+		background: #ffa22a;
+	}
+}
+
+.planet div:nth-child(137) {
+	-webkit-animation: shift-137 15s ease infinite;
+	animation: shift-137 15s ease infinite;
+}
+
+@-webkit-keyframes shift-137 {
+	0%,
+	100% {
+		background: #b90164;
+	}
+	16% {
+		background: #bb00a3;
+	}
+	33% {
+		background: #f9011a;
+	}
+	50% {
+		background: #e436af;
+	}
+	66% {
+		background: #ff9e2c;
+	}
+	83% {
+		background: #ffa12b;
+	}
+}
+
+@keyframes shift-137 {
+	0%,
+	100% {
+		background: #b90164;
+	}
+	16% {
+		background: #bb00a3;
+	}
+	33% {
+		background: #f9011a;
+	}
+	50% {
+		background: #e436af;
+	}
+	66% {
+		background: #ff9e2c;
+	}
+	83% {
+		background: #ffa12b;
+	}
+}
+
+.planet div:nth-child(138) {
+	-webkit-animation: shift-138 15s ease infinite;
+	animation: shift-138 15s ease infinite;
+}
+
+@-webkit-keyframes shift-138 {
+	0%,
+	100% {
+		background: #7801ae;
+	}
+	16% {
+		background: #bc00a2;
+	}
+	33% {
+		background: #ca0150;
+	}
+	50% {
+		background: #134574;
+	}
+	66% {
+		background: #ffa42a;
+	}
+	83% {
+		background: #ffa02b;
+	}
+}
+
+@keyframes shift-138 {
+	0%,
+	100% {
+		background: #7801ae;
+	}
+	16% {
+		background: #bc00a2;
+	}
+	33% {
+		background: #ca0150;
+	}
+	50% {
+		background: #134574;
+	}
+	66% {
+		background: #ffa42a;
+	}
+	83% {
+		background: #ffa02b;
+	}
+}
+
+.planet div:nth-child(139) {
+	-webkit-animation: shift-139 15s ease infinite;
+	animation: shift-139 15s ease infinite;
+}
+
+@-webkit-keyframes shift-139 {
+	0%,
+	100% {
+		background: #9f0182;
+	}
+	16% {
+		background: #bd00a1;
+	}
+	33% {
+		background: #9f0182;
+	}
+	50% {
+		background: #f8f3c9;
+	}
+	66% {
+		background: #ff7b3c;
+	}
+	83% {
+		background: #ffa02b;
+	}
+}
+
+@keyframes shift-139 {
+	0%,
+	100% {
+		background: #9f0182;
+	}
+	16% {
+		background: #bd00a1;
+	}
+	33% {
+		background: #9f0182;
+	}
+	50% {
+		background: #f8f3c9;
+	}
+	66% {
+		background: #ff7b3c;
+	}
+	83% {
+		background: #ffa02b;
+	}
+}
+
+.planet div:nth-child(140) {
+	-webkit-animation: shift-140 15s ease infinite;
+	animation: shift-140 15s ease infinite;
+}
+
+@-webkit-keyframes shift-140 {
+	0%,
+	100% {
+		background: #6401c5;
+	}
+	16% {
+		background: #be00a0;
+	}
+	33% {
+		background: #6001ca;
+	}
+	50% {
+		background: #f05e5a;
+	}
+	66% {
+		background: #ffde0f;
+	}
+	83% {
+		background: #ff9f2c;
+	}
+}
+
+@keyframes shift-140 {
+	0%,
+	100% {
+		background: #6401c5;
+	}
+	16% {
+		background: #be00a0;
+	}
+	33% {
+		background: #6001ca;
+	}
+	50% {
+		background: #f05e5a;
+	}
+	66% {
+		background: #ffde0f;
+	}
+	83% {
+		background: #ff9f2c;
+	}
+}
+
+.planet div:nth-child(141) {
+	-webkit-animation: shift-141 15s ease infinite;
+	animation: shift-141 15s ease infinite;
+}
+
+@-webkit-keyframes shift-141 {
+	0%,
+	100% {
+		background: #bb0161;
+	}
+	16% {
+		background: #bf009f;
+	}
+	33% {
+		background: #87019d;
+	}
+	50% {
+		background: #ba1f52;
+	}
+	66% {
+		background: #ff8438;
+	}
+	83% {
+		background: #ff9e2c;
+	}
+}
+
+@keyframes shift-141 {
+	0%,
+	100% {
+		background: #bb0161;
+	}
+	16% {
+		background: #bf009f;
+	}
+	33% {
+		background: #87019d;
+	}
+	50% {
+		background: #ba1f52;
+	}
+	66% {
+		background: #ff8438;
+	}
+	83% {
+		background: #ff9e2c;
+	}
+}
+
+.planet div:nth-child(142) {
+	-webkit-animation: shift-142 15s ease infinite;
+	animation: shift-142 15s ease infinite;
+}
+
+@-webkit-keyframes shift-142 {
+	0%,
+	100% {
+		background: #4c01e1;
+	}
+	16% {
+		background: #c0009e;
+	}
+	33% {
+		background: #4b01e3;
+	}
+	50% {
+		background: #45e9e7;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ff9e2c;
+	}
+}
+
+@keyframes shift-142 {
+	0%,
+	100% {
+		background: #4c01e1;
+	}
+	16% {
+		background: #c0009e;
+	}
+	33% {
+		background: #4b01e3;
+	}
+	50% {
+		background: #45e9e7;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ff9e2c;
+	}
+}
+
+.planet div:nth-child(143) {
+	-webkit-animation: shift-143 15s ease infinite;
+	animation: shift-143 15s ease infinite;
+}
+
+@-webkit-keyframes shift-143 {
+	0%,
+	100% {
+		background: #a3017d;
+	}
+	16% {
+		background: #c1009d;
+	}
+	33% {
+		background: #8c0198;
+	}
+	50% {
+		background: #ebc644;
+	}
+	66% {
+		background: #ffb322;
+	}
+	83% {
+		background: #ff9d2d;
+	}
+}
+
+@keyframes shift-143 {
+	0%,
+	100% {
+		background: #a3017d;
+	}
+	16% {
+		background: #c1009d;
+	}
+	33% {
+		background: #8c0198;
+	}
+	50% {
+		background: #ebc644;
+	}
+	66% {
+		background: #ffb322;
+	}
+	83% {
+		background: #ff9d2d;
+	}
+}
+
+.planet div:nth-child(144) {
+	-webkit-animation: shift-144 15s ease infinite;
+	animation: shift-144 15s ease infinite;
+}
+
+@-webkit-keyframes shift-144 {
+	0%,
+	100% {
+		background: #6401c5;
+	}
+	16% {
+		background: #c2009c;
+	}
+	33% {
+		background: #7601b1;
+	}
+	50% {
+		background: #a035c6;
+	}
+	66% {
+		background: #ffbd1e;
+	}
+	83% {
+		background: #ff9c2d;
+	}
+}
+
+@keyframes shift-144 {
+	0%,
+	100% {
+		background: #6401c5;
+	}
+	16% {
+		background: #c2009c;
+	}
+	33% {
+		background: #7601b1;
+	}
+	50% {
+		background: #a035c6;
+	}
+	66% {
+		background: #ffbd1e;
+	}
+	83% {
+		background: #ff9c2d;
+	}
+}
+
+.planet div:nth-child(145) {
+	-webkit-animation: shift-145 15s ease infinite;
+	animation: shift-145 15s ease infinite;
+}
+
+@-webkit-keyframes shift-145 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #c3009b;
+	}
+	33% {
+		background: #9f0181;
+	}
+	50% {
+		background: #fe7ec8;
+	}
+	66% {
+		background: #ff6e42;
+	}
+	83% {
+		background: #ff9b2d;
+	}
+}
+
+@keyframes shift-145 {
+	0%,
+	100% {
+		background: #7f01a6;
+	}
+	16% {
+		background: #c3009b;
+	}
+	33% {
+		background: #9f0181;
+	}
+	50% {
+		background: #fe7ec8;
+	}
+	66% {
+		background: #ff6e42;
+	}
+	83% {
+		background: #ff9b2d;
+	}
+}
+
+.planet div:nth-child(146) {
+	-webkit-animation: shift-146 15s ease infinite;
+	animation: shift-146 15s ease infinite;
+}
+
+@-webkit-keyframes shift-146 {
+	0%,
+	100% {
+		background: #4001ee;
+	}
+	16% {
+		background: #c4009a;
+	}
+	33% {
+		background: #e20135;
+	}
+	50% {
+		background: #34f164;
+	}
+	66% {
+		background: #ffb223;
+	}
+	83% {
+		background: #ff9b2e;
+	}
+}
+
+@keyframes shift-146 {
+	0%,
+	100% {
+		background: #4001ee;
+	}
+	16% {
+		background: #c4009a;
+	}
+	33% {
+		background: #e20135;
+	}
+	50% {
+		background: #34f164;
+	}
+	66% {
+		background: #ffb223;
+	}
+	83% {
+		background: #ff9b2e;
+	}
+}
+
+.planet div:nth-child(147) {
+	-webkit-animation: shift-147 15s ease infinite;
+	animation: shift-147 15s ease infinite;
+}
+
+@-webkit-keyframes shift-147 {
+	0%,
+	100% {
+		background: #6f01b9;
+	}
+	16% {
+		background: #c50099;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #84dbce;
+	}
+	66% {
+		background: #ffd911;
+	}
+	83% {
+		background: #ff9a2e;
+	}
+}
+
+@keyframes shift-147 {
+	0%,
+	100% {
+		background: #6f01b9;
+	}
+	16% {
+		background: #c50099;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #84dbce;
+	}
+	66% {
+		background: #ffd911;
+	}
+	83% {
+		background: #ff9a2e;
+	}
+}
+
+.planet div:nth-child(148) {
+	-webkit-animation: shift-148 15s ease infinite;
+	animation: shift-148 15s ease infinite;
+}
+
+@-webkit-keyframes shift-148 {
+	0%,
+	100% {
+		background: #c0015c;
+	}
+	16% {
+		background: #c60098;
+	}
+	33% {
+		background: #c0015b;
+	}
+	50% {
+		background: #8f59e2;
+	}
+	66% {
+		background: #ff7141;
+	}
+	83% {
+		background: #ff992e;
+	}
+}
+
+@keyframes shift-148 {
+	0%,
+	100% {
+		background: #c0015c;
+	}
+	16% {
+		background: #c60098;
+	}
+	33% {
+		background: #c0015b;
+	}
+	50% {
+		background: #8f59e2;
+	}
+	66% {
+		background: #ff7141;
+	}
+	83% {
+		background: #ff992e;
+	}
+}
+
+.planet div:nth-child(149) {
+	-webkit-animation: shift-149 15s ease infinite;
+	animation: shift-149 15s ease infinite;
+}
+
+@-webkit-keyframes shift-149 {
+	0%,
+	100% {
+		background: #c40157;
+	}
+	16% {
+		background: #c70097;
+	}
+	33% {
+		background: #6901c0;
+	}
+	50% {
+		background: #83fc3e;
+	}
+	66% {
+		background: #ffb621;
+	}
+	83% {
+		background: #ff992f;
+	}
+}
+
+@keyframes shift-149 {
+	0%,
+	100% {
+		background: #c40157;
+	}
+	16% {
+		background: #c70097;
+	}
+	33% {
+		background: #6901c0;
+	}
+	50% {
+		background: #83fc3e;
+	}
+	66% {
+		background: #ffb621;
+	}
+	83% {
+		background: #ff992f;
+	}
+}
+
+.planet div:nth-child(150) {
+	-webkit-animation: shift-150 15s ease infinite;
+	animation: shift-150 15s ease infinite;
+}
+
+@-webkit-keyframes shift-150 {
+	0%,
+	100% {
+		background: #4901e4;
+	}
+	16% {
+		background: #c80096;
+	}
+	33% {
+		background: #4e01df;
+	}
+	50% {
+		background: #071da5;
+	}
+	66% {
+		background: #ffa728;
+	}
+	83% {
+		background: #ff982f;
+	}
+}
+
+@keyframes shift-150 {
+	0%,
+	100% {
+		background: #4901e4;
+	}
+	16% {
+		background: #c80096;
+	}
+	33% {
+		background: #4e01df;
+	}
+	50% {
+		background: #071da5;
+	}
+	66% {
+		background: #ffa728;
+	}
+	83% {
+		background: #ff982f;
+	}
+}
+
+.planet div:nth-child(151) {
+	-webkit-animation: shift-151 15s ease infinite;
+	animation: shift-151 15s ease infinite;
+}
+
+@-webkit-keyframes shift-151 {
+	0%,
+	100% {
+		background: #f9011a;
+	}
+	16% {
+		background: #c90095;
+	}
+	33% {
+		background: #f9011a;
+	}
+	50% {
+		background: #d10672;
+	}
+	66% {
+		background: #ffd513;
+	}
+	83% {
+		background: #ff972f;
+	}
+}
+
+@keyframes shift-151 {
+	0%,
+	100% {
+		background: #f9011a;
+	}
+	16% {
+		background: #c90095;
+	}
+	33% {
+		background: #f9011a;
+	}
+	50% {
+		background: #d10672;
+	}
+	66% {
+		background: #ffd513;
+	}
+	83% {
+		background: #ff972f;
+	}
+}
+
+.planet div:nth-child(152) {
+	-webkit-animation: shift-152 15s ease infinite;
+	animation: shift-152 15s ease infinite;
+}
+
+@-webkit-keyframes shift-152 {
+	0%,
+	100% {
+		background: #95018e;
+	}
+	16% {
+		background: #ca0094;
+	}
+	33% {
+		background: #e8012e;
+	}
+	50% {
+		background: #454a8c;
+	}
+	66% {
+		background: #ffd314;
+	}
+	83% {
+		background: #ff972f;
+	}
+}
+
+@keyframes shift-152 {
+	0%,
+	100% {
+		background: #95018e;
+	}
+	16% {
+		background: #ca0094;
+	}
+	33% {
+		background: #e8012e;
+	}
+	50% {
+		background: #454a8c;
+	}
+	66% {
+		background: #ffd314;
+	}
+	83% {
+		background: #ff972f;
+	}
+}
+
+.planet div:nth-child(153) {
+	-webkit-animation: shift-153 15s ease infinite;
+	animation: shift-153 15s ease infinite;
+}
+
+@-webkit-keyframes shift-153 {
+	0%,
+	100% {
+		background: #89019b;
+	}
+	16% {
+		background: #cb0093;
+	}
+	33% {
+		background: #7301b4;
+	}
+	50% {
+		background: #6e4b74;
+	}
+	66% {
+		background: #ffde0f;
+	}
+	83% {
+		background: #ff9630;
+	}
+}
+
+@keyframes shift-153 {
+	0%,
+	100% {
+		background: #89019b;
+	}
+	16% {
+		background: #cb0093;
+	}
+	33% {
+		background: #7301b4;
+	}
+	50% {
+		background: #6e4b74;
+	}
+	66% {
+		background: #ffde0f;
+	}
+	83% {
+		background: #ff9630;
+	}
+}
+
+.planet div:nth-child(154) {
+	-webkit-animation: shift-154 15s ease infinite;
+	animation: shift-154 15s ease infinite;
+}
+
+@-webkit-keyframes shift-154 {
+	0%,
+	100% {
+		background: #b40169;
+	}
+	16% {
+		background: #cc0092;
+	}
+	33% {
+		background: #fa011a;
+	}
+	50% {
+		background: #434c60;
+	}
+	66% {
+		background: #ff8139;
+	}
+	83% {
+		background: #ff9530;
+	}
+}
+
+@keyframes shift-154 {
+	0%,
+	100% {
+		background: #b40169;
+	}
+	16% {
+		background: #cc0092;
+	}
+	33% {
+		background: #fa011a;
+	}
+	50% {
+		background: #434c60;
+	}
+	66% {
+		background: #ff8139;
+	}
+	83% {
+		background: #ff9530;
+	}
+}
+
+.planet div:nth-child(155) {
+	-webkit-animation: shift-155 15s ease infinite;
+	animation: shift-155 15s ease infinite;
+}
+
+@-webkit-keyframes shift-155 {
+	0%,
+	100% {
+		background: #6201c8;
+	}
+	16% {
+		background: #cd0091;
+	}
+	33% {
+		background: #4801e6;
+	}
+	50% {
+		background: #a8be27;
+	}
+	66% {
+		background: #ff6845;
+	}
+	83% {
+		background: #ff9530;
+	}
+}
+
+@keyframes shift-155 {
+	0%,
+	100% {
+		background: #6201c8;
+	}
+	16% {
+		background: #cd0091;
+	}
+	33% {
+		background: #4801e6;
+	}
+	50% {
+		background: #a8be27;
+	}
+	66% {
+		background: #ff6845;
+	}
+	83% {
+		background: #ff9530;
+	}
+}
+
+.planet div:nth-child(156) {
+	-webkit-animation: shift-156 15s ease infinite;
+	animation: shift-156 15s ease infinite;
+}
+
+@-webkit-keyframes shift-156 {
+	0%,
+	100% {
+		background: #5401d8;
+	}
+	16% {
+		background: #ce0090;
+	}
+	33% {
+		background: #6201c8;
+	}
+	50% {
+		background: #358040;
+	}
+	66% {
+		background: #ffbc1e;
+	}
+	83% {
+		background: #ff9431;
+	}
+}
+
+@keyframes shift-156 {
+	0%,
+	100% {
+		background: #5401d8;
+	}
+	16% {
+		background: #ce0090;
+	}
+	33% {
+		background: #6201c8;
+	}
+	50% {
+		background: #358040;
+	}
+	66% {
+		background: #ffbc1e;
+	}
+	83% {
+		background: #ff9431;
+	}
+}
+
+.planet div:nth-child(157) {
+	-webkit-animation: shift-157 15s ease infinite;
+	animation: shift-157 15s ease infinite;
+}
+
+@-webkit-keyframes shift-157 {
+	0%,
+	100% {
+		background: #dd013b;
+	}
+	16% {
+		background: #cf008f;
+	}
+	33% {
+		background: #900192;
+	}
+	50% {
+		background: #267b7f;
+	}
+	66% {
+		background: #ffef07;
+	}
+	83% {
+		background: #ff9331;
+	}
+}
+
+@keyframes shift-157 {
+	0%,
+	100% {
+		background: #dd013b;
+	}
+	16% {
+		background: #cf008f;
+	}
+	33% {
+		background: #900192;
+	}
+	50% {
+		background: #267b7f;
+	}
+	66% {
+		background: #ffef07;
+	}
+	83% {
+		background: #ff9331;
+	}
+}
+
+.planet div:nth-child(158) {
+	-webkit-animation: shift-158 15s ease infinite;
+	animation: shift-158 15s ease infinite;
+}
+
+@-webkit-keyframes shift-158 {
+	0%,
+	100% {
+		background: #4001ef;
+	}
+	16% {
+		background: #d0008e;
+	}
+	33% {
+		background: #a70179;
+	}
+	50% {
+		background: #698754;
+	}
+	66% {
+		background: #ffa529;
+	}
+	83% {
+		background: #ff9331;
+	}
+}
+
+@keyframes shift-158 {
+	0%,
+	100% {
+		background: #4001ef;
+	}
+	16% {
+		background: #d0008e;
+	}
+	33% {
+		background: #a70179;
+	}
+	50% {
+		background: #698754;
+	}
+	66% {
+		background: #ffa529;
+	}
+	83% {
+		background: #ff9331;
+	}
+}
+
+.planet div:nth-child(159) {
+	-webkit-animation: shift-159 15s ease infinite;
+	animation: shift-159 15s ease infinite;
+}
+
+@-webkit-keyframes shift-159 {
+	0%,
+	100% {
+		background: #9a0187;
+	}
+	16% {
+		background: #d1008d;
+	}
+	33% {
+		background: #6c01bc;
+	}
+	50% {
+		background: #791f7f;
+	}
+	66% {
+		background: #ffa02b;
+	}
+	83% {
+		background: #ff9232;
+	}
+}
+
+@keyframes shift-159 {
+	0%,
+	100% {
+		background: #9a0187;
+	}
+	16% {
+		background: #d1008d;
+	}
+	33% {
+		background: #6c01bc;
+	}
+	50% {
+		background: #791f7f;
+	}
+	66% {
+		background: #ffa02b;
+	}
+	83% {
+		background: #ff9232;
+	}
+}
+
+.planet div:nth-child(160) {
+	-webkit-animation: shift-160 15s ease infinite;
+	animation: shift-160 15s ease infinite;
+}
+
+@-webkit-keyframes shift-160 {
+	0%,
+	100% {
+		background: #900192;
+	}
+	16% {
+		background: #d2008c;
+	}
+	33% {
+		background: #d20147;
+	}
+	50% {
+		background: #112df3;
+	}
+	66% {
+		background: #ff8438;
+	}
+	83% {
+		background: #ff9132;
+	}
+}
+
+@keyframes shift-160 {
+	0%,
+	100% {
+		background: #900192;
+	}
+	16% {
+		background: #d2008c;
+	}
+	33% {
+		background: #d20147;
+	}
+	50% {
+		background: #112df3;
+	}
+	66% {
+		background: #ff8438;
+	}
+	83% {
+		background: #ff9132;
+	}
+}
+
+.planet div:nth-child(161) {
+	-webkit-animation: shift-161 15s ease infinite;
+	animation: shift-161 15s ease infinite;
+}
+
+@-webkit-keyframes shift-161 {
+	0%,
+	100% {
+		background: #5401d8;
+	}
+	16% {
+		background: #d3008b;
+	}
+	33% {
+		background: #c1015b;
+	}
+	50% {
+		background: #f4c541;
+	}
+	66% {
+		background: #ffe50c;
+	}
+	83% {
+		background: #ff9032;
+	}
+}
+
+@keyframes shift-161 {
+	0%,
+	100% {
+		background: #5401d8;
+	}
+	16% {
+		background: #d3008b;
+	}
+	33% {
+		background: #c1015b;
+	}
+	50% {
+		background: #f4c541;
+	}
+	66% {
+		background: #ffe50c;
+	}
+	83% {
+		background: #ff9032;
+	}
+}
+
+.planet div:nth-child(162) {
+	-webkit-animation: shift-162 15s ease infinite;
+	animation: shift-162 15s ease infinite;
+}
+
+@-webkit-keyframes shift-162 {
+	0%,
+	100% {
+		background: #a5017a;
+	}
+	16% {
+		background: #d4008a;
+	}
+	33% {
+		background: #3d01f2;
+	}
+	50% {
+		background: #610208;
+	}
+	66% {
+		background: #fffe01;
+	}
+	83% {
+		background: #ff9033;
+	}
+}
+
+@keyframes shift-162 {
+	0%,
+	100% {
+		background: #a5017a;
+	}
+	16% {
+		background: #d4008a;
+	}
+	33% {
+		background: #3d01f2;
+	}
+	50% {
+		background: #610208;
+	}
+	66% {
+		background: #fffe01;
+	}
+	83% {
+		background: #ff9033;
+	}
+}
+
+.planet div:nth-child(163) {
+	-webkit-animation: shift-163 15s ease infinite;
+	animation: shift-163 15s ease infinite;
+}
+
+@-webkit-keyframes shift-163 {
+	0%,
+	100% {
+		background: #6201c8;
+	}
+	16% {
+		background: #d50089;
+	}
+	33% {
+		background: #eb012a;
+	}
+	50% {
+		background: #1d202c;
+	}
+	66% {
+		background: #ff803a;
+	}
+	83% {
+		background: #ff8f33;
+	}
+}
+
+@keyframes shift-163 {
+	0%,
+	100% {
+		background: #6201c8;
+	}
+	16% {
+		background: #d50089;
+	}
+	33% {
+		background: #eb012a;
+	}
+	50% {
+		background: #1d202c;
+	}
+	66% {
+		background: #ff803a;
+	}
+	83% {
+		background: #ff8f33;
+	}
+}
+
+.planet div:nth-child(164) {
+	-webkit-animation: shift-164 15s ease infinite;
+	animation: shift-164 15s ease infinite;
+}
+
+@-webkit-keyframes shift-164 {
+	0%,
+	100% {
+		background: #f9011a;
+	}
+	16% {
+		background: #d60088;
+	}
+	33% {
+		background: #ee0127;
+	}
+	50% {
+		background: #3dff43;
+	}
+	66% {
+		background: #ffd911;
+	}
+	83% {
+		background: #ff8e33;
+	}
+}
+
+@keyframes shift-164 {
+	0%,
+	100% {
+		background: #f9011a;
+	}
+	16% {
+		background: #d60088;
+	}
+	33% {
+		background: #ee0127;
+	}
+	50% {
+		background: #3dff43;
+	}
+	66% {
+		background: #ffd911;
+	}
+	83% {
+		background: #ff8e33;
+	}
+}
+
+.planet div:nth-child(165) {
+	-webkit-animation: shift-165 15s ease infinite;
+	animation: shift-165 15s ease infinite;
+}
+
+@-webkit-keyframes shift-165 {
+	0%,
+	100% {
+		background: #bd015f;
+	}
+	16% {
+		background: #d70087;
+	}
+	33% {
+		background: #8a019a;
+	}
+	50% {
+		background: #810d50;
+	}
+	66% {
+		background: #ff9e2c;
+	}
+	83% {
+		background: #ff8e34;
+	}
+}
+
+@keyframes shift-165 {
+	0%,
+	100% {
+		background: #bd015f;
+	}
+	16% {
+		background: #d70087;
+	}
+	33% {
+		background: #8a019a;
+	}
+	50% {
+		background: #810d50;
+	}
+	66% {
+		background: #ff9e2c;
+	}
+	83% {
+		background: #ff8e34;
+	}
+}
+
+.planet div:nth-child(166) {
+	-webkit-animation: shift-166 15s ease infinite;
+	animation: shift-166 15s ease infinite;
+}
+
+@-webkit-keyframes shift-166 {
+	0%,
+	100% {
+		background: #c40157;
+	}
+	16% {
+		background: #d80086;
+	}
+	33% {
+		background: #8201a3;
+	}
+	50% {
+		background: #e36b68;
+	}
+	66% {
+		background: #ff6c43;
+	}
+	83% {
+		background: #ff8d34;
+	}
+}
+
+@keyframes shift-166 {
+	0%,
+	100% {
+		background: #c40157;
+	}
+	16% {
+		background: #d80086;
+	}
+	33% {
+		background: #8201a3;
+	}
+	50% {
+		background: #e36b68;
+	}
+	66% {
+		background: #ff6c43;
+	}
+	83% {
+		background: #ff8d34;
+	}
+}
+
+.planet div:nth-child(167) {
+	-webkit-animation: shift-167 15s ease infinite;
+	animation: shift-167 15s ease infinite;
+}
+
+@-webkit-keyframes shift-167 {
+	0%,
+	100% {
+		background: #b1016c;
+	}
+	16% {
+		background: #d90085;
+	}
+	33% {
+		background: #6201c7;
+	}
+	50% {
+		background: #f0e387;
+	}
+	66% {
+		background: #ff6447;
+	}
+	83% {
+		background: #ff8c34;
+	}
+}
+
+@keyframes shift-167 {
+	0%,
+	100% {
+		background: #b1016c;
+	}
+	16% {
+		background: #d90085;
+	}
+	33% {
+		background: #6201c7;
+	}
+	50% {
+		background: #f0e387;
+	}
+	66% {
+		background: #ff6447;
+	}
+	83% {
+		background: #ff8c34;
+	}
+}
+
+.planet div:nth-child(168) {
+	-webkit-animation: shift-168 15s ease infinite;
+	animation: shift-168 15s ease infinite;
+}
+
+@-webkit-keyframes shift-168 {
+	0%,
+	100% {
+		background: #7c01aa;
+	}
+	16% {
+		background: #da0084;
+	}
+	33% {
+		background: #4401ea;
+	}
+	50% {
+		background: #5dca96;
+	}
+	66% {
+		background: #ffb422;
+	}
+	83% {
+		background: #ff8c34;
+	}
+}
+
+@keyframes shift-168 {
+	0%,
+	100% {
+		background: #7c01aa;
+	}
+	16% {
+		background: #da0084;
+	}
+	33% {
+		background: #4401ea;
+	}
+	50% {
+		background: #5dca96;
+	}
+	66% {
+		background: #ffb422;
+	}
+	83% {
+		background: #ff8c34;
+	}
+}
+
+.planet div:nth-child(169) {
+	-webkit-animation: shift-169 15s ease infinite;
+	animation: shift-169 15s ease infinite;
+}
+
+@-webkit-keyframes shift-169 {
+	0%,
+	100% {
+		background: #8c0198;
+	}
+	16% {
+		background: #db0083;
+	}
+	33% {
+		background: #4601e8;
+	}
+	50% {
+		background: #e860f4;
+	}
+	66% {
+		background: #ffba1f;
+	}
+	83% {
+		background: #ff8b35;
+	}
+}
+
+@keyframes shift-169 {
+	0%,
+	100% {
+		background: #8c0198;
+	}
+	16% {
+		background: #db0083;
+	}
+	33% {
+		background: #4601e8;
+	}
+	50% {
+		background: #e860f4;
+	}
+	66% {
+		background: #ffba1f;
+	}
+	83% {
+		background: #ff8b35;
+	}
+}
+
+.planet div:nth-child(170) {
+	-webkit-animation: shift-170 15s ease infinite;
+	animation: shift-170 15s ease infinite;
+}
+
+@-webkit-keyframes shift-170 {
+	0%,
+	100% {
+		background: #910192;
+	}
+	16% {
+		background: #dc0082;
+	}
+	33% {
+		background: #87019d;
+	}
+	50% {
+		background: #ac9b74;
+	}
+	66% {
+		background: #ffb223;
+	}
+	83% {
+		background: #ff8a35;
+	}
+}
+
+@keyframes shift-170 {
+	0%,
+	100% {
+		background: #910192;
+	}
+	16% {
+		background: #dc0082;
+	}
+	33% {
+		background: #87019d;
+	}
+	50% {
+		background: #ac9b74;
+	}
+	66% {
+		background: #ffb223;
+	}
+	83% {
+		background: #ff8a35;
+	}
+}
+
+.planet div:nth-child(171) {
+	-webkit-animation: shift-171 15s ease infinite;
+	animation: shift-171 15s ease infinite;
+}
+
+@-webkit-keyframes shift-171 {
+	0%,
+	100% {
+		background: #b3016a;
+	}
+	16% {
+		background: #dd0081;
+	}
+	33% {
+		background: #4d01e0;
+	}
+	50% {
+		background: #8187af;
+	}
+	66% {
+		background: #ff803a;
+	}
+	83% {
+		background: #ff8a35;
+	}
+}
+
+@keyframes shift-171 {
+	0%,
+	100% {
+		background: #b3016a;
+	}
+	16% {
+		background: #dd0081;
+	}
+	33% {
+		background: #4d01e0;
+	}
+	50% {
+		background: #8187af;
+	}
+	66% {
+		background: #ff803a;
+	}
+	83% {
+		background: #ff8a35;
+	}
+}
+
+.planet div:nth-child(172) {
+	-webkit-animation: shift-172 15s ease infinite;
+	animation: shift-172 15s ease infinite;
+}
+
+@-webkit-keyframes shift-172 {
+	0%,
+	100% {
+		background: #cf014a;
+	}
+	16% {
+		background: #de0080;
+	}
+	33% {
+		background: #c0015c;
+	}
+	50% {
+		background: #411307;
+	}
+	66% {
+		background: #ffea0a;
+	}
+	83% {
+		background: #ff8936;
+	}
+}
+
+@keyframes shift-172 {
+	0%,
+	100% {
+		background: #cf014a;
+	}
+	16% {
+		background: #de0080;
+	}
+	33% {
+		background: #c0015c;
+	}
+	50% {
+		background: #411307;
+	}
+	66% {
+		background: #ffea0a;
+	}
+	83% {
+		background: #ff8936;
+	}
+}
+
+.planet div:nth-child(173) {
+	-webkit-animation: shift-173 15s ease infinite;
+	animation: shift-173 15s ease infinite;
+}
+
+@-webkit-keyframes shift-173 {
+	0%,
+	100% {
+		background: #da013e;
+	}
+	16% {
+		background: #df007f;
+	}
+	33% {
+		background: #85019f;
+	}
+	50% {
+		background: #96eff8;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ff8836;
+	}
+}
+
+@keyframes shift-173 {
+	0%,
+	100% {
+		background: #da013e;
+	}
+	16% {
+		background: #df007f;
+	}
+	33% {
+		background: #85019f;
+	}
+	50% {
+		background: #96eff8;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ff8836;
+	}
+}
+
+.planet div:nth-child(174) {
+	-webkit-animation: shift-174 15s ease infinite;
+	animation: shift-174 15s ease infinite;
+}
+
+@-webkit-keyframes shift-174 {
+	0%,
+	100% {
+		background: #88019c;
+	}
+	16% {
+		background: #e0007e;
+	}
+	33% {
+		background: #cf014a;
+	}
+	50% {
+		background: #cad640;
+	}
+	66% {
+		background: #ff9132;
+	}
+	83% {
+		background: #ff8836;
+	}
+}
+
+@keyframes shift-174 {
+	0%,
+	100% {
+		background: #88019c;
+	}
+	16% {
+		background: #e0007e;
+	}
+	33% {
+		background: #cf014a;
+	}
+	50% {
+		background: #cad640;
+	}
+	66% {
+		background: #ff9132;
+	}
+	83% {
+		background: #ff8836;
+	}
+}
+
+.planet div:nth-child(175) {
+	-webkit-animation: shift-175 15s ease infinite;
+	animation: shift-175 15s ease infinite;
+}
+
+@-webkit-keyframes shift-175 {
+	0%,
+	100% {
+		background: #d40145;
+	}
+	16% {
+		background: #e1007d;
+	}
+	33% {
+		background: #ef0126;
+	}
+	50% {
+		background: #57878a;
+	}
+	66% {
+		background: #ff7041;
+	}
+	83% {
+		background: #ff8737;
+	}
+}
+
+@keyframes shift-175 {
+	0%,
+	100% {
+		background: #d40145;
+	}
+	16% {
+		background: #e1007d;
+	}
+	33% {
+		background: #ef0126;
+	}
+	50% {
+		background: #57878a;
+	}
+	66% {
+		background: #ff7041;
+	}
+	83% {
+		background: #ff8737;
+	}
+}
+
+.planet div:nth-child(176) {
+	-webkit-animation: shift-176 15s ease infinite;
+	animation: shift-176 15s ease infinite;
+}
+
+@-webkit-keyframes shift-176 {
+	0%,
+	100% {
+		background: #bd015f;
+	}
+	16% {
+		background: #e2007c;
+	}
+	33% {
+		background: #eb012a;
+	}
+	50% {
+		background: #d83664;
+	}
+	66% {
+		background: #ff9530;
+	}
+	83% {
+		background: #ff8637;
+	}
+}
+
+@keyframes shift-176 {
+	0%,
+	100% {
+		background: #bd015f;
+	}
+	16% {
+		background: #e2007c;
+	}
+	33% {
+		background: #eb012a;
+	}
+	50% {
+		background: #d83664;
+	}
+	66% {
+		background: #ff9530;
+	}
+	83% {
+		background: #ff8637;
+	}
+}
+
+.planet div:nth-child(177) {
+	-webkit-animation: shift-177 15s ease infinite;
+	animation: shift-177 15s ease infinite;
+}
+
+@-webkit-keyframes shift-177 {
+	0%,
+	100% {
+		background: #b70166;
+	}
+	16% {
+		background: #e3007b;
+	}
+	33% {
+		background: #5f01cb;
+	}
+	50% {
+		background: #0f85d4;
+	}
+	66% {
+		background: #ffc61a;
+	}
+	83% {
+		background: #ff8637;
+	}
+}
+
+@keyframes shift-177 {
+	0%,
+	100% {
+		background: #b70166;
+	}
+	16% {
+		background: #e3007b;
+	}
+	33% {
+		background: #5f01cb;
+	}
+	50% {
+		background: #0f85d4;
+	}
+	66% {
+		background: #ffc61a;
+	}
+	83% {
+		background: #ff8637;
+	}
+}
+
+.planet div:nth-child(178) {
+	-webkit-animation: shift-178 15s ease infinite;
+	animation: shift-178 15s ease infinite;
+}
+
+@-webkit-keyframes shift-178 {
+	0%,
+	100% {
+		background: #7d01a9;
+	}
+	16% {
+		background: #e4007a;
+	}
+	33% {
+		background: #fa0119;
+	}
+	50% {
+		background: #5c6897;
+	}
+	66% {
+		background: #ffe50c;
+	}
+	83% {
+		background: #ff8538;
+	}
+}
+
+@keyframes shift-178 {
+	0%,
+	100% {
+		background: #7d01a9;
+	}
+	16% {
+		background: #e4007a;
+	}
+	33% {
+		background: #fa0119;
+	}
+	50% {
+		background: #5c6897;
+	}
+	66% {
+		background: #ffe50c;
+	}
+	83% {
+		background: #ff8538;
+	}
+}
+
+.planet div:nth-child(179) {
+	-webkit-animation: shift-179 15s ease infinite;
+	animation: shift-179 15s ease infinite;
+}
+
+@-webkit-keyframes shift-179 {
+	0%,
+	100% {
+		background: #c2015a;
+	}
+	16% {
+		background: #e50079;
+	}
+	33% {
+		background: #f8011c;
+	}
+	50% {
+		background: #b0762e;
+	}
+	66% {
+		background: #ffbb1f;
+	}
+	83% {
+		background: #ff8438;
+	}
+}
+
+@keyframes shift-179 {
+	0%,
+	100% {
+		background: #c2015a;
+	}
+	16% {
+		background: #e50079;
+	}
+	33% {
+		background: #f8011c;
+	}
+	50% {
+		background: #b0762e;
+	}
+	66% {
+		background: #ffbb1f;
+	}
+	83% {
+		background: #ff8438;
+	}
+}
+
+.planet div:nth-child(180) {
+	-webkit-animation: shift-180 15s ease infinite;
+	animation: shift-180 15s ease infinite;
+}
+
+@-webkit-keyframes shift-180 {
+	0%,
+	100% {
+		background: #3a01f6;
+	}
+	16% {
+		background: #e60078;
+	}
+	33% {
+		background: #8e0195;
+	}
+	50% {
+		background: #42ed44;
+	}
+	66% {
+		background: #ffc41b;
+	}
+	83% {
+		background: #ff8338;
+	}
+}
+
+@keyframes shift-180 {
+	0%,
+	100% {
+		background: #3a01f6;
+	}
+	16% {
+		background: #e60078;
+	}
+	33% {
+		background: #8e0195;
+	}
+	50% {
+		background: #42ed44;
+	}
+	66% {
+		background: #ffc41b;
+	}
+	83% {
+		background: #ff8338;
+	}
+}
+
+.planet div:nth-child(181) {
+	-webkit-animation: shift-181 15s ease infinite;
+	animation: shift-181 15s ease infinite;
+}
+
+@-webkit-keyframes shift-181 {
+	0%,
+	100% {
+		background: #4a01e4;
+	}
+	16% {
+		background: #e70077;
+	}
+	33% {
+		background: #5601d6;
+	}
+	50% {
+		background: #8f3410;
+	}
+	66% {
+		background: #ffd214;
+	}
+	83% {
+		background: #ff8339;
+	}
+}
+
+@keyframes shift-181 {
+	0%,
+	100% {
+		background: #4a01e4;
+	}
+	16% {
+		background: #e70077;
+	}
+	33% {
+		background: #5601d6;
+	}
+	50% {
+		background: #8f3410;
+	}
+	66% {
+		background: #ffd214;
+	}
+	83% {
+		background: #ff8339;
+	}
+}
+
+.planet div:nth-child(182) {
+	-webkit-animation: shift-182 15s ease infinite;
+	animation: shift-182 15s ease infinite;
+}
+
+@-webkit-keyframes shift-182 {
+	0%,
+	100% {
+		background: #df0138;
+	}
+	16% {
+		background: #e80076;
+	}
+	33% {
+		background: #a4017c;
+	}
+	50% {
+		background: #4c8eab;
+	}
+	66% {
+		background: #ffde0f;
+	}
+	83% {
+		background: #ff8239;
+	}
+}
+
+@keyframes shift-182 {
+	0%,
+	100% {
+		background: #df0138;
+	}
+	16% {
+		background: #e80076;
+	}
+	33% {
+		background: #a4017c;
+	}
+	50% {
+		background: #4c8eab;
+	}
+	66% {
+		background: #ffde0f;
+	}
+	83% {
+		background: #ff8239;
+	}
+}
+
+.planet div:nth-child(183) {
+	-webkit-animation: shift-183 15s ease infinite;
+	animation: shift-183 15s ease infinite;
+}
+
+@-webkit-keyframes shift-183 {
+	0%,
+	100% {
+		background: #3701f9;
+	}
+	16% {
+		background: #e90075;
+	}
+	33% {
+		background: #6301c7;
+	}
+	50% {
+		background: #9c5243;
+	}
+	66% {
+		background: #ff9431;
+	}
+	83% {
+		background: #ff8139;
+	}
+}
+
+@keyframes shift-183 {
+	0%,
+	100% {
+		background: #3701f9;
+	}
+	16% {
+		background: #e90075;
+	}
+	33% {
+		background: #6301c7;
+	}
+	50% {
+		background: #9c5243;
+	}
+	66% {
+		background: #ff9431;
+	}
+	83% {
+		background: #ff8139;
+	}
+}
+
+.planet div:nth-child(184) {
+	-webkit-animation: shift-184 15s ease infinite;
+	animation: shift-184 15s ease infinite;
+}
+
+@-webkit-keyframes shift-184 {
+	0%,
+	100% {
+		background: #9c0185;
+	}
+	16% {
+		background: #ea0074;
+	}
+	33% {
+		background: #e30134;
+	}
+	50% {
+		background: #711aea;
+	}
+	66% {
+		background: #ff6b44;
+	}
+	83% {
+		background: #ff8139;
+	}
+}
+
+@keyframes shift-184 {
+	0%,
+	100% {
+		background: #9c0185;
+	}
+	16% {
+		background: #ea0074;
+	}
+	33% {
+		background: #e30134;
+	}
+	50% {
+		background: #711aea;
+	}
+	66% {
+		background: #ff6b44;
+	}
+	83% {
+		background: #ff8139;
+	}
+}
+
+.planet div:nth-child(185) {
+	-webkit-animation: shift-185 15s ease infinite;
+	animation: shift-185 15s ease infinite;
+}
+
+@-webkit-keyframes shift-185 {
+	0%,
+	100% {
+		background: #e00136;
+	}
+	16% {
+		background: #eb0073;
+	}
+	33% {
+		background: #87019e;
+	}
+	50% {
+		background: #347bfb;
+	}
+	66% {
+		background: #ffde0f;
+	}
+	83% {
+		background: #ff803a;
+	}
+}
+
+@keyframes shift-185 {
+	0%,
+	100% {
+		background: #e00136;
+	}
+	16% {
+		background: #eb0073;
+	}
+	33% {
+		background: #87019e;
+	}
+	50% {
+		background: #347bfb;
+	}
+	66% {
+		background: #ffde0f;
+	}
+	83% {
+		background: #ff803a;
+	}
+}
+
+.planet div:nth-child(186) {
+	-webkit-animation: shift-186 15s ease infinite;
+	animation: shift-186 15s ease infinite;
+}
+
+@-webkit-keyframes shift-186 {
+	0%,
+	100% {
+		background: #6c01bd;
+	}
+	16% {
+		background: #ec0072;
+	}
+	33% {
+		background: #3c01f3;
+	}
+	50% {
+		background: #a12526;
+	}
+	66% {
+		background: #ffe30d;
+	}
+	83% {
+		background: #ff7f3a;
+	}
+}
+
+@keyframes shift-186 {
+	0%,
+	100% {
+		background: #6c01bd;
+	}
+	16% {
+		background: #ec0072;
+	}
+	33% {
+		background: #3c01f3;
+	}
+	50% {
+		background: #a12526;
+	}
+	66% {
+		background: #ffe30d;
+	}
+	83% {
+		background: #ff7f3a;
+	}
+}
+
+.planet div:nth-child(187) {
+	-webkit-animation: shift-187 15s ease infinite;
+	animation: shift-187 15s ease infinite;
+}
+
+@-webkit-keyframes shift-187 {
+	0%,
+	100% {
+		background: #de013a;
+	}
+	16% {
+		background: #ed0071;
+	}
+	33% {
+		background: #f30121;
+	}
+	50% {
+		background: #cc5086;
+	}
+	66% {
+		background: #ffdc10;
+	}
+	83% {
+		background: #ff7f3a;
+	}
+}
+
+@keyframes shift-187 {
+	0%,
+	100% {
+		background: #de013a;
+	}
+	16% {
+		background: #ed0071;
+	}
+	33% {
+		background: #f30121;
+	}
+	50% {
+		background: #cc5086;
+	}
+	66% {
+		background: #ffdc10;
+	}
+	83% {
+		background: #ff7f3a;
+	}
+}
+
+.planet div:nth-child(188) {
+	-webkit-animation: shift-188 15s ease infinite;
+	animation: shift-188 15s ease infinite;
+}
+
+@-webkit-keyframes shift-188 {
+	0%,
+	100% {
+		background: #cf014b;
+	}
+	16% {
+		background: #ee0070;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #c3a9ee;
+	}
+	66% {
+		background: #ffc21c;
+	}
+	83% {
+		background: #ff7e3b;
+	}
+}
+
+@keyframes shift-188 {
+	0%,
+	100% {
+		background: #cf014b;
+	}
+	16% {
+		background: #ee0070;
+	}
+	33% {
+		background: #4a01e3;
+	}
+	50% {
+		background: #c3a9ee;
+	}
+	66% {
+		background: #ffc21c;
+	}
+	83% {
+		background: #ff7e3b;
+	}
+}
+
+.planet div:nth-child(189) {
+	-webkit-animation: shift-189 15s ease infinite;
+	animation: shift-189 15s ease infinite;
+}
+
+@-webkit-keyframes shift-189 {
+	0%,
+	100% {
+		background: #ed0128;
+	}
+	16% {
+		background: #ef006f;
+	}
+	33% {
+		background: #ba0163;
+	}
+	50% {
+		background: #50e8de;
+	}
+	66% {
+		background: #ffa728;
+	}
+	83% {
+		background: #ff7d3b;
+	}
+}
+
+@keyframes shift-189 {
+	0%,
+	100% {
+		background: #ed0128;
+	}
+	16% {
+		background: #ef006f;
+	}
+	33% {
+		background: #ba0163;
+	}
+	50% {
+		background: #50e8de;
+	}
+	66% {
+		background: #ffa728;
+	}
+	83% {
+		background: #ff7d3b;
+	}
+}
+
+.planet div:nth-child(190) {
+	-webkit-animation: shift-190 15s ease infinite;
+	animation: shift-190 15s ease infinite;
+}
+
+@-webkit-keyframes shift-190 {
+	0%,
+	100% {
+		background: #88019c;
+	}
+	16% {
+		background: #f0006e;
+	}
+	33% {
+		background: #b1016d;
+	}
+	50% {
+		background: #522aab;
+	}
+	66% {
+		background: #ff6c43;
+	}
+	83% {
+		background: #ff7d3b;
+	}
+}
+
+@keyframes shift-190 {
+	0%,
+	100% {
+		background: #88019c;
+	}
+	16% {
+		background: #f0006e;
+	}
+	33% {
+		background: #b1016d;
+	}
+	50% {
+		background: #522aab;
+	}
+	66% {
+		background: #ff6c43;
+	}
+	83% {
+		background: #ff7d3b;
+	}
+}
+
+.planet div:nth-child(191) {
+	-webkit-animation: shift-191 15s ease infinite;
+	animation: shift-191 15s ease infinite;
+}
+
+@-webkit-keyframes shift-191 {
+	0%,
+	100% {
+		background: #4c01e1;
+	}
+	16% {
+		background: #f1006d;
+	}
+	33% {
+		background: #bd015f;
+	}
+	50% {
+		background: #880205;
+	}
+	66% {
+		background: #ffd413;
+	}
+	83% {
+		background: #ff7c3c;
+	}
+}
+
+@keyframes shift-191 {
+	0%,
+	100% {
+		background: #4c01e1;
+	}
+	16% {
+		background: #f1006d;
+	}
+	33% {
+		background: #bd015f;
+	}
+	50% {
+		background: #880205;
+	}
+	66% {
+		background: #ffd413;
+	}
+	83% {
+		background: #ff7c3c;
+	}
+}
+
+.planet div:nth-child(192) {
+	-webkit-animation: shift-192 15s ease infinite;
+	animation: shift-192 15s ease infinite;
+}
+
+@-webkit-keyframes shift-192 {
+	0%,
+	100% {
+		background: #9f0182;
+	}
+	16% {
+		background: #f2006c;
+	}
+	33% {
+		background: #5401d8;
+	}
+	50% {
+		background: #560e5b;
+	}
+	66% {
+		background: #ffaf25;
+	}
+	83% {
+		background: #ff7b3c;
+	}
+}
+
+@keyframes shift-192 {
+	0%,
+	100% {
+		background: #9f0182;
+	}
+	16% {
+		background: #f2006c;
+	}
+	33% {
+		background: #5401d8;
+	}
+	50% {
+		background: #560e5b;
+	}
+	66% {
+		background: #ffaf25;
+	}
+	83% {
+		background: #ff7b3c;
+	}
+}
+
+.planet div:nth-child(193) {
+	-webkit-animation: shift-193 15s ease infinite;
+	animation: shift-193 15s ease infinite;
+}
+
+@-webkit-keyframes shift-193 {
+	0%,
+	100% {
+		background: #b0016e;
+	}
+	16% {
+		background: #f3006b;
+	}
+	33% {
+		background: #3b01f5;
+	}
+	50% {
+		background: #135fd6;
+	}
+	66% {
+		background: #ff6646;
+	}
+	83% {
+		background: #ff7b3c;
+	}
+}
+
+@keyframes shift-193 {
+	0%,
+	100% {
+		background: #b0016e;
+	}
+	16% {
+		background: #f3006b;
+	}
+	33% {
+		background: #3b01f5;
+	}
+	50% {
+		background: #135fd6;
+	}
+	66% {
+		background: #ff6646;
+	}
+	83% {
+		background: #ff7b3c;
+	}
+}
+
+.planet div:nth-child(194) {
+	-webkit-animation: shift-194 15s ease infinite;
+	animation: shift-194 15s ease infinite;
+}
+
+@-webkit-keyframes shift-194 {
+	0%,
+	100% {
+		background: #5601d6;
+	}
+	16% {
+		background: #f4006a;
+	}
+	33% {
+		background: #96018c;
+	}
+	50% {
+		background: #aeaaee;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ff7a3d;
+	}
+}
+
+@keyframes shift-194 {
+	0%,
+	100% {
+		background: #5601d6;
+	}
+	16% {
+		background: #f4006a;
+	}
+	33% {
+		background: #96018c;
+	}
+	50% {
+		background: #aeaaee;
+	}
+	66% {
+		background: #fffd01;
+	}
+	83% {
+		background: #ff7a3d;
+	}
+}
+
+.planet div:nth-child(195) {
+	-webkit-animation: shift-195 15s ease infinite;
+	animation: shift-195 15s ease infinite;
+}
+
+@-webkit-keyframes shift-195 {
+	0%,
+	100% {
+		background: #910192;
+	}
+	16% {
+		background: #f50069;
+	}
+	33% {
+		background: #c1015b;
+	}
+	50% {
+		background: #a6f15a;
+	}
+	66% {
+		background: #fff007;
+	}
+	83% {
+		background: #ff793d;
+	}
+}
+
+@keyframes shift-195 {
+	0%,
+	100% {
+		background: #910192;
+	}
+	16% {
+		background: #f50069;
+	}
+	33% {
+		background: #c1015b;
+	}
+	50% {
+		background: #a6f15a;
+	}
+	66% {
+		background: #fff007;
+	}
+	83% {
+		background: #ff793d;
+	}
+}
+
+.planet div:nth-child(196) {
+	-webkit-animation: shift-196 15s ease infinite;
+	animation: shift-196 15s ease infinite;
+}
+
+@-webkit-keyframes shift-196 {
+	0%,
+	100% {
+		background: #8201a3;
+	}
+	16% {
+		background: #f60068;
+	}
+	33% {
+		background: #920190;
+	}
+	50% {
+		background: #b6a638;
+	}
+	66% {
+		background: #ffbd1e;
+	}
+	83% {
+		background: #ff783d;
+	}
+}
+
+@keyframes shift-196 {
+	0%,
+	100% {
+		background: #8201a3;
+	}
+	16% {
+		background: #f60068;
+	}
+	33% {
+		background: #920190;
+	}
+	50% {
+		background: #b6a638;
+	}
+	66% {
+		background: #ffbd1e;
+	}
+	83% {
+		background: #ff783d;
+	}
+}
+
+.planet div:nth-child(197) {
+	-webkit-animation: shift-197 15s ease infinite;
+	animation: shift-197 15s ease infinite;
+}
+
+@-webkit-keyframes shift-197 {
+	0%,
+	100% {
+		background: #a2017e;
+	}
+	16% {
+		background: #f70067;
+	}
+	33% {
+		background: #c60155;
+	}
+	50% {
+		background: #530548;
+	}
+	66% {
+		background: #ffed08;
+	}
+	83% {
+		background: #ff783e;
+	}
+}
+
+@keyframes shift-197 {
+	0%,
+	100% {
+		background: #a2017e;
+	}
+	16% {
+		background: #f70067;
+	}
+	33% {
+		background: #c60155;
+	}
+	50% {
+		background: #530548;
+	}
+	66% {
+		background: #ffed08;
+	}
+	83% {
+		background: #ff783e;
+	}
+}
+
+.planet div:nth-child(198) {
+	-webkit-animation: shift-198 15s ease infinite;
+	animation: shift-198 15s ease infinite;
+}
+
+@-webkit-keyframes shift-198 {
+	0%,
+	100% {
+		background: #9c0185;
+	}
+	16% {
+		background: #f80066;
+	}
+	33% {
+		background: #5101dc;
+	}
+	50% {
+		background: #e04618;
+	}
+	66% {
+		background: #ffbc1e;
+	}
+	83% {
+		background: #ff773e;
+	}
+}
+
+@keyframes shift-198 {
+	0%,
+	100% {
+		background: #9c0185;
+	}
+	16% {
+		background: #f80066;
+	}
+	33% {
+		background: #5101dc;
+	}
+	50% {
+		background: #e04618;
+	}
+	66% {
+		background: #ffbc1e;
+	}
+	83% {
+		background: #ff773e;
+	}
+}
+
+.planet div:nth-child(199) {
+	-webkit-animation: shift-199 15s ease infinite;
+	animation: shift-199 15s ease infinite;
+}
+
+@-webkit-keyframes shift-199 {
+	0%,
+	100% {
+		background: #4301ec;
+	}
+	16% {
+		background: #f90065;
+	}
+	33% {
+		background: #6a01bf;
+	}
+	50% {
+		background: #5ee5a3;
+	}
+	66% {
+		background: #ffa827;
+	}
+	83% {
+		background: #ff763e;
+	}
+}
+
+@keyframes shift-199 {
+	0%,
+	100% {
+		background: #4301ec;
+	}
+	16% {
+		background: #f90065;
+	}
+	33% {
+		background: #6a01bf;
+	}
+	50% {
+		background: #5ee5a3;
+	}
+	66% {
+		background: #ffa827;
+	}
+	83% {
+		background: #ff763e;
+	}
+}
+
+.planet div:nth-child(200) {
+	-webkit-animation: shift-200 15s ease infinite;
+	animation: shift-200 15s ease infinite;
+}
+
+@-webkit-keyframes shift-200 {
+	0%,
+	100% {
+		background: #ee0127;
+	}
+	16% {
+		background: #fa0064;
+	}
+	33% {
+		background: #d40144;
+	}
+	50% {
+		background: #d6e7f2;
+	}
+	66% {
+		background: #ffe20d;
+	}
+	83% {
+		background: #ff763e;
+	}
+}
+
+@keyframes shift-200 {
+	0%,
+	100% {
+		background: #ee0127;
+	}
+	16% {
+		background: #fa0064;
+	}
+	33% {
+		background: #d40144;
+	}
+	50% {
+		background: #d6e7f2;
+	}
+	66% {
+		background: #ffe20d;
+	}
+	83% {
+		background: #ff763e;
+	}
+}
+
+.planet div:nth-child(201) {
+	-webkit-animation: shift-201 15s ease infinite;
+	animation: shift-201 15s ease infinite;
+}
+
+@-webkit-keyframes shift-201 {
+	0%,
+	100% {
+		background: #3f01f0;
+	}
+	16% {
+		background: #fb0063;
+	}
+	33% {
+		background: #6401c6;
+	}
+	50% {
+		background: #e8242f;
+	}
+	66% {
+		background: #ffb920;
+	}
+	83% {
+		background: #ff753f;
+	}
+}
+
+@keyframes shift-201 {
+	0%,
+	100% {
+		background: #3f01f0;
+	}
+	16% {
+		background: #fb0063;
+	}
+	33% {
+		background: #6401c6;
+	}
+	50% {
+		background: #e8242f;
+	}
+	66% {
+		background: #ffb920;
+	}
+	83% {
+		background: #ff753f;
+	}
+}
+
+.planet div:nth-child(202) {
+	-webkit-animation: shift-202 15s ease infinite;
+	animation: shift-202 15s ease infinite;
+}
+
+@-webkit-keyframes shift-202 {
+	0%,
+	100% {
+		background: #4101ed;
+	}
+	16% {
+		background: #fc0062;
+	}
+	33% {
+		background: #4201ec;
+	}
+	50% {
+		background: #055e08;
+	}
+	66% {
+		background: #ff992f;
+	}
+	83% {
+		background: #ff743f;
+	}
+}
+
+@keyframes shift-202 {
+	0%,
+	100% {
+		background: #4101ed;
+	}
+	16% {
+		background: #fc0062;
+	}
+	33% {
+		background: #4201ec;
+	}
+	50% {
+		background: #055e08;
+	}
+	66% {
+		background: #ff992f;
+	}
+	83% {
+		background: #ff743f;
+	}
+}
+
+.planet div:nth-child(203) {
+	-webkit-animation: shift-203 15s ease infinite;
+	animation: shift-203 15s ease infinite;
+}
+
+@-webkit-keyframes shift-203 {
+	0%,
+	100% {
+		background: #5801d4;
+	}
+	16% {
+		background: #fd0061;
+	}
+	33% {
+		background: #a60179;
+	}
+	50% {
+		background: #f9d6df;
+	}
+	66% {
+		background: #ff8239;
+	}
+	83% {
+		background: #ff743f;
+	}
+}
+
+@keyframes shift-203 {
+	0%,
+	100% {
+		background: #5801d4;
+	}
+	16% {
+		background: #fd0061;
+	}
+	33% {
+		background: #a60179;
+	}
+	50% {
+		background: #f9d6df;
+	}
+	66% {
+		background: #ff8239;
+	}
+	83% {
+		background: #ff743f;
+	}
+}
+
+.planet div:nth-child(204) {
+	-webkit-animation: shift-204 15s ease infinite;
+	animation: shift-204 15s ease infinite;
+}
+
+@-webkit-keyframes shift-204 {
+	0%,
+	100% {
+		background: #5101dc;
+	}
+	16% {
+		background: #fe0060;
+	}
+	33% {
+		background: #990188;
+	}
+	50% {
+		background: #508e44;
+	}
+	66% {
+		background: #ff8d34;
+	}
+	83% {
+		background: #ff7340;
+	}
+}
+
+@keyframes shift-204 {
+	0%,
+	100% {
+		background: #5101dc;
+	}
+	16% {
+		background: #fe0060;
+	}
+	33% {
+		background: #990188;
+	}
+	50% {
+		background: #508e44;
+	}
+	66% {
+		background: #ff8d34;
+	}
+	83% {
+		background: #ff7340;
+	}
+}
+
+.planet div:nth-child(205) {
+	-webkit-animation: shift-205 15s ease infinite;
+	animation: shift-205 15s ease infinite;
+}
+
+@-webkit-keyframes shift-205 {
+	0%,
+	100% {
+		background: #e20135;
+	}
+	16% {
+		background: #ff005f;
+	}
+	33% {
+		background: #4201ed;
+	}
+	50% {
+		background: #8cea1e;
+	}
+	66% {
+		background: #ffa02b;
+	}
+	83% {
+		background: #ff7240;
+	}
+}
+
+@keyframes shift-205 {
+	0%,
+	100% {
+		background: #e20135;
+	}
+	16% {
+		background: #ff005f;
+	}
+	33% {
+		background: #4201ed;
+	}
+	50% {
+		background: #8cea1e;
+	}
+	66% {
+		background: #ffa02b;
+	}
+	83% {
+		background: #ff7240;
+	}
+}
+
+.planet div:nth-child(206) {
+	-webkit-animation: shift-206 15s ease infinite;
+	animation: shift-206 15s ease infinite;
+}
+
+@-webkit-keyframes shift-206 {
+	0%,
+	100% {
+		background: #ea012b;
+	}
+	16% {
+		background: #ff005e;
+	}
+	33% {
+		background: #6201c8;
+	}
+	50% {
+		background: #cd1a2c;
+	}
+	66% {
+		background: #ff7240;
+	}
+	83% {
+		background: #ff7240;
+	}
+}
+
+@keyframes shift-206 {
+	0%,
+	100% {
+		background: #ea012b;
+	}
+	16% {
+		background: #ff005e;
+	}
+	33% {
+		background: #6201c8;
+	}
+	50% {
+		background: #cd1a2c;
+	}
+	66% {
+		background: #ff7240;
+	}
+	83% {
+		background: #ff7240;
+	}
+}
+
+.planet div:nth-child(207) {
+	-webkit-animation: shift-207 15s ease infinite;
+	animation: shift-207 15s ease infinite;
+}
+
+@-webkit-keyframes shift-207 {
+	0%,
+	100% {
+		background: #4b01e2;
+	}
+	16% {
+		background: #ff005d;
+	}
+	33% {
+		background: #4e01df;
+	}
+	50% {
+		background: #e94a5c;
+	}
+	66% {
+		background: #ff6646;
+	}
+	83% {
+		background: #ff7141;
+	}
+}
+
+@keyframes shift-207 {
+	0%,
+	100% {
+		background: #4b01e2;
+	}
+	16% {
+		background: #ff005d;
+	}
+	33% {
+		background: #4e01df;
+	}
+	50% {
+		background: #e94a5c;
+	}
+	66% {
+		background: #ff6646;
+	}
+	83% {
+		background: #ff7141;
+	}
+}
+
+.planet div:nth-child(208) {
+	-webkit-animation: shift-208 15s ease infinite;
+	animation: shift-208 15s ease infinite;
+}
+
+@-webkit-keyframes shift-208 {
+	0%,
+	100% {
+		background: #7301b4;
+	}
+	16% {
+		background: #ff005c;
+	}
+	33% {
+		background: #af016f;
+	}
+	50% {
+		background: #dcf31a;
+	}
+	66% {
+		background: #ffbc1f;
+	}
+	83% {
+		background: #ff7041;
+	}
+}
+
+@keyframes shift-208 {
+	0%,
+	100% {
+		background: #7301b4;
+	}
+	16% {
+		background: #ff005c;
+	}
+	33% {
+		background: #af016f;
+	}
+	50% {
+		background: #dcf31a;
+	}
+	66% {
+		background: #ffbc1f;
+	}
+	83% {
+		background: #ff7041;
+	}
+}
+
+.planet div:nth-child(209) {
+	-webkit-animation: shift-209 15s ease infinite;
+	animation: shift-209 15s ease infinite;
+}
+
+@-webkit-keyframes shift-209 {
+	0%,
+	100% {
+		background: #ed0128;
+	}
+	16% {
+		background: #ff005b;
+	}
+	33% {
+		background: #ac0172;
+	}
+	50% {
+		background: #5c8432;
+	}
+	66% {
+		background: #ffa828;
+	}
+	83% {
+		background: #ff7041;
+	}
+}
+
+@keyframes shift-209 {
+	0%,
+	100% {
+		background: #ed0128;
+	}
+	16% {
+		background: #ff005b;
+	}
+	33% {
+		background: #ac0172;
+	}
+	50% {
+		background: #5c8432;
+	}
+	66% {
+		background: #ffa828;
+	}
+	83% {
+		background: #ff7041;
+	}
+}
+
+.planet div:nth-child(210) {
+	-webkit-animation: shift-210 15s ease infinite;
+	animation: shift-210 15s ease infinite;
+}
+
+@-webkit-keyframes shift-210 {
+	0%,
+	100% {
+		background: #b2016c;
+	}
+	16% {
+		background: #ff005a;
+	}
+	33% {
+		background: #f6011e;
+	}
+	50% {
+		background: #8ecb3c;
+	}
+	66% {
+		background: #ffef07;
+	}
+	83% {
+		background: #ff6f42;
+	}
+}
+
+@keyframes shift-210 {
+	0%,
+	100% {
+		background: #b2016c;
+	}
+	16% {
+		background: #ff005a;
+	}
+	33% {
+		background: #f6011e;
+	}
+	50% {
+		background: #8ecb3c;
+	}
+	66% {
+		background: #ffef07;
+	}
+	83% {
+		background: #ff6f42;
+	}
+}
+
+.planet div:nth-child(211) {
+	-webkit-animation: shift-211 15s ease infinite;
+	animation: shift-211 15s ease infinite;
+}
+
+@-webkit-keyframes shift-211 {
+	0%,
+	100% {
+		background: #88019c;
+	}
+	16% {
+		background: #ff0059;
+	}
+	33% {
+		background: #3201ff;
+	}
+	50% {
+		background: #980c06;
+	}
+	66% {
+		background: #ffba1f;
+	}
+	83% {
+		background: #ff6e42;
+	}
+}
+
+@keyframes shift-211 {
+	0%,
+	100% {
+		background: #88019c;
+	}
+	16% {
+		background: #ff0059;
+	}
+	33% {
+		background: #3201ff;
+	}
+	50% {
+		background: #980c06;
+	}
+	66% {
+		background: #ffba1f;
+	}
+	83% {
+		background: #ff6e42;
+	}
+}
+
+.planet div:nth-child(212) {
+	-webkit-animation: shift-212 15s ease infinite;
+	animation: shift-212 15s ease infinite;
+}
+
+@-webkit-keyframes shift-212 {
+	0%,
+	100% {
+		background: #4601e8;
+	}
+	16% {
+		background: #ff0058;
+	}
+	33% {
+		background: #7201b6;
+	}
+	50% {
+		background: #2e24a4;
+	}
+	66% {
+		background: #ff8438;
+	}
+	83% {
+		background: #ff6d42;
+	}
+}
+
+@keyframes shift-212 {
+	0%,
+	100% {
+		background: #4601e8;
+	}
+	16% {
+		background: #ff0058;
+	}
+	33% {
+		background: #7201b6;
+	}
+	50% {
+		background: #2e24a4;
+	}
+	66% {
+		background: #ff8438;
+	}
+	83% {
+		background: #ff6d42;
+	}
+}
+
+.planet div:nth-child(213) {
+	-webkit-animation: shift-213 15s ease infinite;
+	animation: shift-213 15s ease infinite;
+}
+
+@-webkit-keyframes shift-213 {
+	0%,
+	100% {
+		background: #6601c3;
+	}
+	16% {
+		background: #ff0057;
+	}
+	33% {
+		background: #d70141;
+	}
+	50% {
+		background: #67d61d;
+	}
+	66% {
+		background: #ffe70b;
+	}
+	83% {
+		background: #ff6d43;
+	}
+}
+
+@keyframes shift-213 {
+	0%,
+	100% {
+		background: #6601c3;
+	}
+	16% {
+		background: #ff0057;
+	}
+	33% {
+		background: #d70141;
+	}
+	50% {
+		background: #67d61d;
+	}
+	66% {
+		background: #ffe70b;
+	}
+	83% {
+		background: #ff6d43;
+	}
+}
+
+.planet div:nth-child(214) {
+	-webkit-animation: shift-214 15s ease infinite;
+	animation: shift-214 15s ease infinite;
+}
+
+@-webkit-keyframes shift-214 {
+	0%,
+	100% {
+		background: #7001b8;
+	}
+	16% {
+		background: #ff0056;
+	}
+	33% {
+		background: #7501b2;
+	}
+	50% {
+		background: #7e2e84;
+	}
+	66% {
+		background: #ff7f3a;
+	}
+	83% {
+		background: #ff6c43;
+	}
+}
+
+@keyframes shift-214 {
+	0%,
+	100% {
+		background: #7001b8;
+	}
+	16% {
+		background: #ff0056;
+	}
+	33% {
+		background: #7501b2;
+	}
+	50% {
+		background: #7e2e84;
+	}
+	66% {
+		background: #ff7f3a;
+	}
+	83% {
+		background: #ff6c43;
+	}
+}
+
+.planet div:nth-child(215) {
+	-webkit-animation: shift-215 15s ease infinite;
+	animation: shift-215 15s ease infinite;
+}
+
+@-webkit-keyframes shift-215 {
+	0%,
+	100% {
+		background: #ab0174;
+	}
+	16% {
+		background: #ff0055;
+	}
+	33% {
+		background: #9e0183;
+	}
+	50% {
+		background: #b8b43b;
+	}
+	66% {
+		background: #ffda11;
+	}
+	83% {
+		background: #ff6b43;
+	}
+}
+
+@keyframes shift-215 {
+	0%,
+	100% {
+		background: #ab0174;
+	}
+	16% {
+		background: #ff0055;
+	}
+	33% {
+		background: #9e0183;
+	}
+	50% {
+		background: #b8b43b;
+	}
+	66% {
+		background: #ffda11;
+	}
+	83% {
+		background: #ff6b43;
+	}
+}
+
+.planet div:nth-child(216) {
+	-webkit-animation: shift-216 15s ease infinite;
+	animation: shift-216 15s ease infinite;
+}
+
+@-webkit-keyframes shift-216 {
+	0%,
+	100% {
+		background: #e10136;
+	}
+	16% {
+		background: #ff0054;
+	}
+	33% {
+		background: #c1015a;
+	}
+	50% {
+		background: #db405e;
+	}
+	66% {
+		background: #ff972f;
+	}
+	83% {
+		background: #ff6b43;
+	}
+}
+
+@keyframes shift-216 {
+	0%,
+	100% {
+		background: #e10136;
+	}
+	16% {
+		background: #ff0054;
+	}
+	33% {
+		background: #c1015a;
+	}
+	50% {
+		background: #db405e;
+	}
+	66% {
+		background: #ff972f;
+	}
+	83% {
+		background: #ff6b43;
+	}
+}
+
+.planet div:nth-child(217) {
+	-webkit-animation: shift-217 15s ease infinite;
+	animation: shift-217 15s ease infinite;
+}
+
+@-webkit-keyframes shift-217 {
+	0%,
+	100% {
+		background: #bc0161;
+	}
+	16% {
+		background: #ff0053;
+	}
+	33% {
+		background: #6701c2;
+	}
+	50% {
+		background: #686dca;
+	}
+	66% {
+		background: #ffcc17;
+	}
+	83% {
+		background: #ff6a44;
+	}
+}
+
+@keyframes shift-217 {
+	0%,
+	100% {
+		background: #bc0161;
+	}
+	16% {
+		background: #ff0053;
+	}
+	33% {
+		background: #6701c2;
+	}
+	50% {
+		background: #686dca;
+	}
+	66% {
+		background: #ffcc17;
+	}
+	83% {
+		background: #ff6a44;
+	}
+}
+
+.planet div:nth-child(218) {
+	-webkit-animation: shift-218 15s ease infinite;
+	animation: shift-218 15s ease infinite;
+}
+
+@-webkit-keyframes shift-218 {
+	0%,
+	100% {
+		background: #7e01a7;
+	}
+	16% {
+		background: #ff0052;
+	}
+	33% {
+		background: #7801af;
+	}
+	50% {
+		background: #961731;
+	}
+	66% {
+		background: #ff8737;
+	}
+	83% {
+		background: #ff6944;
+	}
+}
+
+@keyframes shift-218 {
+	0%,
+	100% {
+		background: #7e01a7;
+	}
+	16% {
+		background: #ff0052;
+	}
+	33% {
+		background: #7801af;
+	}
+	50% {
+		background: #961731;
+	}
+	66% {
+		background: #ff8737;
+	}
+	83% {
+		background: #ff6944;
+	}
+}
+
+.planet div:nth-child(219) {
+	-webkit-animation: shift-219 15s ease infinite;
+	animation: shift-219 15s ease infinite;
+}
+
+@-webkit-keyframes shift-219 {
+	0%,
+	100% {
+		background: #bb0161;
+	}
+	16% {
+		background: #ff0051;
+	}
+	33% {
+		background: #3401fd;
+	}
+	50% {
+		background: #ae4f62;
+	}
+	66% {
+		background: #ffd513;
+	}
+	83% {
+		background: #ff6944;
+	}
+}
+
+@keyframes shift-219 {
+	0%,
+	100% {
+		background: #bb0161;
+	}
+	16% {
+		background: #ff0051;
+	}
+	33% {
+		background: #3401fd;
+	}
+	50% {
+		background: #ae4f62;
+	}
+	66% {
+		background: #ffd513;
+	}
+	83% {
+		background: #ff6944;
+	}
+}
+
+.planet div:nth-child(220) {
+	-webkit-animation: shift-220 15s ease infinite;
+	animation: shift-220 15s ease infinite;
+}
+
+@-webkit-keyframes shift-220 {
+	0%,
+	100% {
+		background: #96018b;
+	}
+	16% {
+		background: #ff0050;
+	}
+	33% {
+		background: #f8011c;
+	}
+	50% {
+		background: #795219;
+	}
+	66% {
+		background: #ffef08;
+	}
+	83% {
+		background: #ff6845;
+	}
+}
+
+@keyframes shift-220 {
+	0%,
+	100% {
+		background: #96018b;
+	}
+	16% {
+		background: #ff0050;
+	}
+	33% {
+		background: #f8011c;
+	}
+	50% {
+		background: #795219;
+	}
+	66% {
+		background: #ffef08;
+	}
+	83% {
+		background: #ff6845;
+	}
+}
+
+.planet div:nth-child(221) {
+	-webkit-animation: shift-221 15s ease infinite;
+	animation: shift-221 15s ease infinite;
+}
+
+@-webkit-keyframes shift-221 {
+	0%,
+	100% {
+		background: #a3017d;
+	}
+	16% {
+		background: #ff004f;
+	}
+	33% {
+		background: #3401fd;
+	}
+	50% {
+		background: #be713f;
+	}
+	66% {
+		background: #ffef07;
+	}
+	83% {
+		background: #ff6745;
+	}
+}
+
+@keyframes shift-221 {
+	0%,
+	100% {
+		background: #a3017d;
+	}
+	16% {
+		background: #ff004f;
+	}
+	33% {
+		background: #3401fd;
+	}
+	50% {
+		background: #be713f;
+	}
+	66% {
+		background: #ffef07;
+	}
+	83% {
+		background: #ff6745;
+	}
+}
+
+.planet div:nth-child(222) {
+	-webkit-animation: shift-222 15s ease infinite;
+	animation: shift-222 15s ease infinite;
+}
+
+@-webkit-keyframes shift-222 {
+	0%,
+	100% {
+		background: #af0170;
+	}
+	16% {
+		background: #ff004e;
+	}
+	33% {
+		background: #9e0183;
+	}
+	50% {
+		background: #dfee4c;
+	}
+	66% {
+		background: #ff9f2c;
+	}
+	83% {
+		background: #ff6745;
+	}
+}
+
+@keyframes shift-222 {
+	0%,
+	100% {
+		background: #af0170;
+	}
+	16% {
+		background: #ff004e;
+	}
+	33% {
+		background: #9e0183;
+	}
+	50% {
+		background: #dfee4c;
+	}
+	66% {
+		background: #ff9f2c;
+	}
+	83% {
+		background: #ff6745;
+	}
+}
+
+.planet div:nth-child(223) {
+	-webkit-animation: shift-223 15s ease infinite;
+	animation: shift-223 15s ease infinite;
+}
+
+@-webkit-keyframes shift-223 {
+	0%,
+	100% {
+		background: #6201c7;
+	}
+	16% {
+		background: #ff004d;
+	}
+	33% {
+		background: #c40157;
+	}
+	50% {
+		background: #8741f5;
+	}
+	66% {
+		background: #ff8139;
+	}
+	83% {
+		background: #ff6646;
+	}
+}
+
+@keyframes shift-223 {
+	0%,
+	100% {
+		background: #6201c7;
+	}
+	16% {
+		background: #ff004d;
+	}
+	33% {
+		background: #c40157;
+	}
+	50% {
+		background: #8741f5;
+	}
+	66% {
+		background: #ff8139;
+	}
+	83% {
+		background: #ff6646;
+	}
+}
+
+.planet div:nth-child(224) {
+	-webkit-animation: shift-224 15s ease infinite;
+	animation: shift-224 15s ease infinite;
+}
+
+@-webkit-keyframes shift-224 {
+	0%,
+	100% {
+		background: #8201a3;
+	}
+	16% {
+		background: #ff004c;
+	}
+	33% {
+		background: #df0138;
+	}
+	50% {
+		background: #e4b34b;
+	}
+	66% {
+		background: #ffaa27;
+	}
+	83% {
+		background: #ff6546;
+	}
+}
+
+@keyframes shift-224 {
+	0%,
+	100% {
+		background: #8201a3;
+	}
+	16% {
+		background: #ff004c;
+	}
+	33% {
+		background: #df0138;
+	}
+	50% {
+		background: #e4b34b;
+	}
+	66% {
+		background: #ffaa27;
+	}
+	83% {
+		background: #ff6546;
+	}
+}
+
+.planet div:nth-child(225) {
+	-webkit-animation: shift-225 15s ease infinite;
+	animation: shift-225 15s ease infinite;
+}
+
+@-webkit-keyframes shift-225 {
+	0%,
+	100% {
+		background: #88019c;
+	}
+	16% {
+		background: #ff004b;
+	}
+	33% {
+		background: #ee0126;
+	}
+	50% {
+		background: #c27048;
+	}
+	66% {
+		background: #ffd215;
+	}
+	83% {
+		background: #ff6546;
+	}
+}
+
+@keyframes shift-225 {
+	0%,
+	100% {
+		background: #88019c;
+	}
+	16% {
+		background: #ff004b;
+	}
+	33% {
+		background: #ee0126;
+	}
+	50% {
+		background: #c27048;
+	}
+	66% {
+		background: #ffd215;
+	}
+	83% {
+		background: #ff6546;
+	}
+}</style>
+	</head>
+
+	<body>
+		<section class="planet">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+	</body>
+
+</html>
