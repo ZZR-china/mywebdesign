@@ -1,0 +1,40 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
+html {
+	overflow: hidden;
+	touch-action: none;
+	content-zooming: none;
+}
+
+body {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+
+#canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+#text {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+}
+
+#text div {
+	position: absolute;
+	color: #eee;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	top: -80px;
+	font-family: 'Raleway Dots', cursive;
+	font-size: 128px;
+}
