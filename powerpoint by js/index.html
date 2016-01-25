@@ -1,0 +1,279 @@
+<html>
+<head>
+<style type="text/css" media="all">
+.d1 {
+	width: 443px;
+	height: auto;
+	overflow: hidden;
+	border: #666666 2px solid;
+	background-color: #000000;
+	position: relative;
+}
+
+.d2 {
+	width: 100%;
+	height: 209px;
+	overflow: hidden;
+}
+
+.loading {
+	width: 443px;
+	border: #666666 2px solid;
+	background-color: #000000;
+	color: #FFCC00;
+	font-size: 12px;
+	height: 179px;
+	text-align: center;
+	padding-top: 30px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.num_list {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: -1px;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 4px 0px;
+	height: 20px;
+	overflow: hidden;
+}
+
+.num_list span {
+	display: inline-block;
+	height: 16px;
+	padding-left: 6px;
+}
+
+.b1,.b2 {
+	background-color: #666666;
+	display: block;
+	float: left;
+	padding: 2px 6px;
+	margin-right: 3px;
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.b2 {
+	color: #FFCC33;
+	background-color: #FF6633;
+}
+
+.button {
+	position: absolute;
+	z-index: 1000;
+	right: 0px;
+	bottom: 2px;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+	border: 0px;
+}
+
+ul {
+	display: none;
+}
+</style>
+
+<script language="javascript" type="text/javascript">
+	var main = function() {
+
+		var interv = 2000; //切换间隔时间
+		var interv2 = 10; //切换速度
+		var opac1 = 80; //文字背景的透明度
+		var source = "fade_focus" //焦点轮换图片容器的id名称
+
+		//根据Tag名获取指定对象下的元素
+		function getTag(tag, obj) {
+			if (obj == null) {
+				return document.getElementsByTagName(tag)
+			} else {
+				return obj.getElementsByTagName(tag)
+			}
+		}
+		//根据指定id获取元素
+		function getid(id) {
+			return document.getElementById(id)
+		}
+
+		var opac = 0, j = 0, t = 63, num, scton = 0, timer, timer2, timer3;
+
+		var mainDiv = getid(source);
+		mainDiv.className = "d1";
+		//删除loading
+		mainDiv.removeChild(getTag("div", mainDiv)[0]);
+
+		//创建图片显示区域
+		var slideArea = document.createElement("div");
+		slideArea.className = "d2";
+
+		//创建横条文字title区域
+		var titleArea = document.createElement("div");
+		titleArea.className = "num_list";
+		var titleContent = document.createElement("span");
+		titleArea.appendChild(titleContent);
+		alpha(titleArea, opac1);
+
+		//获取所有li元素
+		var li = getTag("li", mainDiv);
+		//创建横条上按钮区域
+		var buttonArea = document.createElement("div");
+		buttonArea.className = "button";
+		for ( var i = 0; i < li.length; i++) {
+			var a = document.createElement("a");
+			a.innerHTML = i + 1;
+			a.onclick = function() {
+				clearTimeout(timer);
+				clearTimeout(timer2);
+				clearTimeout(timer3);
+				//图片文字连接从1开始；图片索引是从0开始，所以需要-1，
+				j = parseInt(this.innerHTML) - 1;
+				scton = 0;
+				t = 63;
+				opac = 0;
+				fadeon();
+			};
+			a.className = "b1";
+			a.onmouseover = function() {
+				this.className = "b2"
+			};
+			a.onmouseout = function() {
+				this.className = "b1";
+				sc(j)
+			};
+			buttonArea.appendChild(a);
+		}
+
+		//添加图片区域
+		mainDiv.appendChild(slideArea);
+		//添加横条文字title区域
+		mainDiv.appendChild(titleArea);
+		//添加横条上按钮区域
+		mainDiv.appendChild(buttonArea);
+
+		//控制图层透明度
+		function alpha(obj, n) {
+			if (document.all) {
+				//滤镜方式设置透明,查看滤镜alpha
+				obj.style.filter = "alpha(opacity=" + n + ")";
+			} else {
+				//CSS3中opacity属性
+				obj.style.opacity = (n / 100);
+			}
+		}
+
+		//控制焦点按钮
+		function sc(n) {
+			for ( var i = 0; i < li.length; i++) {
+				buttonArea.childNodes[i].className = "b1"
+			}
+			;
+			buttonArea.childNodes[n].className = "b2";
+		}
+
+		//渐显
+		var fadeon = function() {
+			//每执行一次透明度加深5
+			opac += 5;
+			//获取li元素中img显示在图片区域
+			slideArea.innerHTML = li[j].innerHTML;
+			//获取li元素中img的alt信息显示在横条文字title区域
+			titleContent.innerHTML = getTag("img", li[j])[0].alt;
+			alpha(slideArea, opac);
+
+			if (scton == 0) {
+				sc(j);
+				//num<0,执行scrolltxt时文字的marginTop不断变小，即文字上升
+				num = -2;
+				scrolltxt();
+				scton = 1
+			}
+			;
+			if (opac < 100) {
+				//当透明度<100时，执行渐显
+				timer = setTimeout(fadeon, interv2)
+			} else {
+				//当透明度为100时，则执行渐隐
+				timer2 = setTimeout(fadeout, interv);
+			}
+			;
+		}
+		//渐隐
+		var fadeout = function() {
+			opac -= 5;
+			slideArea.innerHTML = li[j].innerHTML;
+			alpha(slideArea, opac);
+			if (scton == 0) {
+				//num>0,执行scrolltxt时文字的marginTop不断变大，即文字下降
+				num = 2;
+				scrolltxt();
+				scton = 1
+			}
+			;
+			if (opac > 0) {
+				//当不完全透明的时，继续渐隐
+				timer = setTimeout(fadeout, interv2)
+			} else {
+				//当前图片完全透明时，获取一下图片索引，再调用fadeon()执行渐显
+				if (j < li.length - 1) {
+					j++
+				} else {
+					j = 0
+				}
+				;
+				fadeon()
+			}
+			;
+		}
+		//滚动文字
+		var scrolltxt = function() {
+			t += num;
+			titleContent.style.marginTop = t + "px";
+			if (num<0&&t>3) {
+				//t不断变小，文字上升
+				timer3 = setTimeout(scrolltxt, interv2)
+			} else if (num > 0 && t < 62) {
+				//t不断变大，文字下降
+				timer3 = setTimeout(scrolltxt, interv2)
+			} else {
+				//t初始值为63，上升每次-2，下降每次+2，当文字已到顶部t<3或者文字已到底部t>62
+				//也就是当图片渐显/渐隐切换时
+				scton = 0
+			}
+		};
+
+		fadeon();
+	}
+
+	//初始化执行main函数
+	window.onload = main;
+</script>
+</head>
+<body>
+	<div id="fade_focus">
+
+		<div class="loading">
+			Loading...<br /> <img src="indicator.gif" width="16" height="16" />
+		</div>
+
+		<ul>
+			<li><a href="#" target="_blank"><img src="1.jpg" width="600"
+					height="400" alt="1.jpg" /></a></li>
+			<li><a href="/" target="_blank"><img src="2.jpg" width="600"
+					height="400" alt="2.jpg" /></a></li>
+			<li><a href="/" target="_blank"><img src="3.jpg" width="600"
+					height="400" alt="3.jpg" /></a></li>
+			<li><a href="/" target="_blank"><img src="4.jpg" width="600"
+					height="400" alt="4.jpg" /></a></li>
+		</ul>
+	</div>
+</body>
+</html>
