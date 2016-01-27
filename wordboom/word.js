@@ -45,7 +45,6 @@
             $('#reset').show();
         } //end of the for
 
-
     } //end of the boom
     function reset(){
     	for(var i = 0;i<lyrics.length;i++){

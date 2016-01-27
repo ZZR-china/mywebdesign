@@ -1,0 +1,276 @@
+<html><head>
+<title>this year,will be better</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+.flex,
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #333;
+  background: -webkit-linear-gradient(45deg, #333, #0d0d0d, #333);
+  background: linear-gradient(45deg, #333, #0d0d0d, #333);
+  margin: 0;
+  font-family: 'Lobster', cursive;
+  overflow: hidden;
+}
+#textMask {
+  fill: #fff;
+  stroke: #fff;
+  stroke-opacity: 0.2;
+  stroke-width: 10;
+  font-size: 490px;
+}
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.container #world,
+.container .img {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.container .num,
+.container .img {
+  text-align: center;
+  position: absolute;
+}
+.container svg {
+  height: 100%;
+  width: 100%;
+}
+.container .num {
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: rgba(255,255,255,0.99);
+  text-shadow: 0px 0px 5px;
+  font-size: 150px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@media (max-width: 870px) {
+  .container .num {
+    font-size: 100px;
+  }
+}
+@media (max-width: 588px) {
+  .container .num {
+    font-size: 50px;
+  }
+}
+.container .num .small {
+  font-size: 50%;
+}
+.container .num .gold {
+  color: rgba(245,240,22,0.99);
+}
+.container .num .myNotMy {
+  color: rgba(69,183,207,0.99);
+}
+.anim-love {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-animation: lovelovelove 1s ease infinite alternate;
+          animation: lovelovelove 1s ease infinite alternate;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .anim-love {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-animation: scalHeart 1s ease infinite alternate;
+            animation: scalHeart 1s ease infinite alternate;
+  }
+@-webkit-keyframes scalHeart {
+    to {
+      -webkit-transform: scale3d(0.88, 0.88, 0.88);
+              transform: scale3d(0.88, 0.88, 0.88);
+    }
+}
+@keyframes scalHeart {
+    to {
+      -webkit-transform: scale3d(0.88, 0.88, 0.88);
+              transform: scale3d(0.88, 0.88, 0.88);
+    }
+}
+}
+@-webkit-keyframes lovelovelove {
+  to {
+    font-size: 550px;
+  }
+}
+@keyframes lovelovelove {
+  to {
+    font-size: 550px;
+  }
+}
+
+
+
+</style>
+
+</head>
+<div class="container">
+  <canvas id="world"></canvas>
+  <div class="img">
+    <svg viewbox="0 0 500 400" class="animated zoomIn">
+      <defs>
+        <filter id="feDisplacementMap" filterunits="userSpaceOnUse" x="0" y="0" width="500" height="400">
+          <feturbulence type="fractalNoise" basefrequency="0.995" numoctaves="1" seed="1" stitchtiles="noStitch" result="img"></feturbulence>
+          <fedisplacementmap in="SourceGraphic" in2="img" xchannelselector="R" ychannelselector="G" scale="0">
+            <animate attributename="scale" values="50;0;0" keytimes="0;0.75;1" begin="0s" dur="5s"></animate>
+          </fedisplacementmap>
+        </filter>
+      </defs>
+      <symbol id="s-text">
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text">♥</text>
+      </symbol>
+      <mask id="m-text" maskunits="userSpaceOnUse" maskcontentunits="userSpaceOnUse">
+        <use id="textMask" xlink:href="#s-text"></use>
+      </mask>
+      <g id="mainImg" mask="url(#m-text)" filter="url(#feDisplacementMap)">
+        <image xlink:href="Bled.jpg" width="100%" height="100%" x="10%" y="0%"></image>
+      </g>
+    </svg>
+  </div>
+  <div class="num animated lightSpeedIn"><span class='gold'>21</span> year)
+    <div class="small">happy<a href="http://www.zhangzirui.com" class='myNotMy'>  birthday</a>!!!</div>
+  </div>
+</div>
+<script>
+(function() {
+  var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
+
+  setTimeout(function() {
+    mainImg.setAttribute('filter', '');
+    return textMask.classList.add("anim-love");
+  }, 5000);
+
+  NUM_CONFETTI = 69;
+
+  COLORS = [[85, 71, 106], [174, 61, 99], [219, 56, 83], [244, 92, 68], [248, 182, 70]];
+
+  PI_2 = 2 * Math.PI;
+
+  canvas = document.getElementById("world");
+
+  context = canvas.getContext("2d");
+
+  window.w = 0;
+
+  window.h = 0;
+
+  resizeWindow = function() {
+    window.w = canvas.width = window.innerWidth;
+    return window.h = canvas.height = window.innerHeight;
+  };
+
+  window.addEventListener('resize', resizeWindow, false);
+
+  window.onload = function() {
+    return setTimeout(resizeWindow, 0);
+  };
+
+  range = function(a, b) {
+    return (b - a) * Math.random() + a;
+  };
+
+  drawCircle = function(x, y, r, style) {
+    context.beginPath();
+    context.arc(x, y, r, 0, PI_2, false);
+    context.fillStyle = style;
+    return context.fill();
+  };
+
+  xpos = 0.5;
+
+  document.onmousemove = function(e) {
+    return xpos = e.pageX / w;
+  };
+
+  window.requestAnimationFrame = (function() {
+    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
+      return window.setTimeout(callback, 1000 / 60);
+    };
+  })();
+
+  Confetti = (function() {
+    function Confetti() {
+      this.style = COLORS[~~range(0, 5)];
+      this.rgb = "rgba(" + this.style[0] + "," + this.style[1] + "," + this.style[2];
+      this.r = ~~range(2, 6);
+      this.r2 = 2 * this.r;
+      this.replace();
+    }
+
+    Confetti.prototype.replace = function() {
+      this.opacity = 0;
+      this.dop = 0.03 * range(1, 4);
+      this.x = range(-this.r2, w - this.r2);
+      this.y = range(-20, h - this.r2);
+      this.xmax = w - this.r;
+      this.ymax = h - this.r;
+      this.vx = range(0, 2) + 8 * xpos - 5;
+      return this.vy = 0.7 * this.r + range(-1, 1);
+    };
+
+    Confetti.prototype.draw = function() {
+      var ref;
+      this.x += this.vx;
+      this.y += this.vy;
+      this.opacity += this.dop;
+      if (this.opacity > 1) {
+        this.opacity = 1;
+        this.dop *= -1;
+      }
+      if (this.opacity < 0 || this.y > this.ymax) {
+        this.replace();
+      }
+      if (!((0 < (ref = this.x) && ref < this.xmax))) {
+        this.x = (this.x + this.xmax) % this.xmax;
+      }
+      return drawCircle(~~this.x, ~~this.y, this.r, this.rgb + "," + this.opacity + ")");
+    };
+
+    return Confetti;
+
+  })();
+
+  confetti = (function() {
+    var j, ref, results;
+    results = [];
+    for (i = j = 1, ref = NUM_CONFETTI; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
+      results.push(new Confetti);
+    }
+    return results;
+  })();
+
+  window.step = function() {
+    var c, j, len, results;
+    requestAnimationFrame(step);
+    context.clearRect(0, 0, w, h);
+    results = [];
+    for (j = 0, len = confetti.length; j < len; j++) {
+      c = confetti[j];
+      results.push(c.draw());
+    }
+    return results;
+  };
+
+  step();
+
+}).call(this);
+
+
+</script>
+</html>
