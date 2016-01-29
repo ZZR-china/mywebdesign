@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta name="viewport" charset="utf-8">
+<style type="text/css">
+html,body{
+  background-color:#FFEBCD;
+}
+div#container{
+width:400px;
+height:400px;
+padding:1;
+margin: 1;
+position:absolute;
+	left:350px;
+	top:100px;
+
+	}
+div.sudoku{
+         margin: 10;
+         padding: 0;
+         width:100px;
+		 height:100px;
+		 background-color:orange; 
+         float: left; 
+		 <!--边框圆角-->
+          border-radius:15px; 
+		 }
+</style>
+
+</head>
+
+<body>
+<div id="container">
+<div class="sudoku" id="1"></div>
+<div class="sudoku" id="2"></div>
+<div class="sudoku" id="3"></div>
+<div class="sudoku" id="4"></div>
+<div class="sudoku" id="5"></div>
+<div class="sudoku" id="6"></div>
+<div class="sudoku" id="7"></div>
+<div class="sudoku" id="8"></div>
+<div class="sudoku" id="9"></div>
+</div>
+<script>
+  var color=new Array(
+    "#cc0000","white","#F0FFFF","gray",
+	"#FAEBD7","F0F8FF","#4B0082","#BC8F8F","#FFE4B5","#3CB371","#7B68EE","#87CEFA","#6A5ACD"
+  );
+  var divChange=document.getElementById("1");
+  var divChange2=document.getElementById("2");
+  var divChange3=document.getElementById("3");
+  var divChange4=document.getElementById("4");
+  var divChange5=document.getElementById("5");
+  var divChange6=document.getElementById("6");
+  var divChange7=document.getElementById("7");
+  var divChange8=document.getElementById("8");
+  var divChange9=document.getElementById("9");
+ 
+   var i=0; 
+  function change(){
+    divChange.setAttribute("style","background:"+color[i]);
+    divChange2.setAttribute("style","background:"+color[i+1]);
+    divChange3.setAttribute("style","background:"+color[i+2]);
+    divChange4.setAttribute("style","background:"+color[i+3]);
+    divChange5.setAttribute("style","background:"+color[i+4]);
+    divChange6.setAttribute("style","background:"+color[i+3]);
+    divChange7.setAttribute("style","background:"+color[i+2]);
+    divChange8.setAttribute("style","background:"+color[i+1]);
+    divChange9.setAttribute("style","background:"+color[i]);
+	i++;
+	
+  }
+  var set=setInterval(change,1000);
+</script>
+</body>
+</html>
