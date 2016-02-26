@@ -1,0 +1,22 @@
+body{
+	font-family: 'Microsoft YaHei', 'SimHei', 'STHeiti', sans-serif;
+}
+.container{
+	max-width:1000px;
+	margin:0 auto;
+}
+.warn{
+	diplay:none;
+	background-color:#DEE8EF;
+	width:290px;
+	padding:5px;
+	color:#B32D2D;
+	font-weight:bold;
+	
+}
+
+textarea{
+	display:block;
+	margin-bottom:10px;
+	
+}
