@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML5/CSS3 3D环形图片墙 伴随旋转动画在线演示</title>
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="css/slider.css" rel="stylesheet" type="text/css" />
+        <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+         <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+         <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <div class="slider">
+            <div class="x_rot">
+                <div class="y_rot">
+                <!-- zg的信息 -->
+                    <div id="i1"  data-toggle="modal" 
+   data-target="#myModal1">
+                        <img src="images/1.jpg" />
+                    </div>
+                    <!-- zzr的信息 -->
+                    <div id="i2" data-toggle="modal" 
+   data-target="#myModal2">
+                        <img src="images/2.jpg" />
+                    </div>
+                    <!-- fhf的信息 -->
+                    <div id="i3" data-toggle="modal" 
+   data-target="#myModal3">
+                        <img src="images/3.jpg" />
+                    </div>
+                    <!-- jhf的信息 -->
+                    <div id="i4" data-toggle="modal" 
+   data-target="#myModal4">
+                        <img src="images/4.jpg" />
+                    </div>
+                    <!-- 第五位的信息 -->
+                    <div id="i5" data-toggle="modal" 
+   data-target="#myModal5">
+                        <img src="images/5.jpg" />
+                    </div>
+                    <!-- 第六位的信息 -->
+                    <div id="i6" data-toggle="modal" 
+   data-target="#myModal6">
+                        <img src="images/6.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 信息框1zg（Modal） -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" 
+           aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close" 
+                       data-dismiss="modal" aria-hidden="true">
+                          &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                       张根根
+                    </h4>
+                 </div>
+                 <div class="modal-body">
+                 还没想好说些什么╭(╯^╰)╮
+                 </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" 
+                       data-dismiss="modal">关闭
+                    </button>
+                 </div>
+              </div><!-- /.modal-content -->
+        </div>
+    </div>
+        <!-- /.modal -->
+        
+        <!-- 信息框2zzr（Modal） -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" 
+           aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close" 
+                       data-dismiss="modal" aria-hidden="true">
+                          &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                       张子锐
+                    </h4>
+                 </div>
+                 <div class="modal-body">
+                    也没想好说什么╭(╯^╰)╮
+                 </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" 
+                       data-dismiss="modal">关闭
+                    </button>
+                 </div>
+              </div><!-- /.modal-content -->
+        </div>
+    </div>
+        <!-- /.modal -->
+
+
+
+        <!-- 信息框3fhf（Modal） -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" 
+           aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close" 
+                       data-dismiss="modal" aria-hidden="true">
+                          &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                       符海飞
+                    </h4>
+                 </div>
+                 <div class="modal-body">
+                    正在想O(∩_∩)O
+                 </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" 
+                       data-dismiss="modal">关闭
+                    </button>
+                 </div>
+              </div><!-- /.modal-content -->
+        </div></div>
+        <!-- /.modal -->
+
+
+
+        <!-- 信息框4jhf（Modal） -->
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" 
+           aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close" 
+                       data-dismiss="modal" aria-hidden="true">
+                          &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                       季鸿飞
+                    </h4>
+                 </div>
+                 <div class="modal-body">
+                    想什么想，╭(╯^╰)╮
+                 </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" 
+                       data-dismiss="modal">关闭
+                    </button>
+                 </div>
+              </div><!-- /.modal-content -->
+        </div></div>
+        <!-- /.modal -->
+
+
+
+        <!-- 信息框5 babyfive（Modal） -->
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" 
+           aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close" 
+                       data-dismiss="modal" aria-hidden="true">
+                          &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                       第五个
+                    </h4>
+                 </div>
+                 <div class="modal-body">
+                    在想今天穿什么衣服
+                 </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" 
+                       data-dismiss="modal">关闭
+                    </button>
+                 </div>
+              </div><!-- /.modal-content -->
+        </div></div>
+        <!-- /.modal -->
+
+
+
+        <!-- 信息框6 baby sex（Modal） -->
+        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" 
+           aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close" 
+                       data-dismiss="modal" aria-hidden="true">
+                          &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                       第sex位
+                    </h4>
+                 </div>
+                 <div class="modal-body">
+                    在想为什么隔壁的问号跟我不一样？
+                 </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-default" 
+                       data-dismiss="modal">关闭
+                    </button>
+                 </div>
+              </div><!-- /.modal-content -->
+        </div></div>
+        <!-- /.modal -->
+
+    </body>
+</html>
